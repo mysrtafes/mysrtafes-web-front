@@ -18,7 +18,7 @@ const Home: NextPage = () => {
                       <p className={styles.eventHoldingPeriod}>2900/22/11(Hog) - 13(Fug)</p>
                       <p className={styles.eventTitle}>ここに企画名が入りますここに企画名が入りますここに企画名が入ります</p>
                       <p className={styles.eventApplicationPeriod}>応募期間：2900/22/11(Hog) - 13(Fug)</p>
-                      <a href="#" className={styles.grayButton}>
+                      <a href="/show" className={styles.grayButton}>
                           応募はこちら
                       </a>
                   </div>
