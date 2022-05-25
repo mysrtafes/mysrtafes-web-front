@@ -1,0 +1,122 @@
+
+.headerTop {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(12, 35, 241, 0.6);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #FFFFFF;
+    a {
+        text-decoration: underline;
+        color: #fff;
+    }
+}
+
+.headerBottom {
+    height: 64px;
+    background: #343438;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        text-decoration: none;
+    }
+    ul{
+        display: flex;
+        li a{
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+    }
+    .logo {
+        width: 44px;
+        height: 44px;
+        margin-right: 13px;
+    }
+    
+    .h1 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    .headerBottomLeft{
+        display: flex;
+        align-items: center;
+    }
+    .headerBottomInner {
+        width: 95%;
+        max-width: 1080px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }    
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+@media (max-width : 768px) {
+    .headerTop {
+        padding: 20px 60px 20px 20px;
+    }
+    .headerBottom {
+        display: none;
+    }
+    .hamburgerMenuIcon {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        height: 36px;
+        width: 36px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        z-index: 10;
+        background-color: #fff;
+        padding: 9px 7px;
+        border-radius: 18px;
+        box-shadow: 3px 3px 2px 1px rgba(0,0,0,.3);
+        transition: .4s;
+    }
+    .active .hamburgerMenuIcon {
+        box-shadow: none;
+        background-color: transparent;
+    }
+    .active .hamburgerMenuIcon span {
+        background-color: #fff;
+    }
+    .active .hamburgerMenuList {
+        top:0;
+    }
+    .hamburgerMenuList {
+        transition: .4s;
+        position: fixed;    
+        background: #343438;
+        right: 0;
+        top:-280px;
+    }
+    .hamburgerMenuList a {
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        margin: 20px;
+    }
+    .hamburgerMenuIcon span{
+        display: block;
+        height: 2px;
+        width: 22px;
+        background-color:#585858;
+    }
+}
