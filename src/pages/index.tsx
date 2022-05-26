@@ -4,10 +4,13 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import DiscordLink from '../components/discordLink'
 import DownloadLink from '../components/downloadLink'
+import TweetList from '../components/tweetList'
 import EventArchiveContent from '../components/eventArchiveContent'
 import Link from 'next/link'
+import React, {useEffect} from "react"
 
 const Home: NextPage = () => {
+
   return (
     <>
       <Header />
@@ -45,7 +48,7 @@ const Home: NextPage = () => {
                           <DownloadLink />
                         </div>
                         <div className={styles.comunityLinkFlexContent}>
-                          （ここにツイッターTL）
+                            <TweetList />
                         </div>
                     </div>
                 </div>
@@ -105,12 +108,13 @@ const Home: NextPage = () => {
       </div>
       <div className={styles.tweetArea}>
           <div className={styles.inner}>
-            ここにレスポンシブtweetリスト
+            <TweetList />
           </div>
       </div>
       <Footer />
     </>
   )
+
 }
 
 export default Home

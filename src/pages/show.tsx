@@ -35,7 +35,8 @@ const Show: NextPage = () => {
                 <p className={styles.p}>
                     どなたでも応募可能です。<br />
                     応募は以下のGoogleフォームから行ってください。<br />
-                    期間中の途中参加も大歓迎です！
+                    期間中の途中参加も大歓迎です！<br /><br />
+                    <Link href="(googleformのurl)"><a className={styles.joinEventButton}>イベントに応募する</a></Link>
                 </p>
                 <h2 className={styles.h2}>Q＆A</h2>
                 <ul className={styles.list}>
