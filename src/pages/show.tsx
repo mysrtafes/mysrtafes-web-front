@@ -4,8 +4,6 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import DiscordLink from '../components/discordLink'
 import DownloadLink from '../components/downloadLink'
-import TwitterLink from '../components/twitterLink'
-import EventArchiveContent from '../components/eventArchiveContent'
 import Link from 'next/link'
 
 const Show: NextPage = () => {
