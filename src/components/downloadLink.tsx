@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '../styles/downloadLink.module.scss'
+import styles from '../styles/DownloadLink.module.scss'
 
 const DownloadLink = () => {
   return (

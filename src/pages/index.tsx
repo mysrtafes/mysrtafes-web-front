@@ -7,7 +7,6 @@ import DownloadLink from '../components/downloadLink'
 import TweetList from '../components/tweetList'
 import EventArchiveContent from '../components/eventArchiveContent'
 import Link from 'next/link'
-import React, {useEffect} from "react"
 
 const Home: NextPage = () => {
 
