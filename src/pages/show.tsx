@@ -47,11 +47,11 @@ const Show: NextPage = () => {
                     <li className={styles.listAnswer}>A: 3つまでの申請と同様に、新たに応募フォームから申請してください。<br />挑戦する目標の上限はありませんので、思う存分挑戦してください。</li>
                 </ul>
                 <h2 className={styles.h2}>ロゴ等</h2>
-                <p className={styles.p}>
+                <div className={styles.p}>
                     <DownloadLink />
                     配信を行う際にご活用ください。<br />
                     素材の改変や公序良俗に反する目的での利用は避けるようにお願いします。
-                </p>
+                </div>
                 <h2 className={styles.h2}>Discord</h2>
                 <DiscordLink />
             </div>
