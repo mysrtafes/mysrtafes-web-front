@@ -55,7 +55,7 @@ const Home: NextPage = () => {
             <div className={styles.aboutFushigiRtaFes} id="about-fushigi-fes">
                 <div className={styles.inner}>
                     <h2 className={styles.h2}>不思議RTAフェスとは？</h2>
-                    <p className={styles.textContent}>
+                    <div className={styles.textContent}>
                         不思議のダンジョンRTAフェス(略称:不思議RTAフェス)は、「不思議のダンジョンシリーズ」及び「その他のローグライクゲーム」をテーマにしたイベント開催などを行っている団体です。<br /><br />
                         RTAという遊び方を通して本ジャンルの面白さを伝えるための活動を主に行っています。<br /><br />
                         
@@ -65,7 +65,7 @@ const Home: NextPage = () => {
                         タイムアタックは海外ではSpeedrunという呼び方でも親しまれており、世界各国で楽しまれているゲームの遊び方です。<br />
                         「RTA in Japan 公式サイトから引用」<br /><br />
                         長年愛され続けているローグライクゲームのさらなる発展を願い、より多くの方に楽しさを知ってもらうことを目標に活動しています。
-                    </p>
+                    </div>
                     <div className={styles.textAlignCenter}>
                         <Link href="#">
                           <a className={styles.grayButton}>

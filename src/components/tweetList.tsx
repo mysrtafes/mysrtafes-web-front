@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import styles from '../styles/TweetList.module.scss'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
 
