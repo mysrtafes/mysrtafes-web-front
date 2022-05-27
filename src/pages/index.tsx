@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 import styles from '../styles/Home.module.scss'
-import Header from '../components/header'
-import Footer from '../components/footer'
-import DiscordLink from '../components/discordLink'
-import DownloadLink from '../components/downloadLink'
-import TweetList from '../components/tweetList'
-import EventArchiveContent from '../components/eventArchiveContent'
 import Link from 'next/link'
+import Header from '@/components/Header'
+import EventArchiveContent from '@/components/EventArchiveContent'
+import DiscordLink from '@/components/DiscordLink/DiscordLink'
+import DownloadLink from '@/components/DownloadLink'
+import TweetList from '@/components/TweetList'
+import Footer from '@/components/Footer'
 
 const Home: NextPage = () => {
 
@@ -17,9 +17,9 @@ const Home: NextPage = () => {
           <div className={styles.inner}>
               <div className={styles.firstView} id="first-view">
                   <div className={styles.innerBox}>
-                      <p className={styles.eventHoldingPeriod}>2900/22/11(Hog) - 13(Fug)</p>
-                      <p className={styles.eventTitle}>ここに企画名が入りますここに企画名が入りますここに企画名が入ります</p>
-                      <p className={styles.eventApplicationPeriod}>応募期間：2900/22/11(Hog) - 13(Fug)</p>
+                      <p className={styles.eventHoldingPeriod}>2022年6月17日(金)～7月10日(日)</p>
+                      <p className={styles.eventTitle}>チャレンジダンジョン！</p>
+                      <p className={styles.eventApplicationPeriod}>応募期間：2022年6月17日(金)～7月10日(日)</p>
                       <a href="/show" className={styles.grayButton}>
                           応募はこちら
                       </a>
@@ -56,7 +56,15 @@ const Home: NextPage = () => {
                 <div className={styles.inner}>
                     <h2 className={styles.h2}>不思議RTAフェスとは？</h2>
                     <p className={styles.textContent}>
-                        ここに概念的な文章が入ります。文は目的観点を決議よれテンプレートあっませ以下、誤認され対象を著作性明確の編集原則が行われてはするます、ペディアの方針は、投稿さ主題と出所さことにおける注意同様ませでしょがいあるある。ただし、ライセンスの提出権は、内容の削除できる参考十分ある権利に制定する、そのフリーにしれてBYに著作さことが執筆するれるな。一方を、引用目的を説明されている資料を直ちにしいいことは、関係たで、場合については引用毎の侵害としてフリー上の問題は得ることに、被違反性も、独自の規定をさて俳人を著作するうばいでない。著作認めて、それの参考もないなどよれませある。または、各修正権を、規定さBYの複数、付が重要に要約しのでなるば、記事プロジェクトの例証とSAに公表しことになるて、削除するませ文が著作、投稿家防止ないないとの引用をさことも、比較的短いと抜き出してよいますです。
+                        不思議のダンジョンRTAフェス(略称:不思議RTAフェス)は、「不思議のダンジョンシリーズ」及び「その他のローグライクゲーム」をテーマにしたイベント開催などを行っている団体です。<br /><br />
+                        RTAという遊び方を通して本ジャンルの面白さを伝えるための活動を主に行っています。<br /><br />
+                        
+                        <h3>RTAとは</h3><br />
+                        RTAとは、ゲームを最初からプレイして実時間でどれだけ早くクリアできるのかを競う遊び方です。<br />
+                        実時間で時間を競うことから、リアルタイムアタックと呼ばれており、RTAはReal Time Attackの頭文字を取った略称です。<br /><br />
+                        タイムアタックは海外ではSpeedrunという呼び方でも親しまれており、世界各国で楽しまれているゲームの遊び方です。<br />
+                        「RTA in Japan 公式サイトから引用」<br /><br />
+                        長年愛され続けているローグライクゲームのさらなる発展を願い、より多くの方に楽しさを知ってもらうことを目標に活動しています。
                     </p>
                     <div className={styles.textAlignCenter}>
                         <Link href="#">

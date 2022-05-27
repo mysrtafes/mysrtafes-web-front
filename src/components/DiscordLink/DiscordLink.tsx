@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '../styles/DiscordLink.module.scss'
+import styles from '@/components/DiscordLink/DiscordLink.module.scss'
 
 const DiscordLink = () => {
   return (
