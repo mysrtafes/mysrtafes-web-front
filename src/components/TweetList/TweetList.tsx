@@ -1,4 +1,4 @@
-import styles from '../styles/TweetList.module.scss'
+import styles from '@/components/TweetList/TweetList.module.scss'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
 
 const TweetList = () => {

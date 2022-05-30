@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 import styles from '../styles/Home.module.scss'
-import Link from 'next/link'
-import Header from '@/components/Header'
-import EventArchiveContent from '@/components/EventArchiveContent'
+import Header from '@/components/Header/Header'
+import EventArchiveContent from '@/components/EventArchiveContent/EventArchiveContent'
 import DiscordLink from '@/components/DiscordLink/DiscordLink'
-import DownloadLink from '@/components/DownloadLink'
-import TweetList from '@/components/TweetList'
-import Footer from '@/components/Footer'
+import DownloadLink from '@/components/DownloadLink/DownloadLink'
+import Footer from '@/components/Footer/Footer'
+import TweetList from '@/components/TweetList/TweetList'
+import GrayButton from '@/components/Button/GrayButton'
 
 const Home: NextPage = () => {
 
@@ -20,38 +20,10 @@ const Home: NextPage = () => {
                       <p className={styles.eventHoldingPeriod}>2022年6月17日(金)～7月10日(日)</p>
                       <p className={styles.eventTitle}>チャレンジダンジョン！</p>
                       <p className={styles.eventApplicationPeriod}>応募期間：2022年6月17日(金)～7月10日(日)</p>
-                      <a href="/show" className={styles.grayButton}>
-                          応募はこちら
-                      </a>
+                      <GrayButton text="応募はこちら" href="/show"/>
                   </div>
               </div>
           </div>      
-      <div className={styles.eventArchives} id="event-archives">
-        <h2 className={styles.h2}>イベントアーカイブ</h2>
-        <ul>
-            <EventArchiveContent image_url="images/discord.png" period="2900/22/11(Hog) - 13(Fug)" title="ここに企画名が入りますここに企画名が入りますここに企画名が入ります" url="#"/>
-            <EventArchiveContent image_url="images/discord.png" period="2900/22/11(Hog) - 13(Fug)" title="ここに企画名が入りますここに企画名が入りますここに企画名が入ります" url="#"/>
-            <EventArchiveContent image_url="images/discord.png" period="2900/22/11(Hog) - 13(Fug)" title="ここに企画名が入りますここに企画名が入りますここに企画名が入ります" url="#"/>
-        </ul>
-        <a href="#" className={styles.grayButton}>
-            すべて見る
-        </a>
-      </div>
-
-      <div className={styles.comunityLink} id="comunity-links">
-                <h2 className={styles.h2}>コミュニティリンク集</h2>
-                <div className={styles.inner}>
-                    <div className={styles.comunityLinkFlex}>
-                        <div className={styles.comunityLinkFlexContent}>
-                          <DiscordLink />
-                          <DownloadLink />
-                        </div>
-                        <div className={styles.comunityLinkFlexContent}>
-                            <TweetList />
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div className={styles.aboutFushigiRtaFes} id="about-fushigi-fes">
                 <div className={styles.inner}>
                     <h2 className={styles.h2}>不思議RTAフェスとは？</h2>
@@ -67,11 +39,31 @@ const Home: NextPage = () => {
                         長年愛され続けているローグライクゲームのさらなる発展を願い、より多くの方に楽しさを知ってもらうことを目標に活動しています。
                     </div>
                     <div className={styles.textAlignCenter}>
-                        <Link href="#">
-                          <a className={styles.grayButton}>
-                              もっと長ければ個別ぺーじ
-                          </a>
-                        </Link>
+                        <GrayButton text="もっと長ければ個別ぺーじ" href="#"/>
+                    </div>
+                </div>
+            </div>
+      <div className={styles.eventArchives} id="event-archives">
+        <h2 className={styles.h2}>イベントアーカイブ</h2>
+        <ul>
+            <EventArchiveContent image_url="/images/discord.png" period="2900/22/11(Hog) - 13(Fug)" title="ここに企画名が入りますここに企画名が入りますここに企画名が入ります" url="#"/>
+            <EventArchiveContent image_url="/images/discord.png" period="2900/22/11(Hog) - 13(Fug)" title="ここに企画名が入りますここに企画名が入りますここに企画名が入ります" url="#"/>
+            <EventArchiveContent image_url="/images/discord.png" period="2900/22/11(Hog) - 13(Fug)" title="ここに企画名が入りますここに企画名が入りますここに企画名が入ります" url="#"/>
+        </ul>
+        <GrayButton text="すべて見る" href="#"/>
+      </div>
+
+      <div className={styles.comunityLink} id="comunity-links">
+                <h2 className={styles.h2}>コミュニティリンク集</h2>
+                <div className={styles.inner}>
+                    <div className={styles.comunityLinkFlex}>
+                        <div className={styles.comunityLinkFlexContent}>
+                          <DiscordLink />
+                          <DownloadLink />
+                        </div>
+                        <div className={styles.comunityLinkFlexContent}>
+                            <TweetList />
+                        </div>
                     </div>
                 </div>
             </div>

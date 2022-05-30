@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import styles from '../styles/Show.module.scss'
 import Link from 'next/link'
-import Header from '@/components/Header'
-import DownloadLink from '@/components/DownloadLink'
+import Header from '@/components/Header/SubPageHeader'
+import DownloadLink from '@/components/DownloadLink/DownloadLink'
 import DiscordLink from '@/components/DiscordLink/DiscordLink'
-import Footer from '@/components/Footer'
+import Footer from '@/components/Footer/Footer'
 
 const Show: NextPage = () => {
   return (

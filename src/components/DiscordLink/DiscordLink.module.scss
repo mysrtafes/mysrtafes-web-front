@@ -9,13 +9,9 @@
     border-radius: 4px;
     text-decoration: none;
     margin-bottom: 20px;
-    img {
-        width:67.9px;
-        height:71px;
-        margin-right: 38px;
-        margin-left: 40px;
-    }
+    padding-left: 38px;
     p {
+        margin-left: 40px;
         font-weight: 700;
         font-size: 24px;
         line-height: 29px;
@@ -28,14 +24,10 @@
     .discordLinkButton {
         width: 100%;
         height: 100px;
-        img {
-            width: 40px;
-            height: auto;
-            margin-right: 19px;
-            margin-left: 20px;
-        }
+        padding-left: 20px;
         p {
             font-size: 20px;
+            margin-left: 20px;
         }
     }
 }

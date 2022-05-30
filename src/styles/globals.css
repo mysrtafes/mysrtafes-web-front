@@ -1,5 +1,6 @@
 a {
     transition: .4s;
+    cursor: pointer;
 }
 
 a:hover {

@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import styles from '../styles/EventArchiveContent.module.scss'
+import styles from '@/components/EventArchiveContent/EventArchiveContent.module.scss'
+import Image from 'next/image'
 
 interface Props {
     image_url: string,
@@ -13,9 +14,9 @@ const EventArchiveContent = (props: Props ) => {
     <li className={styles.eventArchiveContent}>
         <Link href={props.url}>
             <a className={styles.eventArchivesLink}>
-            <img className={styles.eventArchivesImage} src={props.image_url} />
-                <p className={styles.eventArchivesHoldingPeriod}>{ props.period }</p>
-                <h3 className={styles.eventArchivesTitle}>{props.title}</h3>
+              <Image src={props.image_url} height="226" width="226" />
+              <p>{ props.period }</p>
+              <h3>{props.title}</h3>
             </a>
         </Link>
     </li>

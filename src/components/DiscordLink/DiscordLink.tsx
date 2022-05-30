@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import styles from '@/components/DiscordLink/DiscordLink.module.scss'
+import Image from 'next/image'
 
 const DiscordLink = () => {
   return (
     <Link href="#">
         <a className={styles.discordLinkButton}>
-            <img src="images/discord.png" />
+            <Image src="/images/discord.png" height="71" width="67.9" />
             <p>
                 不思議RTAフェス<br />
                 公式Discordサーバは<br />

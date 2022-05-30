@@ -1,11 +1,13 @@
 import Link from 'next/link'
-import styles from '../styles/Header.module.scss'
+import styles from '@/components/Header/Header.module.scss'
 import React, {useState} from "react"
+import Image from 'next/image'
+import { Link as Scroll } from 'react-scroll';
 
 const Header = () => {
-    const [openMenu, setOpenMenu] = useState(false);
-    const menuFunction = () => {
-      setOpenMenu(!openMenu);
+    const [isOpenMenu, setIsOpenMenu] = useState(false);
+    const toggleMenu = () => {
+      setIsOpenMenu(!isOpenMenu);
     }
 
   return (
@@ -18,27 +20,27 @@ const Header = () => {
                 <div className={styles.headerBottomInner}>
                     <Link href="/">
                         <a className={styles.headerBottomLeft}>
-                            <img src="/images/logo.png" className={styles.logo}/>
+                            <Image src="/images/logo.png" className={styles.logo} height="44" width="44"/>
                             <h1 className={styles.h1}>不思議のダンジョンRTAフェス</h1>
                         </a>
                     </Link>
                     <ul>
-                        <li><Link href="/#first-view"><a>直近の企画</a></Link></li>
-                        <li><Link href="/#event-archives"><a>過去アーカイブ</a></Link></li>
-                        <li><Link href="/#comunity-links"><a>コミュニティリンク集</a></Link></li>
-                        <li><Link href="/#about-fushigi-fes"><a>不思議RTAフェスとは？</a></Link></li>
-                        <li><Link href="/#special-thanks"><a>主催・運営</a></Link></li>
+                        <li><Scroll smooth={true} duration={600} to="first-view">直近の企画</Scroll></li>
+                        <li><Scroll smooth={true} duration={600} to="event-archives">過去アーカイブ</Scroll></li>
+                        <li><Scroll smooth={true} duration={600} to="comunity-links">コミュニティリンク集</Scroll></li>
+                        <li><Scroll smooth={true} duration={600} to="about-fushigi-fes">不思議RTAフェスとは？</Scroll></li>
+                        <li><Scroll smooth={true} duration={600} to="special-thanks">主催・運営</Scroll></li>
                     </ul>
                 </div>
             </div>
         </header>
         <div className={styles.hamburgerMenu} id="hamburger-menu">
-            <div className={styles.hamburgerMenuIcon} id="hamburger-menu-icon" onClick={() => menuFunction()}>
+            <div className={styles.hamburgerMenuIcon} id="hamburger-menu-icon" onClick={() => toggleMenu()}>
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <div className={openMenu ? styles.active: undefined}>
+            <div className={isOpenMenu ? styles.active: ""}>
                 <div className={styles.hamburgerMenuList} >
                     <ul>
                         <li><Link href="/#first-view"><a>直近の企画</a></Link></li>
