@@ -1,0 +1,45 @@
+
+.inner {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+.comunityLink {
+    padding: 60px 0;
+}
+
+.comunityLink .comunityLinkFlex {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 87px 0;
+    display: flex;
+    justify-content: space-between;
+    .comunityLinkFlexContent {
+        width: 46%;
+    }
+}
+
+.h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+@media (max-width : 768px) {
+    .comunityLink .comunityLinkFlex {
+        flex-direction: column;
+        .comunityLinkFlexContent {
+            width: 100%;
+        }
+    }
+    .comunityLink {
+        padding: 50px 0 0;
+        .comunityLinkFlex {
+            padding: 50px 0;
+            .comunityLinkFlexContent:last-child {
+                display: none;
+            }
+        }
+    }
+}
