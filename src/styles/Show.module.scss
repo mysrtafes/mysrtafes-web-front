@@ -1,73 +1,73 @@
 .main {
-    padding-top: 50px;
+  padding-top: 50px;
 
-    .inner {
-        width: 95%;
-        max-width: 1200px;
-        margin: 0 auto 30px;
-    }
+  .inner {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+  }
 
-    .h2 {
-        font-size: 30px;
-        text-align: left;
-        line-height: 50px;
-        color: rgb(109,123,247);
-        padding-top: 10px;
-        padding-bottom: 20px;
-        font-weight: bold;
-        position: relative;
-        &:after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 5px;
-            background-color: rgb(109,123,247);
-            position: absolute;
-            bottom:15px;
-        }
+  .h2 {
+    font-size: 30px;
+    text-align: left;
+    line-height: 50px;
+    color: rgb(109, 123, 247);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 5px;
+      background-color: rgb(109, 123, 247);
+      position: absolute;
+      bottom: 15px;
     }
-    .p {
-        line-height: 32px;
-        font-size: 16px;
-        margin-bottom: 30px;
-        color: #555;
-    }
-    .listQuestion {
-        line-height: 32px;
-        font-size: 16px;
-        margin-bottom: 10px;
-        color: #555;
-        font-weight: bold;
-    }
-    .listAnswer {
-        line-height: 32px;
-        font-size: 16px;
-        margin-bottom: 30px;
-        color: #555;
-    }
-    .strong {
-        font-weight: bold;
-    }
-    .aboutFushigiRtaFes {
-        display: block;
-        font-weight: bold;
-        background-color: #eee;
-        color: #444;
-        padding: 30px;
-        line-height: 24px;
-        font-size: 16px;
-        margin: 20px 0;
-        border-radius: 5px;
-    }
-    .joinEventButton {
-        text-decoration: underline;
-        color: rgb(89,103,217);
-        font-size: 24px;
-        line-height: 42px;
-    }
+  }
+  .p {
+    line-height: 32px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  .listQuestion {
+    line-height: 32px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+  }
+  .listAnswer {
+    line-height: 32px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  .strong {
+    font-weight: bold;
+  }
+  .aboutFushigiRtaFes {
+    display: block;
+    font-weight: bold;
+    background-color: #eee;
+    color: #444;
+    padding: 30px;
+    line-height: 24px;
+    font-size: 16px;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  .joinEventButton {
+    text-decoration: underline;
+    color: rgb(89, 103, 217);
+    font-size: 24px;
+    line-height: 42px;
+  }
 }
-@media (max-width : 768px) {
-    .main {
-        padding-top: 10px;
-    }
+@media (max-width: 768px) {
+  .main {
+    padding-top: 10px;
+  }
 }

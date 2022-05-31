@@ -1,14 +1,14 @@
 .tweetList {
-    border: solid 1px #ccc;
-    border-radius: 5px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
 }
 
 .tweetListSp {
-    display: none;
+  display: none;
 }
 
-@media (max-width : 768px) {
-    .tweetListSp {
-        display: block;
-    }
+@media (max-width: 768px) {
+  .tweetListSp {
+    display: block;
+  }
 }

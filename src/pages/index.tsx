@@ -10,12 +10,17 @@ import ComunityLinks from '@/components/Index/ComunityLinks/ComunityLinks'
 import SpecialThanks from '@/components/Index/SpecialThanks/SpecialThanks'
 
 const Home: NextPage = () => {
-
   return (
     <>
       <Header />
       <div className={styles.main}>
-        <FirstView holdingPeriod='2022年6月17日(金)～7月10日(日)' title="チャレンジダンジョン！" applicationPeriod='応募期間：2022年6月17日(金)～7月10日(日)' url='/show' imageUrl="/images/first-view.png"/>
+        <FirstView
+          holdingPeriod="2022年6月17日(金)～7月10日(日)"
+          title="チャレンジダンジョン！"
+          applicationPeriod="応募期間：2022年6月17日(金)～7月10日(日)"
+          url="/show"
+          imageUrl="/images/first-view.png"
+        />
         <AboutFushigiFes />
         <EventArchives />
         <ComunityLinks />
@@ -25,7 +30,6 @@ const Home: NextPage = () => {
       <Footer />
     </>
   )
-
 }
 
 export default Home
