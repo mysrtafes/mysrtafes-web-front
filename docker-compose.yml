@@ -7,4 +7,13 @@ services:
       - .:/app
     ports:
       - 3000:3000
-
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: database
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    volumes:
+      - ./docker/db/data:/var/lib/mysql
+      - ./docker/db/init:/docker-entrypoint-initdb.d
