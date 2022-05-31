@@ -15,7 +15,7 @@ const Home: NextPage = () => {
     <>
       <Header />
       <div className={styles.main}>
-        <FirstView />
+        <FirstView holdingPeriod='2022年6月17日(金)～7月10日(日)' title="チャレンジダンジョン！" applicationPeriod='応募期間：2022年6月17日(金)～7月10日(日)' url='/show' imageUrl="/images/first-view.png"/>
         <AboutFushigiFes />
         <EventArchives />
         <ComunityLinks />

@@ -1,5 +1,4 @@
 import styles from '@/components/Index/AboutFushigiFes/AboutFushigiFes.module.scss'
-import React, {useState} from "react"
 import GreenButton from '@/components/Button/GreenButton'
 
 const AboutFushigiFes = () => {
@@ -17,7 +16,7 @@ const AboutFushigiFes = () => {
                 実時間で時間を競うことから、リアルタイムアタックと呼ばれており、RTAはReal Time Attackの頭文字を取った略称です。<br />
                 タイムアタックは海外ではSpeedrunという呼び方でも親しまれており、世界各国で楽しまれているゲームの遊び方です。<br />
             </div>
-            <p className={styles.textAlignRight}>「RTA in Japan 公式サイトから引用」</p><br /><br />
+            <p className={styles.textAlignRight}>「RTA in Japan 公式サイトから引用」</p><br />
             長年愛され続けているローグライクゲームのさらなる発展を願い、より多くの方に楽しさを知ってもらうことを目標に活動しています。
         </div>
         <div className={styles.textAlignCenter}>

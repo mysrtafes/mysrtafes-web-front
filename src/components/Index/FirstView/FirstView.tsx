@@ -1,17 +1,26 @@
 import styles from '@/components/Index/FirstView/FirstView.module.scss'
-import React, {useState} from "react"
-import Image from 'next/image'
 import GreenButton from '@/components/Button/GreenButton'
 
-const FirstView = () => {
+interface Props {
+  imageUrl: string,
+  title: string,
+  url: string,
+  applicationPeriod: string,
+  holdingPeriod: string,
+}
+
+
+const FirstView = (props: Props ) => {
+  const backgroundImageUrl = "url(" + props.imageUrl + ")";
+
   return (
     <div className={styles.inner}>
-        <div className={styles.firstView} id="first-view">
+        <div className={styles.firstView} id="first-view" style={{backgroundImage: backgroundImageUrl}}>
             <div className={styles.innerBox}>
-                <p className={styles.eventHoldingPeriod}>2022年6月17日(金)～7月10日(日)</p>
-                <p className={styles.eventTitle}>チャレンジダンジョン！</p>
-                <p className={styles.eventApplicationPeriod}>応募期間：2022年6月17日(金)～7月10日(日)</p>
-                <GreenButton text="応募はこちら" href="/show"/>
+                <p className={styles.eventHoldingPeriod}>{props.holdingPeriod}</p>
+                <p className={styles.eventTitle}>{props.title}</p>
+                <p className={styles.eventApplicationPeriod}>{props.applicationPeriod}</p>
+                <GreenButton text="応募はこちら" href={props.url}/>
             </div>
         </div>
     </div>      
