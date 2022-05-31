@@ -9,7 +9,7 @@ const Header = () => {
     const toggleMenu = () => {
       setIsOpenMenu(!isOpenMenu);
     }
-    
+
   return (
     <>
         <header>
@@ -21,7 +21,7 @@ const Header = () => {
                     <Link href="/">
                         <a className={styles.headerBottomLeft}>
                             <Image src="/images/logo.png" className={styles.logo} height="44" width="44"/>
-                            <h1 className={styles.h1}>不思議のダンジョンRTAフェス</h1>
+                            <h1>不思議のダンジョンRTAフェス</h1>
                         </a>
                     </Link>
                     <ul>

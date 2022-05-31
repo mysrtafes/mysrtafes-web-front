@@ -1,11 +1,10 @@
 import styles from '@/components/Index/SpecialThanks/SpecialThanks.module.scss'
-import React, {useState} from "react"
 
 const SpecialThanks = () => {
   return (
     <div className={styles.specialThanks} id="special-thanks">
         <div className={styles.inner}>
-            <h2 className={styles.h2}>主催・運営</h2>
+            <h2>主催・運営</h2>
             <table>
                 <tbody>
                     <tr>

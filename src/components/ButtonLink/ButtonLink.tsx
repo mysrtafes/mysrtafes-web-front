@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '@/components/Button/Button.module.scss'
+import styles from '@/components/ButtonLink/ButtonLink.module.scss'
 
 interface Props {
     color: string,

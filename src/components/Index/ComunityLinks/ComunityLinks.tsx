@@ -6,7 +6,7 @@ import TweetList from '@/components/TweetList/TweetList'
 const ComunityLinks = () => {
   return (
     <div className={styles.comunityLink} id="comunity-links">
-        <h2 className={styles.h2}>コミュニティリンク集</h2>
+        <h2>コミュニティリンク集</h2>
         <div className={styles.inner}>
             <div className={styles.comunityLinkFlex}>
                 <div className={styles.comunityLinkFlexContent}>

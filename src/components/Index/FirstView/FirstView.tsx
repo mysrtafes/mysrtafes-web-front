@@ -1,5 +1,5 @@
 import styles from '@/components/Index/FirstView/FirstView.module.scss'
-import GreenButton from '@/components/Button/GreenButton'
+import GreenButtonLink from '@/components/ButtonLink/GreenButtonLink'
 
 interface Props {
   imageUrl: string,
@@ -20,7 +20,7 @@ const FirstView = (props: Props ) => {
                 <p className={styles.eventHoldingPeriod}>{props.holdingPeriod}</p>
                 <p className={styles.eventTitle}>{props.title}</p>
                 <p className={styles.eventApplicationPeriod}>{props.applicationPeriod}</p>
-                <GreenButton text="応募はこちら" href={props.url}/>
+                <GreenButtonLink text="応募はこちら" href={props.url}/>
             </div>
         </div>
     </div>      
