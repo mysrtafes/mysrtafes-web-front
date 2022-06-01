@@ -14,6 +14,7 @@ datasource db {
 
 model ChallengeDungeon {
   id Int @id @default(autoincrement())
+  EditUrl String @unique
   TimeStamp DateTime
   Name String
   Furigana String
