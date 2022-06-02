@@ -10,10 +10,6 @@ const handleCreate = async (req: NextApiRequest, res: NextApiResponse) => {
       update: req.body,
       create: req.body,
     })
-    .catch(e => {
-      console.log(e)
-      return e
-    })
   res.json(data)
 }
 
