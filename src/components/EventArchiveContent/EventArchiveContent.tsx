@@ -14,7 +14,10 @@ const EventArchiveContent = (props: Props) => {
     <li className={styles.eventArchiveContent}>
       <Link href={props.url}>
         <a className={styles.eventArchivesLink}>
-          <div className={styles.thumbnail} style={{backgroundImage: "url(" + props.image_url + ");"}} />
+          <div
+            className={styles.thumbnail}
+            style={{ backgroundImage: 'url(' + props.image_url + ');' }}
+          />
           <p>{props.period}</p>
           <h3>{props.title}</h3>
         </a>

@@ -12,11 +12,11 @@ const ChallengeDungeon: NextPage = () => {
   return (
     <>
       <Head>
-          <title>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』とは</title>
-          <meta 
-            name="description" 
-            content="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。" 
-          />
+        <title>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』とは</title>
+        <meta
+          name="description"
+          content="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。"
+        />
       </Head>
 
       <Header />
@@ -24,16 +24,25 @@ const ChallengeDungeon: NextPage = () => {
         <div className={styles.inner}>
           <h2>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』とは</h2>
           <div className={styles.p}>
-            <strong>
-              『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)
-            </strong>
+            <strong>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)</strong>
             は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。
             <br />
             <br />
             挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。
             <br />
             <br />
-            日本国内では他にも<strong>『<Link href="https://hackfest.rtain.jp/"><a>RTAハッカソン</a></Link>』『<Link href="https://w.atwiki.jp/roadtotherecord/pages/18.html"><a>Deep Running</a></Link>』</strong>
+            日本国内では他にも
+            <strong>
+              『
+              <Link href="https://hackfest.rtain.jp/">
+                <a>RTAハッカソン</a>
+              </Link>
+              』『
+              <Link href="https://w.atwiki.jp/roadtotherecord/pages/18.html">
+                <a>Deep Running</a>
+              </Link>
+              』
+            </strong>
             などのRTAに挑戦するイベントが開催されていますが、本イベントでは「RTA以外の挑戦」も歓迎します。
             <br />
             <br />
@@ -70,7 +79,15 @@ const ChallengeDungeon: NextPage = () => {
           <ul className={styles.list}>
             <li className={styles.listQuestion}>Q: イベントに関する質問はどこから行えますか？</li>
             <li className={styles.listAnswer}>
-              A: <Link href="https://twitter.com/mysrtafes"><a target="blank">公式Twitter</a></Link>や<Scroll smooth={true} duration={600} to="discordLink">公式Discord</Scroll>内に作成したチャンネルへお気軽にご質問ください。
+              A:{' '}
+              <Link href="https://twitter.com/mysrtafes">
+                <a target="blank">公式Twitter</a>
+              </Link>
+              や
+              <Scroll smooth={true} duration={600} to="discordLink">
+                公式Discord
+              </Scroll>
+              内に作成したチャンネルへお気軽にご質問ください。
             </li>
             <li className={styles.listQuestion}>
               Q: 選ぶ作品がジャンルに合っているかどうか確認する必要はありますか？
