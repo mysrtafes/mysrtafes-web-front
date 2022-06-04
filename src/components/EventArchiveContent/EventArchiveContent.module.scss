@@ -25,9 +25,41 @@
   .thumbnail {
     width: 100%;
     background: #d9d9d9;
-    height: 200px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
     display: block;
     margin-bottom: 20px;
+  }
+  .twitchLink {
+    border: solid 2px #7621EF;
+    border-radius: 4px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    p {
+        color: #7621EF;
+        margin-bottom: 0;
+        margin-left: 7px;
+    }
+  }
+    .youtubeLink {
+    border: solid 2px #EC4D4D;
+    border-radius: 4px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    p {
+        color: #EC4D4D;
+        margin-bottom: 0;
+        margin-left: 7px;
+    }
   }
 }
 

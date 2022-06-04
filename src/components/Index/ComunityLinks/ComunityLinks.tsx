@@ -11,7 +11,7 @@ const ComunityLinks = () => {
         <div className={styles.comunityLinkFlex}>
           <div className={styles.comunityLinkFlexContent}>
             <DiscordLink />
-            <DownloadLink />
+            {/* <DownloadLink /> */}
           </div>
           <div className={styles.comunityLinkFlexContent}>
             <TweetList />

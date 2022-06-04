@@ -42,6 +42,7 @@ const SpecialThanks = () => {
                   <li>ゆうさく</li>
                   <li>リヒト</li>
                   <li>ロック</li>
+                  <li>ねこ</li>
                 </ul>
               </td>
             </tr>

@@ -13,22 +13,9 @@ const AboutFushigiFes = () => {
           という遊び方を通して本ジャンルの面白さを伝えるための活動を主に行っています。
           <br />
           <br />
-          <div className={styles.aboutRTA}>
-            <h3>RTAとは</h3>
-            RTAとは、ゲームを最初からプレイして実時間でどれだけ早くクリアできるのかを競う遊び方です。
-            <br />
-            実時間で時間を競うことから、リアルタイムアタックと呼ばれており、RTAはReal Time
-            Attackの頭文字を取った略称です。
-            <br />
-            タイムアタックは海外ではSpeedrunという呼び方でも親しまれており、世界各国で楽しまれているゲームの遊び方です。
-            <br />
-          </div>
-          <p className={styles.textAlignRight}>「RTA in Japan 公式サイトから引用」</p>
-          <br />
-          長年愛され続けているローグライクゲームのさらなる発展を願い、より多くの方に楽しさを知ってもらうことを目標に活動しています。
         </div>
         <div className={styles.textAlignCenter}>
-          <GreenButtonLink text="もっと長ければ個別ぺーじ" href="#" />
+          <GreenButtonLink text="もっと見る" href="/about-fushigi-fes" />
         </div>
       </div>
     </div>

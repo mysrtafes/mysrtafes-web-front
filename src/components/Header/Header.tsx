@@ -3,6 +3,8 @@ import styles from '@/components/Header/Header.module.scss'
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { Link as Scroll } from 'react-scroll'
+import HeaderTop from './HeaderTop'
+import HeaderSP from './HeaderSP'
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false)
@@ -10,17 +12,18 @@ const Header = () => {
     setIsOpenMenu(!isOpenMenu)
   }
 
+  const closeWithClick = (e) => {
+    if (e.target === e.currentTarget) {
+      setIsOpenMenu(false);
+    }
+  };
+  
+
   return (
     <>
-      <header>
-        <p className={styles.headerTop}>
-          <span>
-            チャレンジダンジョン！イベント応募受け付け中！！詳細は
-            <Link href="#">
-              <a>こちら</a>
-            </Link>
-          </span>
-        </p>
+    <HeaderSP />
+      <HeaderTop />
+      <header className={styles.headerSticky}>
         <div className={styles.headerBottom}>
           <div className={styles.headerBottomInner}>
             <Link href="/">
@@ -46,13 +49,13 @@ const Header = () => {
                 </Scroll>
               </li>
               <li>
-                <Scroll smooth={true} duration={600} to="about-fushigi-fes">
-                  不思議RTAフェスとは？
+                <Scroll smooth={true} duration={600} to="special-thanks">
+                  主催・運営
                 </Scroll>
               </li>
               <li>
-                <Scroll smooth={true} duration={600} to="special-thanks">
-                  主催・運営
+                <Scroll smooth={true} duration={600} to="about-fushigi-fes">
+                  不思議RTAフェスとは？
                 </Scroll>
               </li>
             </ul>
@@ -60,6 +63,43 @@ const Header = () => {
         </div>
       </header>
       <div className={styles.hamburgerMenu} id="hamburger-menu">
+        <div className={isOpenMenu ? styles.active : ''}>
+          <div className={styles.overlay}
+                 onClick={(e) => {
+                  closeWithClick(e);
+                }}
+          >
+            <div className={styles.hamburgerMenuList}>
+              <ul>
+                <li>
+                  <Scroll smooth={true} duration={600} to="first-view" onClick={toggleMenu}>
+                    直近の企画
+                  </Scroll>
+                </li>
+                <li>
+                  <Scroll smooth={true} duration={600} to="event-archives" onClick={toggleMenu}>
+                    過去アーカイブ
+                  </Scroll>
+                </li>
+                <li>
+                  <Scroll smooth={true} duration={600} to="comunity-links" onClick={toggleMenu}>
+                    コミュニティリンク集
+                  </Scroll>
+                </li>
+                <li>
+                  <Scroll smooth={true} duration={600} to="special-thanks" onClick={toggleMenu}>
+                    主催・運営
+                  </Scroll>
+                </li>
+                <li>
+                  <Scroll smooth={true} duration={600} to="about-fushigi-fes" onClick={toggleMenu}>
+                    不思議RTAフェスとは？
+                  </Scroll>
+                </li>
+              </ul>
+              
+              </div>
+            </div>
         <div
           className={styles.hamburgerMenuIcon}
           id="hamburger-menu-icon"
@@ -69,36 +109,6 @@ const Header = () => {
           <span></span>
           <span></span>
         </div>
-        <div className={isOpenMenu ? styles.active : ''}>
-          <div className={styles.hamburgerMenuList}>
-            <ul>
-              <li>
-                <Link href="/#first-view">
-                  <a>直近の企画</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/#event-archives">
-                  <a>過去アーカイブ</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/#comunity-links">
-                  <a>コミュニティリンク集</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/#about-fushigi-fes">
-                  <a>不思議RTAフェスとは？</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/#special-thanks">
-                  <a>主催・運営</a>
-                </Link>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </>

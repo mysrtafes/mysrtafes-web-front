@@ -1,5 +1,3 @@
-import Link from 'next/link'
-import styles from '@/components/ButtonLink/ButtonLink.module.scss'
 import ButtonLink from '@/components/ButtonLink/ButtonLink'
 
 interface Props {
