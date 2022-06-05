@@ -1,4 +1,4 @@
-import styles from '@/components/Index/AboutFushigiFes/AboutFushigiFes.module.scss'
+import styles from '@/components/page/Index/AboutFushigiFes/AboutFushigiFes.module.scss'
 import GreenButtonLink from '@/components/ButtonLink/GreenButtonLink'
 
 const AboutFushigiFes = () => {

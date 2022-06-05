@@ -1,4 +1,4 @@
-import styles from '@/components/Index/SpecialThanks/SpecialThanks.module.scss'
+import styles from '@/components/page/Index/SpecialThanks/SpecialThanks.module.scss'
 
 const SpecialThanks = () => {
   return (

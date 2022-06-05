@@ -1,4 +1,4 @@
-import styles from '@/components/Index/EventArchives/EventArchives.module.scss'
+import styles from '@/components/page/Index/EventArchives/EventArchives.module.scss'
 // import GreenButtonLink from '@/components/ButtonLink/GreenButtonLink'
 // import EventArchiveContent from '@/components/EventArchiveContent/EventArchiveContent'
 import EventArchiveContentExternalLink from '@/components/EventArchiveContent/EventArchiveContentExternalLink'

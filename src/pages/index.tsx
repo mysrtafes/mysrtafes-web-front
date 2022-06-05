@@ -3,11 +3,11 @@ import styles from '@/styles/Home.module.scss'
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 import TweetListSP from '@/components/TweetList/TweetListSP'
-import FirstView from '@/components/Index/FirstView/FirstView'
-import EventArchives from '@/components/Index/EventArchives/EventArchives'
-import AboutFushigiFes from '@/components/Index/AboutFushigiFes/AboutFushigiFes'
-import ComunityLinks from '@/components/Index/ComunityLinks/ComunityLinks'
-import SpecialThanks from '@/components/Index/SpecialThanks/SpecialThanks'
+import FirstView from '@/components/page/Index/FirstView/FirstView'
+import EventArchives from '@/components/page/Index/EventArchives/EventArchives'
+import AboutFushigiFes from '@/components/page/Index/AboutFushigiFes/AboutFushigiFes'
+import CommunityLinks from '@/components/page/Index/CommunityLinks/CommunityLinks'
+import SpecialThanks from '@/components/page/Index/SpecialThanks/SpecialThanks'
 import Head from 'next/head'
 
 const Home: NextPage = () => {
@@ -24,14 +24,14 @@ const Home: NextPage = () => {
       <Header />
       <div className={styles.main}>
         <FirstView
-          holdingPeriod="2022年6月17日(金)～7月10日(日)"
+          holdingPeriod="2022年6月24日(日)～7月18日(月)"
           title="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』"
-          applicationPeriod="2022年6月17日(金)～7月10日(日)"
+          applicationPeriod="2022年6月24日(日)～7月18日(月)"
           url="/event/challenge-dungeon"
           imageUrl="/images/first-view.png"
         />
         <EventArchives />
-        <ComunityLinks />
+        <CommunityLinks />
         <SpecialThanks />
         <AboutFushigiFes />
       </div>

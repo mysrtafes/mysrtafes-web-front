@@ -7,6 +7,8 @@ import DiscordLink from '@/components/DiscordLink/DiscordLink'
 import Footer from '@/components/Footer/Footer'
 import { Link as Scroll } from 'react-scroll'
 import Head from 'next/head'
+import BlueButton from '@/components/ButtonLink/BlueButtonLink'
+import Image from 'next/image'
 
 const ChallengeDungeon: NextPage = () => {
   return (
@@ -22,6 +24,7 @@ const ChallengeDungeon: NextPage = () => {
       <Header />
       <div className={styles.main}>
         <div className={styles.inner}>
+        <Image src="/images/challenge-dungeon1.png" width="640px" height="360px" />
           <h2>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』とは</h2>
           <div className={styles.p}>
             <strong>
@@ -33,21 +36,26 @@ const ChallengeDungeon: NextPage = () => {
             挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。
             <br />
             <br />
-            日本国内では他にも<strong>『<Link href="https://hackfest.rtain.jp/"><a>RTAハッカソン</a></Link>』『<Link href="https://w.atwiki.jp/roadtotherecord/pages/18.html"><a>Deep Running</a></Link>』</strong>
+            日本国内では他にも<strong>『<a target="_blank" href="https://hackfest.rtain.jp/">RTAハッカソン</a>』『<a target="_blank" href="https://w.atwiki.jp/roadtotherecord/pages/18.html">Deep Running</a>』</strong>
             などのRTAに挑戦するイベントが開催されていますが、本イベントでは「RTA以外の挑戦」も歓迎します。
             <br />
             <br />
+            <Image src="/images/challenge-dungeon2.png" width="640px" height="360px" />
+            <br />
             <strong>「ちょっと不思議部門」</strong>は各作品・ダンジョンのクリアが目標になります。
             <br />
-            <strong>「もっと不思議部門」</strong>
-            はRTAやスコアアタック、高難易度ダンジョンや縛りプレイなど、やりこみクリアを目標にして頂きます。
+            <br />
+            <Image src="/images/challenge-dungeon3.png" width="640px" height="360px" />
+            <br />
+            <strong>「もっと不思議部門」</strong>はRTAやスコアアタック、高難易度ダンジョンや縛りプレイなど、やりこみクリアを目標にして頂きます。
+            <br />
             <br />
             <br />
             初心者の方も熟練プレイヤーの方も、是非この機会に新しい目標に挑戦して、不思議のダンジョン・ローグライクゲームの楽しさに触れて頂けたら幸いです。
           </div>
           <h2>開催期間</h2>
           <div className={styles.p}>
-            <strong className={styles.strong}>2022年6月17日(金)～7月10日(日)</strong>
+            <strong className={styles.strong}>2022年6月24日(日)～7月18日(月)</strong>
           </div>
           <h2>応募について</h2>
           <div className={styles.p}>
@@ -58,19 +66,17 @@ const ChallengeDungeon: NextPage = () => {
             期間中の途中参加も大歓迎です！
             <br />
             <br />
-            <Link href="(googleformのurl)">
-              <a className={styles.joinEventButton}>イベントに応募する</a>
-            </Link>
+            <BlueButton href="(googleformのurl)" text="イベントに応募する" target='_blank' />
             <br />
             <Link href="/event/challenge-dungeon/submissions">
-              <a className={styles.joinEventButton}>応募一覧</a>
+              <a className={styles.linkToSubmission}>応募一覧</a>
             </Link>
           </div>
           <h2>Q＆A</h2>
           <ul className={styles.list}>
             <li className={styles.listQuestion}>Q: イベントに関する質問はどこから行えますか？</li>
             <li className={styles.listAnswer}>
-              A: <Link href="https://twitter.com/mysrtafes"><a target="blank">公式Twitter</a></Link>や<Scroll smooth={true} duration={600} to="discordLink">公式Discord</Scroll>内に作成したチャンネルへお気軽にご質問ください。
+              A: <a target="blank" href="https://twitter.com/mysrtafes">公式Twitter</a>や<Scroll smooth={true} duration={600} to="discordLink">公式Discord</Scroll>内に作成したチャンネルへお気軽にご質問ください。
             </li>
             <li className={styles.listQuestion}>
               Q: 選ぶ作品がジャンルに合っているかどうか確認する必要はありますか？

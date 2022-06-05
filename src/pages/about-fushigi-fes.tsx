@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Header from '@/components/Header/SubPageHeader'
 import Footer from '@/components/Footer/Footer'
 import styles from '@/styles/AboutFushigiFes.module.scss'
-import Link from 'next/link'
 import Head from 'next/head'
 
 const Home: NextPage = () => {
@@ -37,7 +36,7 @@ const Home: NextPage = () => {
                 タイムアタックは海外ではSpeedrunという呼び方でも親しまれており、世界各国で楽しまれているゲームの遊び方です。
                 <br />
             </div>
-            <p className={styles.textAlignRight}>「<Link href="https://rtain.jp/"><a>RTA in Japan 公式サイト</a></Link>から引用」</p>
+            <p className={styles.textAlignRight}>「<a target="_blank" href="https://rtain.jp/">RTA in Japan 公式サイト</a>から引用」</p>
             <br />
             <br />
             長年愛され続けているローグライクゲームのさらなる発展を願い、より多くの方に楽しさを知ってもらうことを目標に活動しています。

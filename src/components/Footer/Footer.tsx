@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.links}>
-        <Link href="privacy-policy"><a>プライバシーポリシー</a></Link>
+        <Link href="/privacy-policy"><a>プライバシーポリシー</a></Link>
       </div>
       © 2022 Mystery dungeon rta fes All rights reserved.
     </footer>

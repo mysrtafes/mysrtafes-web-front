@@ -3,7 +3,7 @@ import styles from '@/styles/Submissions.module.scss'
 import Header from '@/components/Header/SubPageHeader'
 import Footer from '@/components/Footer/Footer'
 import Head from 'next/head'
-import SubmissionContainer from '@/components/SubmissionContainer/SubmissionContainer'
+import SubmissionContainer from '@/components/page/event/SubmissionContainer/SubmissionContainer'
 
 const Home: NextPage = () => {
   return (

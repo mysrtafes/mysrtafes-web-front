@@ -3,8 +3,8 @@ import styles from '@/components/Header/Header.module.scss'
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { Link as Scroll } from 'react-scroll'
-import HeaderTop from './HeaderTop'
-import HeaderSP from './HeaderSP'
+import HeaderTop from '@/components/Header/HeaderTop'
+import HeaderSP from '@/components/Header/HeaderSP'
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false)
@@ -12,7 +12,7 @@ const Header = () => {
     setIsOpenMenu(!isOpenMenu)
   }
 
-  const closeWithClick = (e) => {
+  const closeWithClick = (e: any) => {
     if (e.target === e.currentTarget) {
       setIsOpenMenu(false);
     }
@@ -44,7 +44,7 @@ const Header = () => {
                 </Scroll>
               </li>
               <li>
-                <Scroll smooth={true} duration={600} to="comunity-links">
+                <Scroll smooth={true} duration={600} to="community-links">
                   コミュニティリンク集
                 </Scroll>
               </li>
@@ -82,7 +82,7 @@ const Header = () => {
                   </Scroll>
                 </li>
                 <li>
-                  <Scroll smooth={true} duration={600} to="comunity-links" onClick={toggleMenu}>
+                  <Scroll smooth={true} duration={600} to="community-links" onClick={toggleMenu}>
                     コミュニティリンク集
                   </Scroll>
                 </li>

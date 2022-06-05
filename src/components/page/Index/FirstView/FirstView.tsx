@@ -1,4 +1,4 @@
-import styles from '@/components/Index/FirstView/FirstView.module.scss'
+import styles from '@/components/page/Index/FirstView/FirstView.module.scss'
 import GreenButtonLink from '@/components/ButtonLink/GreenButtonLink'
 
 interface Props {

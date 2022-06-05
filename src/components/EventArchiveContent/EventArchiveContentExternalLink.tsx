@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import styles from '@/components/EventArchiveContent/EventArchiveContent.module.scss'
 import Image from 'next/image'
 
@@ -17,19 +16,14 @@ const EventArchiveContentExternalLink = (props: Props) => {
         <div className={styles.thumbnail} style={{backgroundImage: "url(" + props.image_url + ")"}} />
         <p>{props.period}</p>
         <h3>{props.title}</h3>
-        <Link href={props.twitchUrl}>
-            <a target="_blank" className={styles.twitchLink}>
-                <Image src="/images/twitch.svg" height="18" width="18" />
-                <p>タイムテーブル</p>
-            </a>
-        </Link>
-        <Link href={props.youtubeUrl}>
-            <a target="_blank" className={styles.youtubeLink}>
-                <Image src="/images/youtube.svg" height="13" width="18" />
-                <p>Youtubeアーカイブ</p>
-            </a>
-        </Link>
-
+        <a href={props.twitchUrl} target="_blank" className={styles.twitchLink}>
+            <Image src="/images/twitch.svg" height="18" width="18" />
+            <p>タイムテーブル</p>
+        </a>
+        <a href={props.youtubeUrl} target="_blank" className={styles.youtubeLink}>
+            <Image src="/images/youtube.svg" height="13" width="18" />
+            <p>Youtubeアーカイブ</p>
+        </a>
     </div>
     </li>
   )
