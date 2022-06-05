@@ -6,7 +6,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 60px;
+  position: relative;
   .innerBox {
     width: 640px;
     height: 320px;
@@ -16,6 +16,8 @@
     justify-content: center;
     align-items: flex-start;
     background: rgba(255, 255, 255, 0.89);
+    position: absolute;
+    right: 60px;
     .eventHoldingPeriod {
       font-family: 'Inter';
       font-style: normal;
@@ -50,9 +52,10 @@
 
 @media (max-width: 768px) {
   .firstView {
-    padding-right: 0;
     height: 540px;
     .innerBox {
+      left: 0;
+      right: 0;
       width: 90%;
       margin: 0 auto;
       height: 420px;

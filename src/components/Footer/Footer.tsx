@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.links}>
-        <Link href="privacy-policy">
+        <Link href="/privacy-policy">
           <a>プライバシーポリシー</a>
         </Link>
       </div>

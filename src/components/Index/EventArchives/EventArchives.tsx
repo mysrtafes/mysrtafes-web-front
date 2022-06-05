@@ -9,21 +9,21 @@ const EventArchives = () => {
       <h2>イベントアーカイブ</h2>
       <ul>
         <EventArchiveContentExternalLink
-          image_url="/images/mysrtafes1.png"
+          imageUrl="/images/mysrtafes1.png"
           period="2020/2/29 - 3/1"
           title="不思議のダンジョンシリーズRTAフェス"
           twitchUrl="https://horaro.org/mystery-dungeon-rta-fes/mysrtafes1"
           youtubeUrl="https://www.youtube.com/playlist?list=PLFvJYuQufMw5PcGusQNgAPnRZIVZXKZIT"
         />
         <EventArchiveContentExternalLink
-          image_url="/images/mysrtafes2.png"
+          imageUrl="/images/mysrtafes2.png"
           period="2021/3/12 - 3/14"
           title="第2回不思議のダンジョンRTAフェス"
           twitchUrl="https://horaro.org/mystery-dungeon-rta-fes/mysrtafes2"
           youtubeUrl=" https://www.youtube.com/playlist?list=PLFvJYuQufMw6LBml2iDvkQ4KMk2Lb4D-h"
         />
         <EventArchiveContentExternalLink
-          image_url="/images/mysrtafes3.png"
+          imageUrl="/images/mysrtafes3.png"
           period="2022/2/11 - 2/13"
           title="第3回不思議のダンジョンRTAフェス"
           twitchUrl="https://horaro.org/mystery-dungeon-rta-fes/mysrtafes3"

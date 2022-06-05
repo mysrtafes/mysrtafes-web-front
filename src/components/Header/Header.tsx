@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import styles from '@/components/Header/Header.module.scss'
 import React, { useState } from 'react'
-import Image from 'next/image'
 import { Link as Scroll } from 'react-scroll'
 import HeaderTop from './HeaderTop'
 import HeaderSP from './HeaderSP'
@@ -12,7 +11,7 @@ const Header = () => {
     setIsOpenMenu(!isOpenMenu)
   }
 
-  const closeWithClick = e => {
+  const closeWithClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     if (e.target === e.currentTarget) {
       setIsOpenMenu(false)
     }
@@ -27,7 +26,7 @@ const Header = () => {
           <div className={styles.headerBottomInner}>
             <Link href="/">
               <a className={styles.headerBottomLeft}>
-                <Image src="/images/logo.png" className={styles.logo} height="44" width="44" />
+                <img src="/images/logo.png" className={styles.logo} height="44" width="44" />
                 <h1>不思議のダンジョンRTAフェス</h1>
               </a>
             </Link>
