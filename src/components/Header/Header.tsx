@@ -40,7 +40,7 @@ const Header = () => {
               </li>
               <li>
                 <Scroll smooth={true} duration={600} to="event-archives">
-                  過去アーカイブ
+                  過去イベント
                 </Scroll>
               </li>
               <li>
@@ -78,7 +78,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Scroll smooth={true} duration={600} to="event-archives" onClick={toggleMenu}>
-                    過去アーカイブ
+                    過去イベント
                   </Scroll>
                 </li>
                 <li>
