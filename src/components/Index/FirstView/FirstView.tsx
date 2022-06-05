@@ -13,11 +13,8 @@ interface Props {
 const FirstView = (props: Props) => {
   return (
     <div className={styles.inner}>
-      <div
-        className={styles.firstView}
-        id="first-view"
-      >
-        <Image src={props.imageUrl} layout="fill" objectFit='cover' />
+      <div className={styles.firstView} id="first-view">
+        <Image src={props.imageUrl} layout="fill" objectFit="cover" />
         <div className={styles.innerBox}>
           <p className={styles.eventHoldingPeriod}>{props.holdingPeriod}</p>
           <p className={styles.eventTitle}>{props.title}</p>
