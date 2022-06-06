@@ -14,29 +14,38 @@ const ChallengeDungeon: NextPage = () => {
   return (
     <>
       <Head>
-          <title>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』とは</title>
-          <meta 
-            name="description" 
-            content="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。" 
-          />
+        <title>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』とは</title>
+        <meta
+          name="description"
+          content="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。"
+        />
       </Head>
 
       <Header />
       <div className={styles.main}>
         <div className={styles.inner}>
-        <Image src="/images/challenge-dungeon1.png" width="640px" height="360px" />
+          <Image src="/images/challenge-dungeon1.png" width="640px" height="360px" />
           <h2>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』とは</h2>
           <div className={styles.p}>
-            <strong>
-              『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)
-            </strong>
+            <strong>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)</strong>
             は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。
             <br />
             <br />
             挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。
             <br />
             <br />
-            日本国内では他にも<strong>『<a target="_blank" href="https://hackfest.rtain.jp/">RTAハッカソン</a>』『<a target="_blank" href="https://w.atwiki.jp/roadtotherecord/pages/18.html">Deep Running</a>』</strong>
+            日本国内では他にも
+            <strong>
+              『
+              <a target="_blank" href="https://hackfest.rtain.jp/">
+                RTAハッカソン
+              </a>
+              』『
+              <a target="_blank" href="https://w.atwiki.jp/roadtotherecord/pages/18.html">
+                Deep Running
+              </a>
+              』
+            </strong>
             などのRTAに挑戦するイベントが開催されていますが、本イベントでは「RTA以外の挑戦」も歓迎します。
             <br />
             <br />
@@ -47,7 +56,8 @@ const ChallengeDungeon: NextPage = () => {
             <br />
             <Image src="/images/challenge-dungeon3.png" width="640px" height="360px" />
             <br />
-            <strong>「もっと不思議部門」</strong>はRTAやスコアアタック、高難易度ダンジョンや縛りプレイなど、やりこみクリアを目標にして頂きます。
+            <strong>「もっと不思議部門」</strong>
+            はRTAやスコアアタック、高難易度ダンジョンや縛りプレイなど、やりこみクリアを目標にして頂きます。
             <br />
             <br />
             <br />
@@ -66,7 +76,7 @@ const ChallengeDungeon: NextPage = () => {
             期間中の途中参加も大歓迎です！
             <br />
             <br />
-            <BlueButton href="(googleformのurl)" text="イベントに応募する" target='_blank' />
+            <BlueButton href="(googleformのurl)" text="イベントに応募する" target="_blank" />
             <br />
             <Link href="/event/challenge-dungeon/submissions">
               <a className={styles.linkToSubmission}>応募一覧</a>
@@ -76,7 +86,15 @@ const ChallengeDungeon: NextPage = () => {
           <ul className={styles.list}>
             <li className={styles.listQuestion}>Q: イベントに関する質問はどこから行えますか？</li>
             <li className={styles.listAnswer}>
-              A: <a target="blank" href="https://twitter.com/mysrtafes">公式Twitter</a>や<Scroll smooth={true} duration={600} to="discordLink">公式Discord</Scroll>内に作成したチャンネルへお気軽にご質問ください。
+              A:{' '}
+              <a target="blank" href="https://twitter.com/mysrtafes">
+                公式Twitter
+              </a>
+              や
+              <Scroll smooth={true} duration={600} to="discordLink">
+                公式Discord
+              </Scroll>
+              内に作成したチャンネルへお気軽にご質問ください。
             </li>
             <li className={styles.listQuestion}>
               Q: 選ぶ作品がジャンルに合っているかどうか確認する必要はありますか？

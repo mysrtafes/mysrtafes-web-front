@@ -22,13 +22,18 @@ interface Props {
 const SubmissionContainer = (props: Props) => {
   return (
     <div className={styles.submissionContainer}>
-      <h2 className={styles.TwitterId}>{props.name}({props.furigana}) <a href={ "https://twitter.com/" + props.twitterId} target="_blank">@{props.twitterId}</a> {props.broadcastUrl && <a href={props.broadcastUrl} target="_blank">配信場所</a>}</h2>
-      { 
-          props.message && 
-        <p>
-          {props.message}
-        </p>
-      }
+      <h2 className={styles.TwitterId}>
+        {props.name}({props.furigana}){' '}
+        <a href={'https://twitter.com/' + props.twitterId} target="_blank">
+          @{props.twitterId}
+        </a>{' '}
+        {props.broadcastUrl && (
+          <a href={props.broadcastUrl} target="_blank">
+            配信場所
+          </a>
+        )}
+      </h2>
+      {props.message && <p>{props.message}</p>}
 
       <ul className={styles.p}>
         {props.title1 && (

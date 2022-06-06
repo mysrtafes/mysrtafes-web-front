@@ -7,7 +7,9 @@ interface Props {
 }
 
 const GreenButton = (props: Props) => {
-  return <ButtonLink color="rgb(92,170,155)" text={props.text} href={props.href} target={props.target}/>
+  return (
+    <ButtonLink color="rgb(92,170,155)" text={props.text} href={props.href} target={props.target} />
+  )
 }
 
 export default GreenButton

@@ -13,23 +13,20 @@ const EventArchiveContentExternalLink = (props: Props) => {
   return (
     <li className={styles.eventArchiveContent}>
       <div className={styles.eventArchivesLink}>
-        <div
-          className={styles.thumbnail}
-        >
-
+        <div className={styles.thumbnail}>
           <Image src={props.imageUrl} width={1206} height={680} />
         </div>
         <p>{props.period}</p>
         <h3>{props.title}</h3>
         <a href={props.twitchUrl} target="_blank" className={styles.twitchLink}>
-            <Image src="/images/twitch.svg" height="18" width="18" />
-            <p>タイムテーブル</p>
+          <Image src="/images/twitch.svg" height="18" width="18" />
+          <p>タイムテーブル</p>
         </a>
         <a href={props.youtubeUrl} target="_blank" className={styles.youtubeLink}>
-            <Image src="/images/youtube.svg" height="13" width="18" />
-            <p>Youtubeアーカイブ</p>
+          <Image src="/images/youtube.svg" height="13" width="18" />
+          <p>Youtubeアーカイブ</p>
         </a>
-    </div>
+      </div>
     </li>
   )
 }
