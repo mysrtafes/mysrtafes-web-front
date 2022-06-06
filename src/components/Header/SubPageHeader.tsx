@@ -10,11 +10,7 @@ const SubPageHeader = () => {
     setIsOpenMenu(!isOpenMenu)
   }
 
-<<<<<<< HEAD
   const closeWithClick = (e: any) => {
-=======
-  const closeWithClick = e => {
->>>>>>> f978ae248ceee5a9d60abf415224c434e19e2e8b
     if (e.target === e.currentTarget) {
       setIsOpenMenu(false)
     }
@@ -83,21 +79,12 @@ const SubPageHeader = () => {
                   </Link>
                 </li>
                 <li>
-<<<<<<< HEAD
-                    <Link href="/#event-archives">
-                    <a>過去イベント</a>
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/#community-links">
-=======
                   <Link href="/#event-archives">
                     <a>過去アーカイブ</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/#comunity-links">
->>>>>>> f978ae248ceee5a9d60abf415224c434e19e2e8b
                     <a>コミュニティリンク集</a>
                   </Link>
                 </li>

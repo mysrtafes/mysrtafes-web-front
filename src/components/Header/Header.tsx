@@ -12,11 +12,7 @@ const Header = () => {
     setIsOpenMenu(!isOpenMenu)
   }
 
-<<<<<<< HEAD
   const closeWithClick = (e: any) => {
-=======
-  const closeWithClick = e => {
->>>>>>> f978ae248ceee5a9d60abf415224c434e19e2e8b
     if (e.target === e.currentTarget) {
       setIsOpenMenu(false)
     }
