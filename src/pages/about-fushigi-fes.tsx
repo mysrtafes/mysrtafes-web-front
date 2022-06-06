@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Header from '@/components/Header/SubPageHeader'
 import Footer from '@/components/Footer/Footer'
 import styles from '@/styles/AboutFushigiFes.module.scss'
-import Link from 'next/link'
 import Head from 'next/head'
 
 const Home: NextPage = () => {
@@ -39,9 +38,9 @@ const Home: NextPage = () => {
           </div>
           <p className={styles.textAlignRight}>
             「
-            <Link href="https://rtain.jp/">
-              <a>RTA in Japan 公式サイト</a>
-            </Link>
+            <a target="_blank" href="https://rtain.jp/">
+              RTA in Japan 公式サイト
+            </a>
             から引用」
           </p>
           <br />

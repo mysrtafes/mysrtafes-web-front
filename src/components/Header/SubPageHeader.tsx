@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import styles from '@/components/Header/Header.module.scss'
 import React, { useState } from 'react'
-import HeaderSP from './HeaderSP'
+import Image from 'next/image'
+import HeaderSP from '@/components/Header/HeaderSP'
 
 const SubPageHeader = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false)
@@ -9,7 +10,7 @@ const SubPageHeader = () => {
     setIsOpenMenu(!isOpenMenu)
   }
 
-  const closeWithClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  const closeWithClick = (e: any) => {
     if (e.target === e.currentTarget) {
       setIsOpenMenu(false)
     }
@@ -23,7 +24,7 @@ const SubPageHeader = () => {
           <div className={styles.headerBottomInner}>
             <Link href="/">
               <a className={styles.headerBottomLeft}>
-                <img src="/images/logo.png" className={styles.logo} height="44" width="44" />
+                <Image src="/images/logo.png" className={styles.logo} height="44" width="44" />
                 <h1 className={styles.h1}>不思議のダンジョンRTAフェス</h1>
               </a>
             </Link>
@@ -35,11 +36,11 @@ const SubPageHeader = () => {
               </li>
               <li>
                 <Link href="/#event-archives">
-                  <a>過去アーカイブ</a>
+                  <a>過去イベント</a>
                 </Link>
               </li>
               <li>
-                <Link href="/#comunity-links">
+                <Link href="/#community-links">
                   <a>コミュニティリンク集</a>
                 </Link>
               </li>

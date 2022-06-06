@@ -1,5 +1,5 @@
-import styles from '@/components/SubmissionContainer/SubmissionContainer.module.scss'
-import GameContainer from '@/components/GameContainer/GameContainer'
+import styles from '@/components/page/event/SubmissionContainer/SubmissionContainer.module.scss'
+import GameContainer from '@/components/page/event/GameContainer/GameContainer'
 import Link from 'next/link'
 
 interface Props {
@@ -24,13 +24,13 @@ const SubmissionContainer = (props: Props) => {
     <div className={styles.submissionContainer}>
       <h2 className={styles.TwitterId}>
         {props.name}({props.furigana}){' '}
-        <Link href={'https://twitter.com/' + props.twitterId}>
-          <a>@{props.twitterId}</a>
-        </Link>{' '}
+        <a href={'https://twitter.com/' + props.twitterId} target="_blank">
+          @{props.twitterId}
+        </a>{' '}
         {props.broadcastUrl && (
-          <Link href={props.broadcastUrl}>
-            <a>配信場所</a>
-          </Link>
+          <a href={props.broadcastUrl} target="_blank">
+            配信場所
+          </a>
         )}
       </h2>
       {props.message && <p>{props.message}</p>}

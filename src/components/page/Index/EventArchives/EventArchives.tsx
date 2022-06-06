@@ -1,4 +1,4 @@
-import styles from '@/components/Index/EventArchives/EventArchives.module.scss'
+import styles from '@/components/page/Index/EventArchives/EventArchives.module.scss'
 // import GreenButtonLink from '@/components/ButtonLink/GreenButtonLink'
 // import EventArchiveContent from '@/components/EventArchiveContent/EventArchiveContent'
 import EventArchiveContentExternalLink from '@/components/EventArchiveContent/EventArchiveContentExternalLink'
@@ -6,7 +6,7 @@ import EventArchiveContentExternalLink from '@/components/EventArchiveContent/Ev
 const EventArchives = () => {
   return (
     <div className={styles.eventArchives} id="event-archives">
-      <h2>イベントアーカイブ</h2>
+      <h2>過去イベント</h2>
       <ul>
         <EventArchiveContentExternalLink
           imageUrl="/images/mysrtafes1.png"
