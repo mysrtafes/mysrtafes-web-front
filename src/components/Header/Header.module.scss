@@ -18,9 +18,9 @@
 }
 
 .headerSticky {
-    position: sticky;
-    top: 0;
-    z-index: 10;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .headerBottom {
@@ -29,7 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 3px 5px 3px rgba(0,0,0,.25);
+  box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.25);
   a {
     text-decoration: none;
   }
@@ -69,7 +69,7 @@
 }
 
 .headerSP {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -103,14 +103,14 @@
       height: 2px;
       width: 22px;
       background-color: #585858;
-      transition: .4s;
+      transition: 0.4s;
       position: absolute;
-      top:16px;
+      top: 16px;
       &:first-child {
-          top: 9px;
+        top: 9px;
       }
       &:last-child {
-          top: 23px;
+        top: 23px;
       }
     }
   }
@@ -118,18 +118,18 @@
     .hamburgerMenuIcon {
       box-shadow: none;
       background-color: transparent;
-      span{
+      span {
         opacity: 0;
         position: absolute;
         &:first-child {
-            opacity: 1;
-            transform: rotate(45deg);
-            top: 14px;
+          opacity: 1;
+          transform: rotate(45deg);
+          top: 14px;
         }
         &:last-child {
-            opacity: 1;
-            transform: rotate(-45deg);
-            top: 14px;
+          opacity: 1;
+          transform: rotate(-45deg);
+          top: 14px;
         }
       }
     }
@@ -140,14 +140,14 @@
       top: 0;
     }
     .overlay {
-        position: fixed;
-        height: 100vh;
-        width: 100vw;
-        left: 0;
-        top: 0;
-        z-index: 10;
-        background-color: rgba(0,0,0,.3);
-      }
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      left: 0;
+      top: 0;
+      z-index: 10;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
   }
   .hamburgerMenuList {
     transition: 0.4s;
@@ -175,19 +175,19 @@
     top: 0;
     z-index: 10;
     a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     h1 {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 24px;
-        color: #ffffff;
-        margin-left: 13px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+      margin-left: 13px;
     }
   }
 }

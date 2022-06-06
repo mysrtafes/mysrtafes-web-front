@@ -13,7 +13,7 @@ const HeaderSP = () => {
             <h1>不思議のダンジョンRTAフェス</h1>
           </a>
         </Link>
-        </div>
+      </div>
     </>
   )
 }

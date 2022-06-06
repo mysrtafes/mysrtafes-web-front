@@ -12,16 +12,19 @@ const Header = () => {
     setIsOpenMenu(!isOpenMenu)
   }
 
+<<<<<<< HEAD
   const closeWithClick = (e: any) => {
+=======
+  const closeWithClick = e => {
+>>>>>>> f978ae248ceee5a9d60abf415224c434e19e2e8b
     if (e.target === e.currentTarget) {
-      setIsOpenMenu(false);
+      setIsOpenMenu(false)
     }
-  };
-  
+  }
 
   return (
     <>
-    <HeaderSP />
+      <HeaderSP />
       <HeaderTop />
       <header className={styles.headerSticky}>
         <div className={styles.headerBottom}>
@@ -64,10 +67,11 @@ const Header = () => {
       </header>
       <div className={styles.hamburgerMenu} id="hamburger-menu">
         <div className={isOpenMenu ? styles.active : ''}>
-          <div className={styles.overlay}
-                 onClick={(e) => {
-                  closeWithClick(e);
-                }}
+          <div
+            className={styles.overlay}
+            onClick={e => {
+              closeWithClick(e)
+            }}
           >
             <div className={styles.hamburgerMenuList}>
               <ul>
@@ -97,18 +101,17 @@ const Header = () => {
                   </Scroll>
                 </li>
               </ul>
-              
-              </div>
             </div>
-        <div
-          className={styles.hamburgerMenuIcon}
-          id="hamburger-menu-icon"
-          onClick={() => toggleMenu()}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+          </div>
+          <div
+            className={styles.hamburgerMenuIcon}
+            id="hamburger-menu-icon"
+            onClick={() => toggleMenu()}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </>
