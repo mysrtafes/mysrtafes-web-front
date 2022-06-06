@@ -1,0 +1,19 @@
+.gameContainer {
+  width: 100%;
+  list-style: none;
+  border-radius: 10px;
+  background-color: rgb(112, 182, 169, 0.2);
+  margin-bottom: 20px;
+  .head {
+    display: flex;
+    background-color: rgb(82, 142, 139);
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  p {
+    padding: 20px;
+  }
+}

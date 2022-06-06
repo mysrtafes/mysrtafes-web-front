@@ -2,6 +2,7 @@ import Link from 'next/link'
 import styles from '@/components/Header/Header.module.scss'
 import React, { useState } from 'react'
 import Image from 'next/image'
+import HeaderSP from '@/components/Header/HeaderSP'
 
 const SubPageHeader = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false)
@@ -9,9 +10,16 @@ const SubPageHeader = () => {
     setIsOpenMenu(!isOpenMenu)
   }
 
+  const closeWithClick = (e: any) => {
+    if (e.target === e.currentTarget) {
+      setIsOpenMenu(false)
+    }
+  }
+
   return (
     <>
-      <header>
+      <HeaderSP />
+      <header className={styles.headerSticky}>
         <div className={styles.headerBottom}>
           <div className={styles.headerBottomInner}>
             <Link href="/">
@@ -28,11 +36,11 @@ const SubPageHeader = () => {
               </li>
               <li>
                 <Link href="/#event-archives">
-                  <a>過去アーカイブ</a>
+                  <a>過去イベント</a>
                 </Link>
               </li>
               <li>
-                <Link href="/#comunity-links">
+                <Link href="/#community-links">
                   <a>コミュニティリンク集</a>
                 </Link>
               </li>
@@ -51,44 +59,57 @@ const SubPageHeader = () => {
         </div>
       </header>
       <div className={styles.hamburgerMenu} id="hamburger-menu">
-        <div
-          className={styles.hamburgerMenuIcon}
-          id="hamburger-menu-icon"
-          onClick={() => toggleMenu()}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
         <div className={isOpenMenu ? styles.active : ''}>
-          <div className={styles.hamburgerMenuList}>
-            <ul>
-              <li>
-                <Link href="/#first-view">
-                  <a>直近の企画</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/#event-archives">
-                  <a>過去アーカイブ</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/#comunity-links">
-                  <a>コミュニティリンク集</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/#about-fushigi-fes">
-                  <a>不思議RTAフェスとは？</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/#special-thanks">
-                  <a>主催・運営</a>
-                </Link>
-              </li>
-            </ul>
+          <div
+            className={styles.overlay}
+            onClick={e => {
+              closeWithClick(e)
+            }}
+          >
+            <div className={styles.hamburgerMenuList}>
+              <ul>
+                <li>
+                  <Link href="/">
+                    <a>トップ</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#first-view">
+                    <a>直近の企画</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#event-archives">
+                    <a>過去アーカイブ</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#comunity-links">
+                    <a>コミュニティリンク集</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#about-fushigi-fes">
+                    <a>不思議RTAフェスとは？</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#special-thanks">
+                    <a>主催・運営</a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            className={styles.hamburgerMenuIcon}
+            id="hamburger-menu-icon"
+            onClick={() => toggleMenu()}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </div>

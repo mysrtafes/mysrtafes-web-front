@@ -1,0 +1,58 @@
+.aboutFushigiFes {
+  padding: 110px 0;
+  color: #111;
+  margin: 0 auto;
+  min-height: calc(100vh - 64px - 53px);
+  .textContent {
+    padding: 60px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+  }
+  .aboutRTA {
+    padding-left: 20px;
+    border-left: 2px solid #111;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+.inner {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.textAlignRight {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .aboutFushigiFes {
+    padding: 60px 0;
+    .textContent {
+      padding: 50px 0;
+    }
+    .aboutRTA {
+      padding-left: 10px;
+      padding-right: 10px;
+      border-top: 2px solid #fff;
+      border-left: none;
+      padding-top: 15px;
+    }
+  }
+}

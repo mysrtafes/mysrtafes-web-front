@@ -1,5 +1,6 @@
 .specialThanks {
   padding: 60px 0;
+  background: #eeeeee;
 
   table {
     width: 700px;
@@ -41,17 +42,18 @@
       td {
         width: 100%;
         display: block;
-        padding: 20px;
+        padding: 10px 10px 20px;
         &:first-child {
           width: 100%;
           font-weight: bold;
+          padding-bottom: 5px;
         }
         ul {
           display: flex;
           flex-wrap: wrap;
           li {
             width: 50%;
-            padding-bottom: 15px;
+            padding-bottom: 9px;
           }
         }
       }

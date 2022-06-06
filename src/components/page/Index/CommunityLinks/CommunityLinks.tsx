@@ -1,17 +1,17 @@
-import styles from '@/components/Index/ComunityLinks/ComunityLinks.module.scss'
+import styles from '@/components/page/Index/CommunityLinks/CommunityLinks.module.scss'
 import DiscordLink from '@/components/DiscordLink/DiscordLink'
 import DownloadLink from '@/components/DownloadLink/DownloadLink'
 import TweetList from '@/components/TweetList/TweetList'
 
-const ComunityLinks = () => {
+const CommunityLinks = () => {
   return (
-    <div className={styles.comunityLink} id="comunity-links">
+    <div className={styles.comunityLink} id="community-links">
       <h2>コミュニティリンク集</h2>
       <div className={styles.inner}>
         <div className={styles.comunityLinkFlex}>
           <div className={styles.comunityLinkFlexContent}>
             <DiscordLink />
-            <DownloadLink />
+            {/* <DownloadLink /> */}
           </div>
           <div className={styles.comunityLinkFlexContent}>
             <TweetList />
@@ -22,4 +22,4 @@ const ComunityLinks = () => {
   )
 }
 
-export default ComunityLinks
+export default CommunityLinks

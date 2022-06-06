@@ -5,6 +5,14 @@
   line-height: 15px;
   font-weight: 500;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  .links {
+    display: flex;
+    margin-bottom: 3px;
+    a {
+      text-decoration: underline;
+    }
+  }
 }

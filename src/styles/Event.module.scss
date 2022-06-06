@@ -7,11 +7,11 @@
     margin: 0 auto 30px;
   }
 
-  .h2 {
+  h2 {
     font-size: 30px;
     text-align: left;
     line-height: 50px;
-    color: rgb(109, 123, 247);
+    color: rgb(112, 182, 169);
     padding-top: 10px;
     padding-bottom: 20px;
     font-weight: bold;
@@ -21,7 +21,8 @@
       display: block;
       width: 100%;
       height: 5px;
-      background-color: rgb(109, 123, 247);
+      background: rgb(112, 182, 169);
+
       position: absolute;
       bottom: 15px;
     }
@@ -59,13 +60,20 @@
     margin: 20px 0;
     border-radius: 5px;
   }
-  .joinEventButton {
+  .linkToSubmission {
     text-decoration: underline;
-    color: rgb(89, 103, 217);
-    font-size: 24px;
-    line-height: 42px;
+    color: rgb(112, 182, 169);
+    font-size: 16px;
+    line-height: 28px;
+  }
+  strong a {
+    text-decoration: underline;
+  }
+  li a {
+    text-decoration: underline;
   }
 }
+
 @media (max-width: 768px) {
   .main {
     padding-top: 10px;

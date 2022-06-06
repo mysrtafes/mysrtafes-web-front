@@ -6,7 +6,7 @@ const DiscordLink = () => {
   return (
     <Link href="#">
       <a className={styles.discordLinkButton}>
-        <Image src="/images/discord.svg" height="71" width="67.9" />
+        <Image src="/images/discord.svg" height="65" width="83" />
         <p>
           不思議RTAフェス
           <br />

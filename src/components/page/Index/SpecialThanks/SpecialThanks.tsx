@@ -1,4 +1,4 @@
-import styles from '@/components/Index/SpecialThanks/SpecialThanks.module.scss'
+import styles from '@/components/page/Index/SpecialThanks/SpecialThanks.module.scss'
 
 const SpecialThanks = () => {
   return (
@@ -42,6 +42,7 @@ const SpecialThanks = () => {
                   <li>ゆうさく</li>
                   <li>リヒト</li>
                   <li>ロック</li>
+                  <li>ねこ</li>
                 </ul>
               </td>
             </tr>
