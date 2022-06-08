@@ -8,7 +8,6 @@ const getChallengers = async () => {
 const useChallengers = () => {
   const { data: challengers, isLoading, isError } = useQuery('challenger', getChallengers)
 
-  console.log(22) // TODO:
   return { challengers, isLoading, isError }
 }
 
