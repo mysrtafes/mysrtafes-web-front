@@ -2,15 +2,13 @@ import type { NextPage } from 'next'
 import styles from '@/styles/Event.module.scss'
 import Link from 'next/link'
 import Header from '@/components/Header/SubPageHeader'
-import DownloadLink from '@/components/DownloadLink/DownloadLink'
 import DiscordLink from '@/components/DiscordLink/DiscordLink'
 import Footer from '@/components/Footer/Footer'
-import { Link as Scroll } from 'react-scroll'
 import Head from 'next/head'
 import BlueButton from '@/components/ButtonLink/BlueButtonLink'
 import Image from 'next/image'
 
-const ChallengeDungeon: NextPage = () => {
+const Challenge: NextPage = () => {
   return (
     <>
       <Head>
@@ -24,7 +22,12 @@ const ChallengeDungeon: NextPage = () => {
       <Header />
       <div className={styles.main}>
         <div className={styles.inner}>
-          <Image src="/images/challenge-dungeon1.png" width="640px" height="360px" />
+          <Image
+            src="/images/challenge-dungeon1.png"
+            alt="ふしチャレフライヤー"
+            width="640px"
+            height="360px"
+          />
           <h2>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』とは</h2>
           <div className={styles.p}>
             <strong>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)</strong>
@@ -37,11 +40,15 @@ const ChallengeDungeon: NextPage = () => {
             日本国内では他にも
             <strong>
               『
-              <a target="_blank" href="https://hackfest.rtain.jp/">
+              <a href="https://hackfest.rtain.jp/" target="_blank" rel="noreferrer">
                 RTAハッカソン
               </a>
               』『
-              <a target="_blank" href="https://w.atwiki.jp/roadtotherecord/pages/18.html">
+              <a
+                href="https://w.atwiki.jp/roadtotherecord/pages/18.html"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Deep Running
               </a>
               』
@@ -49,15 +56,30 @@ const ChallengeDungeon: NextPage = () => {
             などのRTAに挑戦するイベントが開催されていますが、本イベントでは「RTA以外の挑戦」も歓迎します。
             <br />
             <br />
-            <Image src="/images/challenge-dungeon2.png" width="640px" height="360px" />
+            <Image
+              src="/images/challenge-dungeon2.png"
+              alt="ちょっと不思議部門説明"
+              width="640px"
+              height="360px"
+            />
             <br />
-            <strong>「ちょっと不思議部門」</strong>は各作品・ダンジョンのクリアが目標になります。
+            <strong>「ちょっと不思議部門」</strong>
+            はタイムなどは気にせず、シンプルなクリアを目指す部門です。
+            <br />
+            これから不思議のダンジョン・ローグライクゲームに挑戦していきたい！と考えている人におすすめです。
             <br />
             <br />
-            <Image src="/images/challenge-dungeon3.png" width="640px" height="360px" />
+            <Image
+              src="/images/challenge-dungeon3.png"
+              alt="もっと不思議部門説明"
+              width="640px"
+              height="360px"
+            />
             <br />
             <strong>「もっと不思議部門」</strong>
-            はRTAやスコアアタック、高難易度ダンジョンや縛りプレイなど、やりこみクリアを目標にして頂きます。
+            は普通のクリアだけでは満足できないやりこみプレイヤー向けの部門です。
+            <br />
+            また、ちょっと不思議部門でクリアした作品をさらに突き詰めたいと思った人にもおすすめです。
             <br />
             <br />
             <br />
@@ -76,9 +98,13 @@ const ChallengeDungeon: NextPage = () => {
             期間中の途中参加も大歓迎です！
             <br />
             <br />
-            <BlueButton href="(googleformのurl)" text="イベントに応募する" target="_blank" />
+            <BlueButton
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd1C2o799W9tmZCbBWRBkvv2fXxNUtOdP0pOfNywUj5z901xw/viewform?usp=sf_link"
+              text="イベントに応募する"
+              target="_blank"
+            />
             <br />
-            <Link href="/event/challenge-dungeon/submissions">
+            <Link href="/event/challenge/submissions">
               <a className={styles.linkToSubmission}>応募一覧</a>
             </Link>
           </div>
@@ -86,14 +112,14 @@ const ChallengeDungeon: NextPage = () => {
           <ul className={styles.list}>
             <li className={styles.listQuestion}>Q: イベントに関する質問はどこから行えますか？</li>
             <li className={styles.listAnswer}>
-              A:{' '}
-              <a target="blank" href="https://twitter.com/mysrtafes">
+              A:
+              <a href="https://twitter.com/mysrtafes" target="blank" rel="noreferrer">
                 公式Twitter
               </a>
               や
-              <Scroll smooth={true} duration={600} to="discordLink">
+              <a href="https://discord.gg/5z4hG4uzAd" target="blank" rel="noreferrer">
                 公式Discord
-              </Scroll>
+              </a>
               内に作成したチャンネルへお気軽にご質問ください。
             </li>
             <li className={styles.listQuestion}>
@@ -113,14 +139,7 @@ const ChallengeDungeon: NextPage = () => {
               挑戦する目標の上限はありませんので、思う存分挑戦してください。
             </li>
           </ul>
-          {/* <h2>ロゴ等</h2>
-          <div className={styles.p}>
-            <DownloadLink />
-            配信を行う際にご活用ください。
-            <br />
-            素材の改変や公序良俗に反する目的での利用は避けるようにお願いします。
-          </div> */}
-          <h2 id="discordLink">Discord</h2>
+          <h2>Discord</h2>
           <DiscordLink />
         </div>
       </div>
@@ -129,4 +148,4 @@ const ChallengeDungeon: NextPage = () => {
   )
 }
 
-export default ChallengeDungeon
+export default Challenge

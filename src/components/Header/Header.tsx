@@ -41,7 +41,7 @@ const Header = () => {
             <ul>
               <li>
                 <Scroll smooth={true} duration={600} to="first-view">
-                  直近の企画
+                  最新イベント
                 </Scroll>
               </li>
               <li>
@@ -50,17 +50,12 @@ const Header = () => {
                 </Scroll>
               </li>
               <li>
-                <Scroll smooth={true} duration={600} to="community-links">
-                  コミュニティリンク集
-                </Scroll>
-              </li>
-              <li>
                 <Scroll smooth={true} duration={600} to="special-thanks">
                   主催・運営
                 </Scroll>
               </li>
               <li>
-                <Scroll smooth={true} duration={600} to="about-fushigi-fes">
+                <Scroll smooth={true} duration={600} to="about">
                   不思議RTAフェスとは？
                 </Scroll>
               </li>
@@ -80,7 +75,7 @@ const Header = () => {
               <ul>
                 <li>
                   <Scroll smooth={true} duration={600} to="first-view" onClick={toggleMenu}>
-                    直近の企画
+                    最新イベント
                   </Scroll>
                 </li>
                 <li>
@@ -89,17 +84,12 @@ const Header = () => {
                   </Scroll>
                 </li>
                 <li>
-                  <Scroll smooth={true} duration={600} to="community-links" onClick={toggleMenu}>
-                    コミュニティリンク集
-                  </Scroll>
-                </li>
-                <li>
                   <Scroll smooth={true} duration={600} to="special-thanks" onClick={toggleMenu}>
                     主催・運営
                   </Scroll>
                 </li>
                 <li>
-                  <Scroll smooth={true} duration={600} to="about-fushigi-fes" onClick={toggleMenu}>
+                  <Scroll smooth={true} duration={600} to="about" onClick={toggleMenu}>
                     不思議RTAフェスとは？
                   </Scroll>
                 </li>

@@ -6,6 +6,7 @@ const handleCreate = async (req: NextApiRequest, res: NextApiResponse) => {
   const prisma = new PrismaClient()
   const data = await prisma.challenger.findMany({
     select: {
+      id: true,
       Name: true,
       Furigana: true,
       StreamUrl: true,

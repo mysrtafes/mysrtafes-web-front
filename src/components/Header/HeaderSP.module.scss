@@ -1,0 +1,32 @@
+.headerSP {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .headerSP {
+    background: #343438;
+    height: 60px;
+    padding-left: 10px;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: flex-start;
+    top: 0;
+    z-index: 10;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+      margin-left: 13px;
+    }
+  }
+}

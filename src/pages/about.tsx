@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import Header from '@/components/Header/SubPageHeader'
 import Footer from '@/components/Footer/Footer'
-import styles from '@/styles/AboutFushigiFes.module.scss'
+import styles from '@/styles/About.module.scss'
 import Head from 'next/head'
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <>
       <Head>
@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-      <div className={styles.aboutFushigiFes} id="about-fushigi-fes">
+      <div className={styles.about} id="about">
         <div className={styles.inner}>
           <h2>不思議RTAフェスとは？</h2>
           <div className={styles.textContent}>
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
           </div>
           <p className={styles.textAlignRight}>
             「
-            <a target="_blank" href="https://rtain.jp/">
+            <a href="https://rtain.jp/" target="_blank" rel="noreferrer">
               RTA in Japan 公式サイト
             </a>
             から引用」
@@ -53,4 +53,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default About
