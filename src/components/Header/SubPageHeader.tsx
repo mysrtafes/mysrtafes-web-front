@@ -32,13 +32,13 @@ const SubPageHeader = () => {
                   width="44"
                   unoptimized={true}
                 />
-                <h1 className={styles.h1}>不思議のダンジョンRTAフェス</h1>
+                <h1>不思議のダンジョンRTAフェス</h1>
               </a>
             </Link>
             <ul>
               <li>
                 <Link href="/#first-view">
-                  <a>直近の企画</a>
+                  <a>最新イベント</a>
                 </Link>
               </li>
               <li>
@@ -47,12 +47,7 @@ const SubPageHeader = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/#community-links">
-                  <a>コミュニティリンク集</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/#about-fushigi-fes">
+                <Link href="/#about">
                   <a>不思議RTAフェスとは？</a>
                 </Link>
               </li>
@@ -82,7 +77,7 @@ const SubPageHeader = () => {
                 </li>
                 <li>
                   <Link href="/#first-view">
-                    <a>直近の企画</a>
+                    <a>最新イベント</a>
                   </Link>
                 </li>
                 <li>
@@ -91,12 +86,7 @@ const SubPageHeader = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#comunity-links">
-                    <a>コミュニティリンク集</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#about-fushigi-fes">
+                  <Link href="/#about">
                     <a>不思議RTAフェスとは？</a>
                   </Link>
                 </li>

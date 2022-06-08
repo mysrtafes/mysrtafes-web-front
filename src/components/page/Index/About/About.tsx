@@ -1,9 +1,9 @@
-import styles from '@/components/page/Index/AboutFushigiFes/AboutFushigiFes.module.scss'
+import styles from '@/components/page/Index/About/About.module.scss'
 import GreenButtonLink from '@/components/ButtonLink/GreenButtonLink'
 
-const AboutFushigiFes = () => {
+const About = () => {
   return (
-    <div className={styles.aboutFushigiFes} id="about-fushigi-fes">
+    <div className={styles.about} id="about">
       <div className={styles.inner}>
         <h2>不思議RTAフェスとは？</h2>
         <div className={styles.textContent}>
@@ -15,11 +15,11 @@ const AboutFushigiFes = () => {
           <br />
         </div>
         <div className={styles.textAlignCenter}>
-          <GreenButtonLink text="もっと見る" href="/about-fushigi-fes" />
+          <GreenButtonLink text="もっと見る" href="/about" />
         </div>
       </div>
     </div>
   )
 }
 
-export default AboutFushigiFes
+export default About

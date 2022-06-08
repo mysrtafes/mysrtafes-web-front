@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import styles from '@/components/Header/Header.module.scss'
-import React, { useState } from 'react'
+import styles from '@/components/Header/HeaderSP.module.scss'
+import React from 'react'
 import Image from 'next/image'
 
 const HeaderSP = () => {
@@ -9,7 +9,14 @@ const HeaderSP = () => {
       <div className={styles.headerSP}>
         <Link href="/">
           <a>
-            <Image src="/images/logo.png" className={styles.logo} height="44" width="44" />
+            <Image
+              src="/images/logo.png"
+              alt="不思議RTAフェスロゴ"
+              className={styles.logo}
+              height="44"
+              width="44"
+              unoptimized={true}
+            />
             <h1>不思議のダンジョンRTAフェス</h1>
           </a>
         </Link>

@@ -10,8 +10,8 @@
     "vercel-build": "prisma generate && prisma db push --accept-data-loss && next build"
   },
   "dependencies": {
-    "@types/react-scroll": "^1.8.3",
     "@prisma/client": "^3.14.0",
+    "@types/react-scroll": "^1.8.3",
     "axios": "^0.27.2",
     "next": "12.1.5",
     "prisma": "^3.14.0",
@@ -26,8 +26,11 @@
     "@types/node": "17.0.29",
     "@types/react": "18.0.8",
     "@types/react-dom": "18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "typescript": "4.6.3"
   }
 }

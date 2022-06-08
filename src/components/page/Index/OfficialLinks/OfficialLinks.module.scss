@@ -4,7 +4,7 @@
   margin: 0 auto 30px;
 }
 
-.comunityLink {
+.officialLink {
   padding: 60px 0;
   h2 {
     text-align: center;
@@ -14,29 +14,29 @@
   }
 }
 
-.comunityLink .comunityLinkFlex {
+.officialLink .officialLinkFlex {
   max-width: 980px;
   margin: 0 auto;
   padding: 87px 0;
   display: flex;
   justify-content: space-between;
-  .comunityLinkFlexContent {
+  .officialLinkFlexContent {
     width: 46%;
   }
 }
 
 @media (max-width: 768px) {
-  .comunityLink .comunityLinkFlex {
+  .officialLink .officialLinkFlex {
     flex-direction: column;
-    .comunityLinkFlexContent {
+    .officialLinkFlexContent {
       width: 100%;
     }
   }
-  .comunityLink {
+  .officialLink {
     padding: 50px 0 0;
-    .comunityLinkFlex {
+    .officialLinkFlex {
       padding: 50px 0;
-      .comunityLinkFlexContent:last-child {
+      .officialLinkFlexContent:last-child {
         display: none;
       }
     }

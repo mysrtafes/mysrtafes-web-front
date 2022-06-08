@@ -1,21 +1,21 @@
-import Link from 'next/link'
 import styles from '@/components/TwitchLink/TwitchLink.module.scss'
 import Image from 'next/image'
 
 const TwitchLink = () => {
   return (
-    <Link href="#">
-      <a className={styles.twitchLinkButton}>
-        <Image src="/images/twitchLink.svg" height="71" width="69" />
-        <p>
-          不思議RTAフェス
-          <br />
-          素材ダウンロードは
-          <br />
-          こちら
-        </p>
-      </a>
-    </Link>
+    <a
+      href="https://www.twitch.tv/mysterydungeon_rtafes"
+      className={styles.twitchLinkButton}
+      target="_blank"
+      rel="noreferrer"
+    >
+      <Image src="/images/twitchLink.svg" alt="Twitchリンク" height="71" width="69" />
+      <p>
+        不思議RTAフェス
+        <br />
+        公式Twitchチャンネル
+      </p>
+    </a>
   )
 }
 

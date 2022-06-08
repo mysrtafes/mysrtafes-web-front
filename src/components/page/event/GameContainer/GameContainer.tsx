@@ -1,9 +1,9 @@
 import styles from '@/components/page/event/GameContainer/GameContainer.module.scss'
 
 interface Props {
-  title?: string
-  department?: string
-  goal?: string
+  title: string
+  department: string
+  goal: string
 }
 
 const GameContainer = (props: Props) => {
