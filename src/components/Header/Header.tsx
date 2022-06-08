@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import styles from '@/components/Header/Header.module.scss'
 import React, { useState } from 'react'
-import Image from 'next/image'
 import { Link as Scroll } from 'react-scroll'
 import HeaderTop from '@/components/Header/HeaderTop'
 import HeaderSP from '@/components/Header/HeaderSP'
+import Image from 'next/image'
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false)
@@ -27,7 +27,14 @@ const Header = () => {
           <div className={styles.headerBottomInner}>
             <Link href="/">
               <a className={styles.headerBottomLeft}>
-                <Image src="/images/logo.png" className={styles.logo} height="44" width="44" />
+                <Image
+                  src="/images/logo.png"
+                  alt="不思議RTAフェスロゴ"
+                  className={styles.logo}
+                  height="44"
+                  width="44"
+                  unoptimized={true}
+                />
                 <h1>不思議のダンジョンRTAフェス</h1>
               </a>
             </Link>
