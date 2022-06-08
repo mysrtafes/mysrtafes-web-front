@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from 'next'
+import type { NextPage } from 'next'
 import styles from '@/styles/Submissions.module.scss'
 import Header from '@/components/Header/SubPageHeader'
 import Footer from '@/components/Footer/Footer'
