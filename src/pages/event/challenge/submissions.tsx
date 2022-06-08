@@ -1,13 +1,18 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import styles from '@/styles/Submissions.module.scss'
 import Header from '@/components/Header/SubPageHeader'
 import Footer from '@/components/Footer/Footer'
 import Head from 'next/head'
 import SubmissionContainer from '@/components/page/event/SubmissionContainer/SubmissionContainer'
 import useChallengers from '@/hooks/useChallenger'
+import { Challenger } from '@prisma/client'
+import axios from 'axios'
 
-const Submission: NextPage = () => {
-  const { challengers, isLoading } = useChallengers()
+interface Props {
+  challengers: Challenger[]
+}
+const Submission: NextPage<Props> = (props: Props) => {
+  const { challengers, isLoading } = useChallengers(props.challengers)
   return (
     <>
       <Head>
@@ -31,6 +36,17 @@ const Submission: NextPage = () => {
       <Footer />
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const challengers = (await axios.get<Challenger[]>(`${process.env.BACKEND_URL}/api/challengers`))
+    .data
+
+  return {
+    props: {
+      challengers,
+    },
+  }
 }
 
 export default Submission
