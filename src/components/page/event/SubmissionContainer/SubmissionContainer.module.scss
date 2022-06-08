@@ -1,14 +1,27 @@
 .submissionContainer {
-  background: #fff;
-  padding: 20px 30px;
+  padding: 10px;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  background-color: #fff;
   p {
-    font-size: 18px;
-    padding: 10px 0 30px;
+    font-size: 16px;
+    padding: 0 0 20px;
   }
   a {
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .submissionContainer {
+    p {
+      font-size: 16px;
+      padding: 0 0 10px;
+    }
+    a {
+      font-size: 16px;
+      text-decoration: underline;
+    }
   }
 }
