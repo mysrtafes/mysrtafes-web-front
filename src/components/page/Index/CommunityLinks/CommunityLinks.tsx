@@ -2,6 +2,7 @@ import styles from '@/components/page/Index/CommunityLinks/CommunityLinks.module
 import DiscordLink from '@/components/DiscordLink/DiscordLink'
 import DownloadLink from '@/components/DownloadLink/DownloadLink'
 import TweetList from '@/components/TweetList/TweetList'
+import TwitchLink from '@/components/TwitchLink/TwitchLink'
 
 const CommunityLinks = () => {
   return (
@@ -11,6 +12,7 @@ const CommunityLinks = () => {
         <div className={styles.comunityLinkFlex}>
           <div className={styles.comunityLinkFlexContent}>
             <DiscordLink />
+            <TwitchLink />
             {/* <DownloadLink /> */}
           </div>
           <div className={styles.comunityLinkFlexContent}>
