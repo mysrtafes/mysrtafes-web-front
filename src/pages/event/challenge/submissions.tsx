@@ -5,9 +5,14 @@ import Footer from '@/components/Footer/Footer'
 import Head from 'next/head'
 import SubmissionContainer from '@/components/page/event/SubmissionContainer/SubmissionContainer'
 import useChallengers from '@/hooks/useChallenger'
+import { Challenger, PrismaClient } from '@prisma/client'
 
-const Submission: NextPage = () => {
-  const { challengers, isLoading } = useChallengers()
+interface Props {
+  challengers: Challenger[]
+}
+
+const Submission: NextPage<Props> = (props: Props) => {
+  const { challengers, isLoading } = useChallengers(props.challengers)
   return (
     <>
       <Head>
@@ -31,6 +36,43 @@ const Submission: NextPage = () => {
       <Footer />
     </>
   )
+}
+
+export const getStaticProps = async () => {
+  const prisma = new PrismaClient()
+  const challengers = await prisma.challenger.findMany({
+    select: {
+      id: true,
+      Name: true,
+      Furigana: true,
+      StreamUrl: true,
+      TwitterId: true,
+      Message: true,
+      Game1: true,
+      Department1: true,
+      Goal1: true,
+      Game2: true,
+      Department2: true,
+      Goal2: true,
+      Game3: true,
+      Department3: true,
+      Goal3: true,
+    },
+    orderBy: [
+      {
+        id: 'asc',
+      },
+      {
+        Name: 'desc',
+      },
+    ],
+  })
+
+  return {
+    props: {
+      challengers,
+    },
+  }
 }
 
 export default Submission

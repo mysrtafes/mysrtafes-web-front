@@ -22,6 +22,14 @@ const handleCreate = async (req: NextApiRequest, res: NextApiResponse) => {
       Department3: true,
       Goal3: true,
     },
+    orderBy: [
+      {
+        id: 'asc',
+      },
+      {
+        Name: 'desc',
+      },
+    ],
   })
   res.json(data)
 }
