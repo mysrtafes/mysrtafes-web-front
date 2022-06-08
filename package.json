@@ -9,6 +9,9 @@
     "lint": "next lint",
     "vercel-build": "prisma generate && prisma db push --accept-data-loss && next build"
   },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} src/prisma/seed.ts"
+  },
   "dependencies": {
     "@prisma/client": "^3.14.0",
     "@types/react-scroll": "^1.8.3",
@@ -31,6 +34,7 @@
     "eslint-config-next": "12.1.5",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "ts-node": "^10.8.1",
     "typescript": "4.6.3"
   }
 }
