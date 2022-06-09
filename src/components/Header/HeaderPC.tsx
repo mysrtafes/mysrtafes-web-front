@@ -7,7 +7,7 @@ import HeaderMenu from '@/components/Header/HeaderMenu'
 const HeaderPC = ({ isTopPage = false }) => {
   return (
     <>
-      <HeaderBanner />
+      {isTopPage && <HeaderBanner />}
       <header className={styles.headerSticky}>
         <div className={styles.headerBottom}>
           <div className={styles.headerBottomInner}>
