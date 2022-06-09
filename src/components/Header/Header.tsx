@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import styles from '@/components/Header/Header.module.scss'
 import React, { useState } from 'react'
-import Image from 'next/image'
 import { Link as Scroll } from 'react-scroll'
 import HeaderTop from '@/components/Header/HeaderTop'
 import HeaderSP from '@/components/Header/HeaderSP'
+import Image from 'next/image'
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false)
@@ -27,14 +27,21 @@ const Header = () => {
           <div className={styles.headerBottomInner}>
             <Link href="/">
               <a className={styles.headerBottomLeft}>
-                <Image src="/images/logo.png" className={styles.logo} height="44" width="44" />
+                <Image
+                  src="/images/logo.png"
+                  alt="不思議RTAフェスロゴ"
+                  className={styles.logo}
+                  height="44"
+                  width="44"
+                  unoptimized={true}
+                />
                 <h1>不思議のダンジョンRTAフェス</h1>
               </a>
             </Link>
             <ul>
               <li>
                 <Scroll smooth={true} duration={600} to="first-view">
-                  直近の企画
+                  最新イベント
                 </Scroll>
               </li>
               <li>
@@ -43,17 +50,12 @@ const Header = () => {
                 </Scroll>
               </li>
               <li>
-                <Scroll smooth={true} duration={600} to="community-links">
-                  コミュニティリンク集
-                </Scroll>
-              </li>
-              <li>
                 <Scroll smooth={true} duration={600} to="special-thanks">
                   主催・運営
                 </Scroll>
               </li>
               <li>
-                <Scroll smooth={true} duration={600} to="about-fushigi-fes">
+                <Scroll smooth={true} duration={600} to="about">
                   不思議RTAフェスとは？
                 </Scroll>
               </li>
@@ -73,7 +75,7 @@ const Header = () => {
               <ul>
                 <li>
                   <Scroll smooth={true} duration={600} to="first-view" onClick={toggleMenu}>
-                    直近の企画
+                    最新イベント
                   </Scroll>
                 </li>
                 <li>
@@ -82,17 +84,12 @@ const Header = () => {
                   </Scroll>
                 </li>
                 <li>
-                  <Scroll smooth={true} duration={600} to="community-links" onClick={toggleMenu}>
-                    コミュニティリンク集
-                  </Scroll>
-                </li>
-                <li>
                   <Scroll smooth={true} duration={600} to="special-thanks" onClick={toggleMenu}>
                     主催・運営
                   </Scroll>
                 </li>
                 <li>
-                  <Scroll smooth={true} duration={600} to="about-fushigi-fes" onClick={toggleMenu}>
+                  <Scroll smooth={true} duration={600} to="about" onClick={toggleMenu}>
                     不思議RTAフェスとは？
                   </Scroll>
                 </li>

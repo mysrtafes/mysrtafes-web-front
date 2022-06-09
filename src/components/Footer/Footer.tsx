@@ -9,7 +9,7 @@ const Footer = () => {
           <a>プライバシーポリシー</a>
         </Link>
       </div>
-      © 2022 Mystery dungeon rta fes All rights reserved.
+      © 2022 Mystery Dungeon RTA FES All rights reserved.
     </footer>
   )
 }

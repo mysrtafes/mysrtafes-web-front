@@ -1,5 +1,6 @@
 import styles from '@/components/page/Index/FirstView/FirstView.module.scss'
 import GreenButtonLink from '@/components/ButtonLink/GreenButtonLink'
+import Image from 'next/image'
 
 interface Props {
   imageUrl: string
@@ -10,15 +11,10 @@ interface Props {
 }
 
 const FirstView = (props: Props) => {
-  const backgroundImageUrl = 'url(' + props.imageUrl + ')'
-
   return (
     <div className={styles.inner}>
-      <div
-        className={styles.firstView}
-        id="first-view"
-        style={{ backgroundImage: backgroundImageUrl }}
-      >
+      <div className={styles.firstView} id="first-view">
+        <Image src={props.imageUrl} alt="ファーストビューロゴ" layout="fill" objectFit="cover" />
         <div className={styles.innerBox}>
           <p className={styles.eventHoldingPeriod}>{props.holdingPeriod}</p>
           <p className={styles.eventTitle}>{props.title}</p>

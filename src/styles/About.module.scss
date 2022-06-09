@@ -1,4 +1,5 @@
-.aboutFushigiFes {
+.about {
+  background-color: #eeeeee;
   padding: 110px 0;
   color: #111;
   margin: 0 auto;
@@ -42,7 +43,7 @@
 }
 
 @media (max-width: 768px) {
-  .aboutFushigiFes {
+  .about {
     padding: 60px 0;
     .textContent {
       padding: 50px 0;
