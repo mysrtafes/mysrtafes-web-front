@@ -8,11 +8,13 @@ import EventArchives from '@/components/page/Index/EventArchives/EventArchives'
 import About from '@/components/page/Index/About/About'
 import OfficialLinks from '@/components/page/Index/OfficialLinks/OfficialLinks'
 import SpecialThanks from '@/components/page/Index/SpecialThanks/SpecialThanks'
+import useBetterMediaQuery from '@/hooks/useBetterMediaQuery'
 
 const Home: NextPage = () => {
+  const isPC = useBetterMediaQuery('(min-width: 768px)')
   return (
     <>
-      <Header />
+      <Header isTopPage={true} />
       <div className={styles.main}>
         <FirstView
           holdingPeriod="2022年6月24日(日)～7月18日(月)"
@@ -26,7 +28,7 @@ const Home: NextPage = () => {
         <SpecialThanks />
         <About />
       </div>
-      <TweetListSP />
+      {!isPC && <TweetListSP />}
       <Footer />
     </>
   )
