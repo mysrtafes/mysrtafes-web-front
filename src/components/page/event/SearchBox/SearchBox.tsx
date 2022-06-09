@@ -5,8 +5,8 @@ import SelectBox from '@/components/page/event/SearchBox/SelectBox/SelectBox'
 const SearchBox = () => {
   return (
     <div className={styles.searchBox}>
-        <InputBox />
-        <SelectBox />
+      <InputBox />
+      <SelectBox />
     </div>
   )
 }
