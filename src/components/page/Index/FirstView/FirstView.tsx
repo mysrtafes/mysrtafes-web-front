@@ -14,7 +14,13 @@ const FirstView = (props: Props) => {
   return (
     <div className={styles.inner}>
       <div className={styles.firstView} id="first-view">
-        <Image src={props.imageUrl} alt="ファーストビューロゴ" layout="fill" objectFit="cover" />
+        <Image
+          src={props.imageUrl}
+          alt="ファーストビューロゴ"
+          layout="fill"
+          objectFit="cover"
+          priority={true}
+        />
         <div className={styles.innerBox}>
           <p className={styles.eventHoldingPeriod}>{props.holdingPeriod}</p>
           <p className={styles.eventTitle}>{props.title}</p>

@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import styles from '@/styles/Event.module.scss'
 import Link from 'next/link'
-import Header from '@/components/Header/SubPageHeader'
+import Header from '@/components/Header/Header'
 import DiscordLink from '@/components/DiscordLink/DiscordLink'
 import Footer from '@/components/Footer/Footer'
 import Head from 'next/head'
@@ -12,7 +12,9 @@ const Challenge: NextPage = () => {
   return (
     <>
       <Head>
-        <title>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』とは</title>
+        <title>
+          『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』とは | 不思議のダンジョンRTAフェス
+        </title>
         <meta
           name="description"
           content="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。"
@@ -23,7 +25,7 @@ const Challenge: NextPage = () => {
       <div className={styles.main}>
         <div className={styles.inner}>
           <Image
-            src="/images/challenge-dungeon1.png"
+            src="/images/challenge1.png"
             alt="ふしチャレフライヤー"
             width="640px"
             height="360px"
@@ -57,7 +59,7 @@ const Challenge: NextPage = () => {
             <br />
             <br />
             <Image
-              src="/images/challenge-dungeon2.png"
+              src="/images/challenge2.png"
               alt="ちょっと不思議部門説明"
               width="640px"
               height="360px"
@@ -70,7 +72,7 @@ const Challenge: NextPage = () => {
             <br />
             <br />
             <Image
-              src="/images/challenge-dungeon3.png"
+              src="/images/challenge3.png"
               alt="もっと不思議部門説明"
               width="640px"
               height="360px"
@@ -103,6 +105,7 @@ const Challenge: NextPage = () => {
               text="イベントに応募する"
               target="_blank"
             />
+            <br />
             <br />
             <Link href="/event/challenge/submissions">
               <a className={styles.linkToSubmission}>応募一覧</a>

@@ -1,4 +1,4 @@
-.headerTop {
+.headerBanner {
   height: 60px;
   display: flex;
   align-items: center;
@@ -18,7 +18,7 @@
 }
 
 @media (max-width: 768px) {
-  .headerTop {
+  .headerBanner {
     padding: 20px 20px 20px 20px;
   }
 }

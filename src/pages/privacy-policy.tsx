@@ -1,14 +1,14 @@
 import type { NextPage } from 'next'
-import styles from '@/styles/PlivacyPolicy.module.scss'
-import Header from '@/components/Header/SubPageHeader'
+import styles from '@/styles/PrivacyPolicy.module.scss'
+import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 import Head from 'next/head'
 
-const PlivacyPolicy: NextPage = () => {
+const PrivacyPolicy: NextPage = () => {
   return (
     <>
       <Head>
-        <title>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』とは</title>
+        <title>プライバシーポリシー | 不思議のダンジョンRTAフェス</title>
         <meta
           name="description"
           content="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。"
@@ -21,8 +21,7 @@ const PlivacyPolicy: NextPage = () => {
           <h1>プライバシーポリシー</h1>
           <h2>個人情報の利用目的</h2>
           <div className={styles.p}>
-            当Webサイトでは、メールでのお問い合わせ、コメントの投稿などの際に、名前（ハンドルネーム）、メールアドレス等の個人情報をご登録いただく場合がございます。
-            また、PayPalを利用した寄付の際にPayPalに登録した名前を取得します。
+            当サイトでは、メールでのお問い合わせ、コメントの投稿などの際に、名前（ハンドルネーム）、メールアドレス等の個人情報をご登録いただく場合がございます。
             これらの個人情報は質問に対する回答や必要な情報を電子メールなどをでご連絡する場合に利用させていただくものであり、個人情報をご提供いただく際の目的以外では利用いたしません。
           </div>
           <h2>個人情報の第三者への開示</h2>
@@ -37,7 +36,9 @@ const PlivacyPolicy: NextPage = () => {
             当サイトからリンクやバナーなどによって他のサイトに移動された場合、移動先サイトで提供される情報、サービス等について一切の責任を負いません。
             当サイトのコンテンツ・情報につきまして、可能な限り正確な情報を掲載するよう努めておりますが、誤情報が入り込んだり、情報が古くなっていることもございます。
             当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。
-            プライバシーポリシーの変更について
+          </div>
+          <h2>プライバシーポリシーの変更について</h2>
+          <div className={styles.p}>
             当サイトは、個人情報に関して適用される日本の法令を遵守するとともに、本ポリシーの内容を適宜見直しその改善に努めます。
             修正された最新のプライバシーポリシーは常に本ページにて開示されます。
           </div>
@@ -48,4 +49,4 @@ const PlivacyPolicy: NextPage = () => {
   )
 }
 
-export default PlivacyPolicy
+export default PrivacyPolicy

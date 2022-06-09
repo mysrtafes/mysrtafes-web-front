@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Header from '@/components/Header/SubPageHeader'
+import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 import styles from '@/styles/About.module.scss'
 import Head from 'next/head'
@@ -8,7 +8,7 @@ const About: NextPage = () => {
   return (
     <>
       <Head>
-        <title>不思議RTAフェスとは？</title>
+        <title>不思議RTAフェスとは？ | 不思議のダンジョンRTAフェス</title>
         <meta
           name="description"
           content="不思議のダンジョンRTAフェス(略称:不思議RTAフェス)は、「不思議のダンジョンシリーズ」及び「その他のローグライクゲーム」をテーマにしたイベント開催などを行っている団体です。RTAという遊び方を通して本ジャンルの面白さを伝えるための活動を主に行っています。"
@@ -16,7 +16,7 @@ const About: NextPage = () => {
       </Head>
 
       <Header />
-      <div className={styles.about} id="about">
+      <div className={styles.about}>
         <div className={styles.inner}>
           <h2>不思議RTAフェスとは？</h2>
           <div className={styles.textContent}>

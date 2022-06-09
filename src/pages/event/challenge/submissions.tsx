@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import styles from '@/styles/Submissions.module.scss'
-import Header from '@/components/Header/SubPageHeader'
+import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 import Head from 'next/head'
 import SubmissionContainer from '@/components/page/event/SubmissionContainer/SubmissionContainer'
@@ -16,7 +16,9 @@ const Submission: NextPage<Props> = (props: Props) => {
   return (
     <>
       <Head>
-        <title>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』応募一覧</title>
+        <title>
+          『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』応募一覧 | 不思議のダンジョンRTAフェス
+        </title>
         <meta
           name="description"
           content="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。"
