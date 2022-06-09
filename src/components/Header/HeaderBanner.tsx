@@ -5,7 +5,7 @@ const HeaderBanner = () => {
   return (
     <div className={styles.headerBanner}>
       <span>
-        チャレンジダンジョン！イベント応募受け付け中！！詳細は
+        ふしチャレ！～不思議のダンジョンRTAフェス外伝～ 応募受け付け中！！詳細は
         <Link href="/event/challenge">
           <a>こちら</a>
         </Link>
