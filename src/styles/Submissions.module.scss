@@ -9,7 +9,7 @@
     margin: 0 auto 0px;
   }
 
-  h2 {
+  h2.title {
     font-size: 26px;
     text-align: center;
     line-height: 30px;
@@ -23,5 +23,8 @@
   .main {
     padding-top: 10px;
     padding-bottom: 10px;
+    h2.title {
+      margin-top: 10px;
+    }
   }
 }

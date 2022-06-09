@@ -38,7 +38,7 @@ const Submission: NextPage<Props> = (props: Props) => {
 
       <Header />
       <div className={styles.main}>
-        <h2>ふしチャレ！応募者一覧</h2>
+        <h2 className={styles.title}>ふしチャレ！応募者一覧</h2>
         <div className={styles.inner}>
           {!isLoading &&
             challengers?.map(challenger => (
