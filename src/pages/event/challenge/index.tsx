@@ -16,14 +16,17 @@ const Challenge: NextPage = () => {
         <meta
           property="og:title"
           content="ふしチャレ！～不思議のダンジョンRTAフェス外伝～ | 不思議のダンジョンRTAフェス"
+          key="og:title"
         />
         <meta
           name="description"
           content="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。"
+          key="description"
         />
         <meta
           name="og:description"
           content="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。"
+          key="og:description"
         />
       </Head>
 
