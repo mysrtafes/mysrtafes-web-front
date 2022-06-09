@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <Header />
       <div className={styles.main}>
         <div className={styles.inner}>
-      <SearchBox />
+          <SearchBox />
           <SubmissionContainer
             name="ベア"
             furigana="べあ"

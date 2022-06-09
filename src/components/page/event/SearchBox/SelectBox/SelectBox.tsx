@@ -2,11 +2,10 @@ import styles from '@/components/page/event/SearchBox/SelectBox/SelectBox.module
 
 const SelectBox = () => {
   return (
-
     <div className={styles.selectBox}>
-        <select>
-            <option>option1</option>
-        </select>
+      <select>
+        <option>option1</option>
+      </select>
     </div>
   )
 }
