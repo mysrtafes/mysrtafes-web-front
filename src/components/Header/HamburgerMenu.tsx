@@ -18,22 +18,34 @@ const HamburgerMenu = ({ isTopPage = false }) => {
   const menuList = isTopPage ? (
     <>
       <li>
-        <Scroll smooth={true} duration={600} to="first-view" onClick={toggleMenu}>
+        <Scroll smooth={true} duration={600} to="first-view" href="first-view" onClick={toggleMenu}>
           最新イベント
         </Scroll>
       </li>
       <li>
-        <Scroll smooth={true} duration={600} to="event-archives" onClick={toggleMenu}>
+        <Scroll
+          smooth={true}
+          duration={600}
+          to="event-archives"
+          href="event-archives"
+          onClick={toggleMenu}
+        >
           過去イベント
         </Scroll>
       </li>
       <li>
-        <Scroll smooth={true} duration={600} to="special-thanks" onClick={toggleMenu}>
+        <Scroll
+          smooth={true}
+          duration={600}
+          to="special-thanks"
+          href="special-thanks"
+          onClick={toggleMenu}
+        >
           主催・運営
         </Scroll>
       </li>
       <li>
-        <Scroll smooth={true} duration={600} to="about" onClick={toggleMenu}>
+        <Scroll smooth={true} duration={600} to="about" href="about" onClick={toggleMenu}>
           不思議RTAフェスとは？
         </Scroll>
       </li>

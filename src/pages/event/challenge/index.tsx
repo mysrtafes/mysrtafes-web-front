@@ -12,11 +12,17 @@ const Challenge: NextPage = () => {
   return (
     <>
       <Head>
-        <title>
-          『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』とは | 不思議のダンジョンRTAフェス
-        </title>
+        <title>ふしチャレ！～不思議のダンジョンRTAフェス外伝～ | 不思議のダンジョンRTAフェス</title>
+        <meta
+          property="og:title"
+          content="ふしチャレ！～不思議のダンジョンRTAフェス外伝～ | 不思議のダンジョンRTAフェス"
+        />
         <meta
           name="description"
+          content="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。"
+        />
+        <meta
+          name="og:description"
           content="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。"
         />
       </Head>
@@ -27,11 +33,13 @@ const Challenge: NextPage = () => {
           <Image
             src="/images/challenge1.png"
             alt="ふしチャレフライヤー"
-            width="640px"
-            height="360px"
+            width={640}
+            height={360}
+            priority={true}
+            quality={30}
           />
           <h2>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』とは</h2>
-          <div className={styles.p}>
+          <p>
             <strong>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)</strong>
             は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。
             <br />
@@ -61,8 +69,9 @@ const Challenge: NextPage = () => {
             <Image
               src="/images/challenge2.png"
               alt="ちょっと不思議部門説明"
-              width="640px"
-              height="360px"
+              width={640}
+              height={360}
+              quality={30}
             />
             <br />
             <strong>「ちょっと不思議部門」</strong>
@@ -74,8 +83,9 @@ const Challenge: NextPage = () => {
             <Image
               src="/images/challenge3.png"
               alt="もっと不思議部門説明"
-              width="640px"
-              height="360px"
+              width={640}
+              height={360}
+              quality={30}
             />
             <br />
             <strong>「もっと不思議部門」</strong>
@@ -86,13 +96,13 @@ const Challenge: NextPage = () => {
             <br />
             <br />
             初心者の方も熟練プレイヤーの方も、是非この機会に新しい目標に挑戦して、不思議のダンジョン・ローグライクゲームの楽しさに触れて頂けたら幸いです。
-          </div>
+          </p>
           <h2>開催期間</h2>
-          <div className={styles.p}>
-            <strong className={styles.strong}>2022年6月24日(日)～7月18日(月)</strong>
-          </div>
+          <p>
+            <strong>2022年6月24日(日)～7月18日(月)</strong>
+          </p>
           <h2>応募について</h2>
-          <div className={styles.p}>
+          <p>
             どなたでも応募可能です。
             <br />
             応募は以下のGoogleフォームから行ってください。
@@ -106,11 +116,10 @@ const Challenge: NextPage = () => {
               target="_blank"
             />
             <br />
-            <br />
             <Link href="/event/challenge/submissions">
               <a className={styles.linkToSubmission}>応募一覧</a>
             </Link>
-          </div>
+          </p>
           <h2>Q＆A</h2>
           <ul className={styles.list}>
             <li className={styles.listQuestion}>Q: イベントに関する質問はどこから行えますか？</li>

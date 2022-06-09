@@ -18,10 +18,22 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>不思議のダンジョンRTAフェス</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta property="og:locale" content="ja_JP" />
+        <meta property="og:site_name" content="不思議のダンジョンRTAフェス" />
+        <meta property="og:url" content="https://mysrtafes.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="不思議のダンジョンRTAフェス" />
         <meta
           name="description"
           content="不思議のダンジョンRTAフェス(略称:不思議RTAフェス)は、「不思議のダンジョンシリーズ」及び「その他のローグライクゲーム」をテーマにしたイベント開催などを行っている団体です。RTAという遊び方を通して本ジャンルの面白さを伝えるための活動を主に行っています。"
         />
+        <meta
+          property="og:description"
+          content="不思議のダンジョンRTAフェス(略称:不思議RTAフェス)は、「不思議のダンジョンシリーズ」及び「その他のローグライクゲーム」をテーマにしたイベント開催などを行っている団体です。RTAという遊び方を通して本ジャンルの面白さを伝えるための活動を主に行っています。"
+        />
+        <meta property="og:image" content="/images/mysrtafes.png" />
       </Head>
       <QueryClientProvider client={queryClient}>
         <Component {...pageProps} />
