@@ -42,7 +42,7 @@ const Challenge: NextPage = () => {
             quality={30}
           />
           <h2>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』とは</h2>
-          <p>
+          <p className={styles.message}>
             <strong>『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)</strong>
             は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。
             <br />
@@ -101,11 +101,11 @@ const Challenge: NextPage = () => {
             初心者の方も熟練プレイヤーの方も、是非この機会に新しい目標に挑戦して、不思議のダンジョン・ローグライクゲームの楽しさに触れて頂けたら幸いです。
           </p>
           <h2>開催期間</h2>
-          <p>
+          <p className={styles.message}>
             <strong>2022年6月24日(日)～7月18日(月)</strong>
           </p>
           <h2>応募について</h2>
-          <p>
+          <p className={styles.message}>
             どなたでも応募可能です。
             <br />
             応募は以下のGoogleフォームから行ってください。
