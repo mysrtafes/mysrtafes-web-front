@@ -1,6 +1,7 @@
 import styles from '@/components/page/event/SubmissionContainer/SubmissionContainer.module.scss'
 import GameContainer from '@/components/page/event/GameContainer/GameContainer'
 import { Challenger } from '@prisma/client'
+import useBetterMediaQuery from '@/hooks/useBetterMediaQuery'
 
 interface Props {
   challenger: Challenger
@@ -9,14 +10,17 @@ interface Props {
 const SubmissionContainer = (props: Props) => {
   const challenger = props.challenger
   const twitterId = challenger.TwitterId.replace('@', '')
+  const isPC = useBetterMediaQuery('(min-width: 768px)')
 
   return (
     <div className={styles.submissionContainer}>
       <h2 className={styles.TwitterId}>
-        {challenger.Name}({challenger.Furigana})
+        {challenger.Name}
+        {isPC && `(${challenger.Furigana})`}
+        {!isPC && <br />}
         <a href={'https://twitter.com/' + twitterId} target="_blank" rel="noreferrer">
           @{twitterId}
-        </a>{' '}
+        </a>
         {challenger.StreamUrl && (
           <a href={challenger.StreamUrl} target="_blank" rel="noreferrer">
             配信場所
