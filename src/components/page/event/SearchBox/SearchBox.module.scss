@@ -1,15 +1,7 @@
 .searchBox {
   width: 100%;
   list-style: none;
-  margin-bottom: 20px;
-  input {
-      height: 40px;
-      width: 50%;
-      background-color: #fff;
-      border-radius: 4px;
-      padding-left: 50px;
-      &::after {
-        
-      }
-  }
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }

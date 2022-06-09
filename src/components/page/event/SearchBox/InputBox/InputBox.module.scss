@@ -1,0 +1,34 @@
+.inputBox {
+    position: relative;
+    width: 50%;
+    input {
+        height: 40px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 4px;
+        padding-left: 50px;
+        margin-bottom: 10px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 13px;
+        top: 8px;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        border: solid 4px #aaa;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 28px;
+        top: 24px;
+        bottom: auto;
+        width: 10px;
+        height: 4px;
+        border-radius: 2.5px;
+        background: #aaa;
+        transform: rotate(45deg);
+    }
+}
