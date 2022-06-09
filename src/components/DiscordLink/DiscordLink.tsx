@@ -10,7 +10,7 @@ const DiscordLink = () => {
       rel="noreferrer"
     >
       <Image src="/images/discord.svg" alt="Discord招待リンク" height="65" width="83" />
-      <p>
+      <p className={styles.server}>
         不思議RTAフェス
         <br />
         公式Discordサーバー
