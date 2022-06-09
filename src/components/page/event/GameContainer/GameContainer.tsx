@@ -12,7 +12,7 @@ const GameContainer = (props: Props) => {
       <div className={styles.head}>
         {props.title}（{props.department}）
       </div>
-      <p>{props.goal}</p>
+      <p className={styles.goal}>{props.goal}</p>
     </li>
   )
 }
