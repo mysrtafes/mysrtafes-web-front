@@ -4,6 +4,7 @@ import Header from '@/components/Header/SubPageHeader'
 import Footer from '@/components/Footer/Footer'
 import Head from 'next/head'
 import SubmissionContainer from '@/components/page/event/SubmissionContainer/SubmissionContainer'
+import SearchBox from '@/components/page/event/SearchBox/SearchBox'
 
 const Home: NextPage = () => {
   return (
@@ -17,9 +18,9 @@ const Home: NextPage = () => {
       </Head>
 
       <Header />
-
       <div className={styles.main}>
         <div className={styles.inner}>
+      <SearchBox />
           <SubmissionContainer
             name="ベア"
             furigana="べあ"
