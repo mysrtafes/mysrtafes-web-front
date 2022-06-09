@@ -20,6 +20,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>不思議のダンジョンRTAフェス</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@mysrtafes" />
         <meta property="og:locale" content="ja_JP" />
         <meta property="og:site_name" content="不思議のダンジョンRTAフェス" />
         <meta property="og:url" content="https://mysrtafes.com" />
