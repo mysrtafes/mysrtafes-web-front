@@ -1,5 +1,5 @@
-import styles from '@/components/page/Index/About/About.module.scss'
 import GreenButtonLink from '@/components/ButtonLink/GreenButtonLink'
+import styles from '@/components/page/index/About/About.module.scss'
 
 const About = () => {
   return (

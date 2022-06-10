@@ -1,4 +1,6 @@
 import styles from '@/components/EventArchiveContent/EventArchiveContentExternalLink.module.scss'
+import { faTwitch, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 
 interface Props {
@@ -19,11 +21,11 @@ const EventArchiveContentExternalLink = (props: Props) => {
         <p>{props.period}</p>
         <h3>{props.title}</h3>
         <a href={props.twitchUrl} target="_blank" rel="noreferrer" className={styles.twitchLink}>
-          <Image src="/images/twitch.svg" alt="Twitchアイコン" height="18" width="18" />
+          <FontAwesomeIcon icon={faTwitch} className={styles.twitchIcon} />
           <p>タイムテーブル</p>
         </a>
         <a href={props.youtubeUrl} target="_blank" rel="noreferrer" className={styles.youtubeLink}>
-          <Image src="/images/youtube.svg" alt="Youtubeアイコン" height="13" width="18" />
+          <FontAwesomeIcon icon={faYoutube} className={styles.youtubeIcon} />
           <p>Youtubeアーカイブ</p>
         </a>
       </div>

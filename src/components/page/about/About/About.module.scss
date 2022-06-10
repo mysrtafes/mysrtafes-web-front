@@ -1,8 +1,9 @@
 .about {
-  background: #585858;
-  color: #fff;
+  background-color: #eeeeee;
   padding: 110px 0;
+  color: #111;
   margin: 0 auto;
+  min-height: calc(100vh - 64px - 53px);
   .textContent {
     padding: 60px 0;
     font-weight: 500;
@@ -11,15 +12,19 @@
   }
   .aboutRTA {
     padding-left: 20px;
-    border-left: 2px solid #fff;
+    border-left: 2px solid #111;
     font-weight: bold;
     margin-bottom: 10px;
+    line-height: 1.5;
   }
   h2 {
     text-align: center;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
+  }
+  a {
+    text-decoration: underline;
   }
 }
 
@@ -39,11 +44,14 @@
 
 @media (max-width: 768px) {
   .about {
+    line-height: 36px;
     padding: 60px 0;
     .textContent {
-      padding: 50px 0;
+      padding: 24px 20px;
+      font-size: 16px;
     }
     .aboutRTA {
+      line-height: 26px;
       padding-left: 10px;
       padding-right: 10px;
       border-top: 2px solid #fff;

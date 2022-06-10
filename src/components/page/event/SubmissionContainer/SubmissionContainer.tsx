@@ -1,7 +1,7 @@
-import styles from '@/components/page/event/SubmissionContainer/SubmissionContainer.module.scss'
 import GameContainer from '@/components/page/event/GameContainer/GameContainer'
-import { Challenger } from '@prisma/client'
+import styles from '@/components/page/event/SubmissionContainer/SubmissionContainer.module.scss'
 import useBetterMediaQuery from '@/hooks/useBetterMediaQuery'
+import { Challenger } from '@prisma/client'
 
 interface Props {
   challenger: Challenger
@@ -16,7 +16,6 @@ const SubmissionContainer = (props: Props) => {
     <div className={styles.submissionContainer}>
       <h2 className={styles.TwitterId}>
         {challenger.Name}
-        {isPC && `(${challenger.Furigana})`}
         {!isPC && <br />}
         <a href={'https://twitter.com/' + twitterId} target="_blank" rel="noreferrer">
           @{twitterId}

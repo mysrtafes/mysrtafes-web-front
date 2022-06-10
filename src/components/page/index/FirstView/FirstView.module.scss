@@ -58,8 +58,11 @@
       right: 0;
       width: 90%;
       margin: 0 auto;
-      height: 420px;
+      height: 380px;
       align-items: center;
+      .eventHoldingPeriod {
+        font-size: 16px;
+      }
     }
   }
 }

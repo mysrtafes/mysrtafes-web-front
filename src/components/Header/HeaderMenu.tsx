@@ -1,7 +1,7 @@
-import { Link as Scroll } from 'react-scroll'
 import styles from '@/components/Header/HeaderMenu.module.scss'
 import Link from 'next/link'
 import { useMemo } from 'react'
+import { Link as Scroll } from 'react-scroll'
 
 const HeaderMenu = ({ isTopPage = false }) => {
   const menuList = useMemo(
