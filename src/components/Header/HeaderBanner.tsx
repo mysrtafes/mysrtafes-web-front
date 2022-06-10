@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import styles from '@/components/Header/HeaderBanner.module.scss'
+import Link from 'next/link'
 
 const HeaderBanner = () => {
   return (

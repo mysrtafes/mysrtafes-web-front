@@ -1,5 +1,5 @@
-import styles from '@/components/page/Index/FirstView/FirstView.module.scss'
 import GreenButtonLink from '@/components/ButtonLink/GreenButtonLink'
+import styles from '@/components/page/index/FirstView/FirstView.module.scss'
 import Image from 'next/image'
 
 interface Props {

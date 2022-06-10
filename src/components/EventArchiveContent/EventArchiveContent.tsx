@@ -1,6 +1,5 @@
-import Link from 'next/link'
 import styles from '@/components/EventArchiveContent/EventArchiveContent.module.scss'
-import Image from 'next/image'
+import Link from 'next/link'
 
 interface Props {
   image_url: string
