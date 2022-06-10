@@ -1,0 +1,23 @@
+.gameContainer {
+  width: 100%;
+  list-style: none;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  .head {
+    display: flex;
+    background-color: rgb(82, 142, 139);
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  p.goal {
+    background-color: rgba(112, 182, 169, 0.2);
+    padding: 15px 10px;
+    font-size: 16px;
+    color: #111;
+    border-radius: 0 0 10px 10px;
+  }
+}

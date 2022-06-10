@@ -1,0 +1,30 @@
+.main {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #888;
+
+  .inner {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto 0px;
+  }
+
+  h2.title {
+    font-size: 26px;
+    text-align: center;
+    line-height: 30px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    h2.title {
+      margin-top: 10px;
+    }
+  }
+}

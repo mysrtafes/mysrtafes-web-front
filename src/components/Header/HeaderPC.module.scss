@@ -1,0 +1,36 @@
+.headerSticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  .headerBottom {
+    height: 64px;
+    background: #343438;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.25);
+    h1 {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: #ffffff;
+      margin-left: 13px;
+    }
+    .headerBottomInner {
+      width: 95%;
+      max-width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .headerBottomLeft {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+      }
+    }
+  }
+}

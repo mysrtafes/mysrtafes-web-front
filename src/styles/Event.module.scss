@@ -1,0 +1,70 @@
+.main {
+  padding-top: 50px;
+
+  .inner {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: left;
+    line-height: 50px;
+    color: rgb(112, 182, 169);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 5px;
+      background: rgb(112, 182, 169);
+
+      position: absolute;
+      bottom: 15px;
+    }
+  }
+  p.message {
+    line-height: 32px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  .listQuestion {
+    line-height: 32px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+  }
+  .listAnswer {
+    line-height: 32px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  .linkToSubmission {
+    text-decoration: underline;
+    color: rgb(112, 182, 169);
+    font-size: 16px;
+    line-height: 28px;
+  }
+  strong a {
+    text-decoration: underline;
+  }
+  li a {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 10px;
+    h2 {
+      font-size: 25px;
+    }
+  }
+}

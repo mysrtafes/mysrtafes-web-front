@@ -1,0 +1,37 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = env("BINARY_TARGETS")
+}
+
+datasource db {
+  provider          = "mysql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+model Challenger {
+  id              Int     @id @default(autoincrement())
+  EditUrl         String  @unique
+  TimeStamp       String
+  Name            String
+  Furigana        String
+  Department1     String
+  Game1           String
+  Goal1           String
+  DiscordName     String?
+  TwitterId       String
+  Message         String? @db.Text
+  TtYesNo         String
+  StreamYesNo     String?
+  StreamUrl       String?
+  MultiGamesYesNo String
+  Department2     String?
+  Game2           String?
+  Goal2           String?
+  Department3     String?
+  Game3           String?
+  Goal3           String?
+}

@@ -1,0 +1,65 @@
+.firstView {
+  width: 86%;
+  background-size: cover;
+  height: 420px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  .innerBox {
+    width: 668px;
+    height: 320px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.89);
+    position: absolute;
+    right: 60px;
+    .eventHoldingPeriod {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+    .eventTitle {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 15px;
+    }
+    .eventApplicationPeriod {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 30px;
+    }
+  }
+}
+.inner {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+}
+
+@media (max-width: 768px) {
+  .firstView {
+    height: 480px;
+    .innerBox {
+      left: 0;
+      right: 0;
+      width: 90%;
+      margin: 0 auto;
+      height: 420px;
+      align-items: center;
+    }
+  }
+}
