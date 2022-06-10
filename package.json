@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-sitemap --config sitemap.config.js",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "vercel-build": "prisma generate && prisma db push --accept-data-loss && next build"
+    "vercel-build": "prisma generate && prisma db push --accept-data-loss && next build && next-sitemap --config sitemap.config.js"
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} src/prisma/seed.ts"

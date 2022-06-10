@@ -1,6 +1,7 @@
 import styles from '@/components/page/Index/SpecialThanks/SpecialThanks.module.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import staffList from '@/const/staffList'
+import StaffName from '../StaffNameList/StaffNameList'
+import StaffNameList from '../StaffNameList/StaffNameList'
 
 const SpecialThanks = () => {
   return (
@@ -13,10 +14,13 @@ const SpecialThanks = () => {
               <td>主催</td>
               <td>
                 <ul>
-                  <li>
-                    ポンズ
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
+                  {staffList.organizers.map(organizer => (
+                    <StaffName
+                      name={organizer.name}
+                      twitterId={organizer.twitterId}
+                      key={organizer.name}
+                    />
+                  ))}
                 </ul>
               </td>
             </tr>
@@ -24,18 +28,13 @@ const SpecialThanks = () => {
               <td>運営</td>
               <td>
                 <ul>
-                  <li>
-                    yagamuu
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    深爪
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    ファジー
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
+                  {staffList.managers.map(manager => (
+                    <StaffNameList
+                      name={manager.name}
+                      twitterId={manager.twitterId}
+                      key={manager.name}
+                    />
+                  ))}
                 </ul>
               </td>
             </tr>
@@ -43,72 +42,13 @@ const SpecialThanks = () => {
               <td>SuperStaff</td>
               <td>
                 <ul>
-                  <li>
-                    CHROM-D-
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    isuZu
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>kajiro</li>
-                  <li>
-                    ping値
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    sisuka
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    あーる
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    アジーン
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    イカロす
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    イリィ→
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    うたたね
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>エクシーク</li>
-                  <li>
-                    ねこ
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    ぶたまん
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    ベア
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    ぼぶそん
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    ゆうさく
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    リヒト
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
-                  <li>
-                    ロック
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
+                  {staffList.superStaffs.map(superStaff => (
+                    <StaffNameList
+                      name={superStaff.name}
+                      twitterId={superStaff.twitterId}
+                      key={superStaff.name}
+                    />
+                  ))}
                 </ul>
               </td>
             </tr>
@@ -116,10 +56,13 @@ const SpecialThanks = () => {
               <td>キービジュアル&ロゴ</td>
               <td>
                 <ul>
-                  <li>
-                    isuZu
-                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
-                  </li>
+                  {staffList.logoCreators.map(logoCreator => (
+                    <StaffNameList
+                      name={logoCreator.name}
+                      twitterId={logoCreator.twitterId}
+                      key={logoCreator.name}
+                    />
+                  ))}
                 </ul>
               </td>
             </tr>
