@@ -25,7 +25,7 @@
 
 .inner {
   width: 95%;
-  max-width: 1200px;
+  max-width: 980px;
   margin: 0 auto 30px;
 }
 
@@ -39,7 +39,7 @@
 
 @media (max-width: 768px) {
   .about {
-    padding: 60px 0;
+    padding: 60px 20px;
     .textContent {
       padding: 50px 0;
     }

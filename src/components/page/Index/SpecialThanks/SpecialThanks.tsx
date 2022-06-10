@@ -1,4 +1,6 @@
 import styles from '@/components/page/Index/SpecialThanks/SpecialThanks.module.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const SpecialThanks = () => {
   return (
@@ -9,15 +11,31 @@ const SpecialThanks = () => {
           <tbody>
             <tr>
               <td>主催</td>
-              <td>ポンズ</td>
+              <td>
+                <ul>
+                  <li>
+                    ポンズ
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                </ul>
+              </td>
             </tr>
             <tr>
               <td>運営</td>
               <td>
                 <ul>
-                  <li>yagamuu</li>
-                  <li>深爪</li>
-                  <li>ファジー</li>
+                  <li>
+                    yagamuu
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    深爪
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    ファジー
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
                 </ul>
               </td>
             </tr>
@@ -25,30 +43,85 @@ const SpecialThanks = () => {
               <td>SuperStaff</td>
               <td>
                 <ul>
-                  <li>CHROM-D-</li>
-                  <li>isuZu</li>
+                  <li>
+                    CHROM-D-
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    isuZu
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
                   <li>kajiro</li>
-                  <li>ping値</li>
-                  <li>sisuka</li>
-                  <li>あーる</li>
-                  <li>アジーン</li>
-                  <li>イカロす</li>
-                  <li>イリィ→</li>
-                  <li>うたたね</li>
+                  <li>
+                    ping値
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    sisuka
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    あーる
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    アジーン
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    イカロす
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    イリィ→
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    うたたね
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
                   <li>エクシーク</li>
-                  <li>ぶたまん</li>
-                  <li>ベア</li>
-                  <li>ぼぶそん</li>
-                  <li>ゆうさく</li>
-                  <li>リヒト</li>
-                  <li>ロック</li>
-                  <li>ねこ</li>
+                  <li>
+                    ねこ
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    ぶたまん
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    ベア
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    ぼぶそん
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    ゆうさく
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    リヒト
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                  <li>
+                    ロック
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
                 </ul>
               </td>
             </tr>
             <tr>
-              <td>ロゴ&イラスト</td>
-              <td>isuZu</td>
+              <td>キービジュアル&ロゴ</td>
+              <td>
+                <ul>
+                  <li>
+                    isuZu
+                    <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
+                  </li>
+                </ul>
+              </td>
             </tr>
           </tbody>
         </table>

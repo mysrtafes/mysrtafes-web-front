@@ -16,7 +16,6 @@ const SubmissionContainer = (props: Props) => {
     <div className={styles.submissionContainer}>
       <h2 className={styles.TwitterId}>
         {challenger.Name}
-        {isPC && `(${challenger.Furigana})`}
         {!isPC && <br />}
         <a href={'https://twitter.com/' + twitterId} target="_blank" rel="noreferrer">
           @{twitterId}

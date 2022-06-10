@@ -23,7 +23,7 @@ const EventArchives = () => {
         <EventArchiveContentExternalLink
           imageUrl="/images/mysrtafes1.png"
           period="2020/2/29 - 3/1"
-          title="不思議のダンジョンシリーズRTAフェス"
+          title="第1回不思議のダンジョンRTAフェス"
           twitchUrl="https://horaro.org/mystery-dungeon-rta-fes/mysrtafes1"
           youtubeUrl="https://www.youtube.com/playlist?list=PLFvJYuQufMw5PcGusQNgAPnRZIVZXKZIT"
         />
