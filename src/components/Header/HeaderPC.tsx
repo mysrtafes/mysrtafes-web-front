@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import styles from '@/components/Header/HeaderPC.module.scss'
 import HeaderBanner from '@/components/Header/HeaderBanner'
-import Image from 'next/image'
 import HeaderMenu from '@/components/Header/HeaderMenu'
+import styles from '@/components/Header/HeaderPC.module.scss'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const HeaderPC = ({ isTopPage = false }) => {
   return (

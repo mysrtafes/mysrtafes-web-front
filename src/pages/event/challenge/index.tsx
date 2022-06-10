@@ -1,8 +1,8 @@
-import type { NextPage } from 'next'
-import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
-import Head from 'next/head'
+import Header from '@/components/Header/Header'
 import Challenge from '@/components/page/event/Challenge/Challenge'
+import type { NextPage } from 'next'
+import Head from 'next/head'
 
 const ChallengePage: NextPage = () => {
   return (

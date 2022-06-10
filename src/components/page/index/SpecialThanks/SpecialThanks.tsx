@@ -1,7 +1,6 @@
-import styles from '@/components/page/Index/SpecialThanks/SpecialThanks.module.scss'
+import styles from '@/components/page/index/SpecialThanks/SpecialThanks.module.scss'
+import StaffNameList from '@/components/page/index/StaffNameList/StaffNameList'
 import staffList from '@/const/staffList'
-import StaffName from '../StaffNameList/StaffNameList'
-import StaffNameList from '../StaffNameList/StaffNameList'
 
 const SpecialThanks = () => {
   return (
@@ -15,7 +14,7 @@ const SpecialThanks = () => {
               <td>
                 <ul>
                   {staffList.organizers.map(organizer => (
-                    <StaffName
+                    <StaffNameList
                       name={organizer.name}
                       twitterId={organizer.twitterId}
                       key={organizer.name}

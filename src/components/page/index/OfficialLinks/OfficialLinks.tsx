@@ -1,5 +1,5 @@
-import styles from '@/components/page/Index/OfficialLinks/OfficialLinks.module.scss'
 import DiscordLink from '@/components/DiscordLink/DiscordLink'
+import styles from '@/components/page/index/OfficialLinks/OfficialLinks.module.scss'
 import TweetList from '@/components/TweetList/TweetList'
 import TwitchLink from '@/components/TwitchLink/TwitchLink'
 

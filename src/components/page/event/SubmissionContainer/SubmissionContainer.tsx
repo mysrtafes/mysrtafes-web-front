@@ -1,7 +1,7 @@
-import styles from '@/components/page/event/SubmissionContainer/SubmissionContainer.module.scss'
 import GameContainer from '@/components/page/event/GameContainer/GameContainer'
-import { Challenger } from '@prisma/client'
+import styles from '@/components/page/event/SubmissionContainer/SubmissionContainer.module.scss'
 import useBetterMediaQuery from '@/hooks/useBetterMediaQuery'
+import { Challenger } from '@prisma/client'
 
 interface Props {
   challenger: Challenger

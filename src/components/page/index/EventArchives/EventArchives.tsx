@@ -1,5 +1,5 @@
-import styles from '@/components/page/Index/EventArchives/EventArchives.module.scss'
 import EventArchiveContentExternalLink from '@/components/EventArchiveContent/EventArchiveContentExternalLink'
+import styles from '@/components/page/index/EventArchives/EventArchives.module.scss'
 
 const EventArchives = () => {
   return (

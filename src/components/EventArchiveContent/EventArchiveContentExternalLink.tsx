@@ -1,7 +1,7 @@
 import styles from '@/components/EventArchiveContent/EventArchiveContentExternalLink.module.scss'
-import Image from 'next/image'
+import { faTwitch, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube, faTwitch } from '@fortawesome/free-brands-svg-icons'
+import Image from 'next/image'
 
 interface Props {
   imageUrl: string

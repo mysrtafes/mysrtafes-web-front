@@ -1,6 +1,6 @@
-import HeaderSP from '@/components/Header/HeaderSP'
-import HeaderPC from '@/components/Header/HeaderPC'
 import HamburgerMenu from '@/components/Header/HamburgerMenu'
+import HeaderPC from '@/components/Header/HeaderPC'
+import HeaderSP from '@/components/Header/HeaderSP'
 import useBetterMediaQuery from '@/hooks/useBetterMediaQuery'
 import HeaderBanner from './HeaderBanner'
 

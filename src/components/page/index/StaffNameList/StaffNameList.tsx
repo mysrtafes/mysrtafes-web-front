@@ -1,6 +1,6 @@
-import styles from '@/components/page/Index/StaffNameList/StaffNameList.module.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styles from '@/components/page/index/StaffNameList/StaffNameList.module.scss'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 interface Props {
   name: string

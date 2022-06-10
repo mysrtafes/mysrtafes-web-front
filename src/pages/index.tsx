@@ -1,14 +1,14 @@
-import type { NextPage } from 'next'
-import styles from '@/styles/Home.module.scss'
-import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
+import Header from '@/components/Header/Header'
+import About from '@/components/page/index/About/About'
+import EventArchives from '@/components/page/index/EventArchives/EventArchives'
+import FirstView from '@/components/page/index/FirstView/FirstView'
+import OfficialLinks from '@/components/page/index/OfficialLinks/OfficialLinks'
+import SpecialThanks from '@/components/page/index/SpecialThanks/SpecialThanks'
 import TweetListSP from '@/components/TweetList/TweetListSP'
-import FirstView from '@/components/page/Index/FirstView/FirstView'
-import EventArchives from '@/components/page/Index/EventArchives/EventArchives'
-import About from '@/components/page/Index/About/About'
-import OfficialLinks from '@/components/page/Index/OfficialLinks/OfficialLinks'
-import SpecialThanks from '@/components/page/Index/SpecialThanks/SpecialThanks'
 import useBetterMediaQuery from '@/hooks/useBetterMediaQuery'
+import styles from '@/styles/Home.module.scss'
+import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
   const isPC = useBetterMediaQuery('(min-width: 768px)')
