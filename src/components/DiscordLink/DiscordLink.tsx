@@ -1,5 +1,6 @@
 import styles from '@/components/DiscordLink/DiscordLink.module.scss'
-import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDiscord } from '@fortawesome/free-brands-svg-icons'
 
 const DiscordLink = () => {
   return (
@@ -9,7 +10,8 @@ const DiscordLink = () => {
       target="_blank"
       rel="noreferrer"
     >
-      <Image src="/images/discord.svg" alt="Discord招待リンク" height="65" width="83" />
+      <FontAwesomeIcon icon={faDiscord} className={styles.discordIcon} />
+
       <p className={styles.server}>
         不思議RTAフェス
         <br />

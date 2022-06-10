@@ -1,5 +1,6 @@
 import styles from '@/components/TwitchLink/TwitchLink.module.scss'
-import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitch } from '@fortawesome/free-brands-svg-icons'
 
 const TwitchLink = () => {
   return (
@@ -9,7 +10,7 @@ const TwitchLink = () => {
       target="_blank"
       rel="noreferrer"
     >
-      <Image src="/images/twitchLink.svg" alt="Twitchリンク" height="71" width="69" />
+      <FontAwesomeIcon icon={faTwitch} className={styles.twitchIcon} />
       <p>
         不思議RTAフェス
         <br />
