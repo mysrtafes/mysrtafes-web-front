@@ -22,6 +22,10 @@ const Document = () => {
             />
           </>
         )}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <body>
         <Main />
