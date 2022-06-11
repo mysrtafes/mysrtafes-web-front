@@ -14,7 +14,7 @@ const OfficialLinks = () => {
             <TwitchLink />
             <DiscordLink />
           </div>
-          {!isPC && (
+          {isPC && (
             <div className={styles.officialLinkFlexContent}>
               <TweetList />
             </div>
