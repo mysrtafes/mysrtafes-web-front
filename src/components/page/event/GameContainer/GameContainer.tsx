@@ -9,10 +9,19 @@ interface Props {
 const GameContainer = (props: Props) => {
   return (
     <li className={styles.gameContainer}>
-      <div className={styles.head}>
-        {props.title}（{props.department}）
+      <div className={styles.head}>{props.title}</div>
+      <div className={styles.goal}>
+        <ul>
+          <li>
+            <span className={styles.left}>部門</span>
+            <span className={styles.right}>{props.department}</span>
+          </li>
+          <li>
+            <span className={styles.left}>目標</span>
+            <span className={styles.right}>{props.goal}</span>
+          </li>
+        </ul>
       </div>
-      <p className={styles.goal}>{props.goal}</p>
     </li>
   )
 }

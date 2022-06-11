@@ -1,4 +1,4 @@
-.headerSticky {
+.headerPC {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -32,5 +32,11 @@
         text-decoration: none;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .headerPC {
+    display: none;
   }
 }
