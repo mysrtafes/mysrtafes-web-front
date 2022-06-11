@@ -20,11 +20,10 @@ const SubmissionContainer = (props: Props) => {
         <a href={'https://twitter.com/' + twitterId} target="_blank" rel="noreferrer">
           @{twitterId}
         </a>
-        {challenger.StreamUrl && (
-          <a href={challenger.StreamUrl} target="_blank" rel="noreferrer">
-            配信場所
-          </a>
-        )}
+
+        <a href="a" className={styles.stream} target="_blank" rel="noreferrer">
+          配信場所
+        </a>
       </h2>
       {challenger.Message && <p className={styles.message}>{challenger.Message}</p>}
 

@@ -1,6 +1,6 @@
 .submissionContainer {
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 10px;
   background-color: #fff;
   p.message {
@@ -10,6 +10,9 @@
   a {
     font-size: 16px;
     text-decoration: underline;
+    &.stream {
+      margin-left: 20px;
+    }
   }
   h2 {
     font-size: 20px;
