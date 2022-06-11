@@ -26,10 +26,6 @@ const Document = () => {
           href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
           rel="stylesheet"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
       <body>
         <Main />
