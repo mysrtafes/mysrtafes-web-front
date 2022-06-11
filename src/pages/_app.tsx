@@ -3,6 +3,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import Head from 'next/head'
+import usePageView from '@/hooks/usePageView'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -14,6 +15,7 @@ const queryClient = new QueryClient({
 })
 
 function MyApp({ Component, pageProps }: AppProps) {
+  usePageView()
   return (
     <>
       <Head>
