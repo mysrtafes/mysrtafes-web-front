@@ -17,9 +17,9 @@ const Home: NextPage = () => {
       <Header isTopPage={true} />
       <div className={styles.main}>
         <FirstView
-          holdingPeriod="2022年6月24日(日)～7月18日(月)"
+          holdingPeriod="2022年6月24日(金)～7月18日(月)"
           title="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』"
-          applicationPeriod="2022年6月17日(日)～"
+          applicationPeriod="2022年6月17日(金)～"
           url="/event/challenge"
           imageUrl="/images/first-view.png"
         />
