@@ -86,7 +86,7 @@ const Challenge = () => {
 
         <h2>開催期間</h2>
         <p className={styles.message}>
-          <strong>2022年6月24日(日)～7月18日(月)</strong>
+          <strong>2022年6月24日(金)～7月18日(月)</strong>
         </p>
 
         <h2>参加方法</h2>
