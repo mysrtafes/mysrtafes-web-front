@@ -1,4 +1,4 @@
-.headerSticky {
+.headerPC {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -11,7 +11,7 @@
     align-items: center;
     box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.25);
     h1 {
-      font-family: 'Inter';
+      font-family: 'Kosugi Maru';
       font-style: normal;
       font-weight: 700;
       font-size: 20px;
@@ -32,5 +32,11 @@
         text-decoration: none;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .headerPC {
+    display: none;
   }
 }

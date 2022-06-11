@@ -3,7 +3,7 @@ const staffList = {
   managers: [
     { name: 'yagamuu', twitterId: 'yagamuu' },
     { name: '深爪', twitterId: 'fukazume_peer' },
-    { name: 'ファジー', twitterId: '' },
+    { name: 'ファジー', twitterId: 'fuzzynoble_all' },
   ],
   superStaffs: [
     { name: 'CHROM-D-', twitterId: 'Chromdragnity' },
@@ -16,7 +16,8 @@ const staffList = {
     { name: 'イカロす', twitterId: 'UranosTubasaPMD' },
     { name: 'イリィ→', twitterId: 'irie1013' },
     { name: 'うたたね', twitterId: 'utatane97181115' },
-    { name: 'エクシーク', twitterId: 'ckit_22' },
+    { name: 'エクシーク', twitterId: '' },
+    { name: 'ねこ', twitterId: 'ckit_22' },
     { name: 'ぶたまん', twitterId: 'butaman_suzukix' },
     { name: 'ベア', twitterId: 'bearfaust0123' },
     { name: 'ぼぶそん', twitterId: 'BOBSON27' },

@@ -14,6 +14,7 @@ const StaffNameList = (props: Props) => {
       {twitterId && (
         <a
           href={`https://twitter.com/${twitterId}`}
+          aria-label="twitterページへ"
           className={styles.twitterIcon}
           target="_blank"
           rel="noreferrer"

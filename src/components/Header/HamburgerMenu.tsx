@@ -72,7 +72,7 @@ const HamburgerMenu = ({ isTopPage = false }) => {
           </li>
           <li>
             <Link href="/#event-archives">
-              <a>過去アーカイブ</a>
+              <a>過去イベント</a>
             </Link>
           </li>
           <li>
