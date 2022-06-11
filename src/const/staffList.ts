@@ -3,7 +3,7 @@ const staffList = {
   managers: [
     { name: 'yagamuu', twitterId: 'yagamuu' },
     { name: '深爪', twitterId: 'fukazume_peer' },
-    { name: 'ファジー', twitterId: '' },
+    { name: 'ファジー', twitterId: 'fuzzynoble_all' },
   ],
   superStaffs: [
     { name: 'CHROM-D-', twitterId: 'Chromdragnity' },
