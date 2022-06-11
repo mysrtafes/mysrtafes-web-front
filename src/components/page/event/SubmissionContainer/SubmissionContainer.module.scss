@@ -10,6 +10,9 @@
   a {
     font-size: 16px;
     text-decoration: underline;
+    &.twitter {
+      margin-left: 20px;
+    }
     &.stream {
       margin-left: 20px;
     }
@@ -32,6 +35,9 @@
       bottom: 15px;
     }
   }
+  .links {
+    display: inline;
+  }
 }
 
 @media (max-width: 768px) {
@@ -43,6 +49,12 @@
     a {
       font-size: 16px;
       text-decoration: underline;
+    }
+    .links {
+      display: block;
+      a.twitter {
+        margin-left: 0;
+      }
     }
   }
 }

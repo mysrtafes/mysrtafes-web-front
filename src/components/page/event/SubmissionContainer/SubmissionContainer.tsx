@@ -10,20 +10,32 @@ interface Props {
 const SubmissionContainer = (props: Props) => {
   const challenger = props.challenger
   const twitterId = challenger.TwitterId.replace('@', '')
-  const isPC = useBetterMediaQuery('(min-width: 768px)')
 
   return (
     <div className={styles.submissionContainer}>
-      <h2 className={styles.TwitterId}>
+      <h2>
         {challenger.Name}
-        {!isPC && <br />}
-        <a href={'https://twitter.com/' + twitterId} target="_blank" rel="noreferrer">
-          @{twitterId}
-        </a>
+        <div className={styles.links}>
+          <a
+            href={'https://twitter.com/' + twitterId}
+            className={styles.twitter}
+            target="_blank"
+            rel="noreferrer"
+          >
+            @{twitterId}
+          </a>
 
-        <a href="a" className={styles.stream} target="_blank" rel="noreferrer">
-          配信場所
-        </a>
+          {challenger.StreamUrl && (
+            <a
+              href={challenger.StreamUrl}
+              className={styles.stream}
+              target="_blank"
+              rel="noreferrer"
+            >
+              配信場所
+            </a>
+          )}
+        </div>
       </h2>
       {challenger.Message && <p className={styles.message}>{challenger.Message}</p>}
 
