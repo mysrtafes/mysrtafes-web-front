@@ -5,9 +5,8 @@ const HeaderBanner = () => {
   return (
     <div className={styles.headerBanner}>
       <span>
-        ふしチャレ！～不思議のダンジョンRTAフェス外伝～ 応募受け付け中！！詳細は
         <Link href="/event/challenge">
-          <a>こちら</a>
+          <a>【応募受付中！】ふしチャレ！〜不思議のダンジョンRTAフェス外伝〜</a>
         </Link>
       </span>
     </div>
