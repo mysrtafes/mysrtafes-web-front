@@ -6,8 +6,8 @@ interface Props {
   target?: string
 }
 
-const BlueButton = (props: Props) => {
+const BlueButtonLink = (props: Props) => {
   return <ButtonLink color="#5865F2" text={props.text} href={props.href} target={props.target} />
 }
 
-export default BlueButton
+export default BlueButtonLink

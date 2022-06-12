@@ -3,17 +3,17 @@ import styles from '@/styles/PrivacyPolicy.module.scss'
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 import Head from 'next/head'
+import TwitterShareArea from '@/components/TwitterShare/TwitterShareArea'
+import { useRouter } from 'next/router'
 
 const PrivacyPolicy: NextPage = () => {
+  const router = useRouter()
+  const title = 'プライバシーポリシー | 不思議のダンジョンRTAフェス'
   return (
     <>
       <Head>
-        <title>プライバシーポリシー | 不思議のダンジョンRTAフェス</title>
-        <meta
-          property="og:title"
-          content="プライバシーポリシー | 不思議のダンジョンRTAフェス"
-          key="og:title"
-        />
+        <title>{title}</title>
+        <meta property="og:title" content={title} key="og:title" />
         <meta
           name="description"
           content="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。"
@@ -55,6 +55,7 @@ const PrivacyPolicy: NextPage = () => {
           </div>
         </div>
       </div>
+      <TwitterShareArea url={process.env.URL + router.pathname} text={title} />
       <Footer />
     </>
   )

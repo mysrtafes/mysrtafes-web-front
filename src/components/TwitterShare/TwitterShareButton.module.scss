@@ -1,0 +1,21 @@
+.twitterShareButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  background-color: #1da1f2;
+  width: 100px;
+  height: 32px;
+  border-radius: 4px;
+  .twitterIcon {
+    width: 22px;
+    color: #fff;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  span.tweet {
+  }
+}

@@ -8,7 +8,7 @@ interface Props {
   target?: string
 }
 
-const Button = (props: Props) => {
+const ButtonLink = (props: Props) => {
   return (
     <Link href={props.href}>
       <a className={styles.button} style={{ backgroundColor: props.color }} target={props.target}>
@@ -18,4 +18,4 @@ const Button = (props: Props) => {
   )
 }
 
-export default Button
+export default ButtonLink
