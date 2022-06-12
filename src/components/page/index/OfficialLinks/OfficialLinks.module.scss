@@ -29,11 +29,16 @@
   .officialLink .officialLinkFlex {
     flex-direction: column;
     .officialLinkFlexContent {
+      &:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       width: 100%;
     }
   }
   .officialLink {
-    padding: 50px 0 0;
+    padding: 0px 0 0;
     .officialLinkFlex {
       padding: 50px 0;
     }
