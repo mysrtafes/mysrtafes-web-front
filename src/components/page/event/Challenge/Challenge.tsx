@@ -85,9 +85,20 @@ const Challenge = () => {
           不思議のダンジョン・ローグライクゲームの楽しさに触れて頂けたら幸いです。
         </p>
 
-        <h2>開催期間</h2>
+        <h2>イベントスケジュール</h2>
         <p className={styles.message}>
-          <strong>2022年6月24日(金)～7月18日(月)</strong>
+          <strong>2022年6月24日(金)21:00 ～ 7月18日(月)24:00</strong>
+          <br />
+          6月24日(金)20:30頃に
+          <a
+            href="https://www.twitch.tv/mysterydungeon_rtafes"
+            className={styles.link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            公式Twitchチャンネル
+          </a>
+          にて開幕配信を行います！
         </p>
 
         <h2>参加方法</h2>
