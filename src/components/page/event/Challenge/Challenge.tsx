@@ -1,4 +1,5 @@
 import BlueButton from '@/components/ButtonLink/BlueButtonLink'
+import OutLineGreenButtonLink from '@/components/ButtonLink/OutLineGreenButtonLink'
 import DiscordLink from '@/components/DiscordLink/DiscordLink'
 import styles from '@/components/page/event/Challenge/Challenge.module.scss'
 import Image from 'next/image'
@@ -112,9 +113,8 @@ const Challenge = () => {
             target="_blank"
           />
           <br />
-          <Link href="/event/challenge/submissions">
-            <a className={styles.linkToSubmission}>応募一覧</a>
-          </Link>
+          <br />
+          <OutLineGreenButtonLink href="/event/challenge/submissions" text="応募一覧" />
         </p>
 
         <h2>Q＆A</h2>

@@ -6,6 +6,8 @@ import Head from 'next/head'
 import SubmissionContainer from '@/components/page/event/SubmissionContainer/SubmissionContainer'
 import useChallengers from '@/hooks/useChallenger'
 import { Challenger, PrismaClient } from '@prisma/client'
+import TwitterShareArea from '@/components/TwitterShare/TwitterShareArea'
+import { useRouter } from 'next/router'
 
 interface Props {
   challengers: Challenger[]
@@ -13,17 +15,14 @@ interface Props {
 
 const Submission: NextPage<Props> = (props: Props) => {
   const { challengers, isLoading } = useChallengers(props.challengers)
+  const router = useRouter()
+  const title =
+    '『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』応募一覧 | 不思議のダンジョンRTAフェス'
   return (
     <>
       <Head>
-        <title>
-          『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』応募一覧 | 不思議のダンジョンRTAフェス
-        </title>
-        <meta
-          property="og:title"
-          content="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』応募一覧 | 不思議のダンジョンRTAフェス"
-          key="og:title"
-        />
+        <title>{title}</title>
+        <meta property="og:title" content={title} key="og:title" />
         <meta
           name="description"
           content="『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』(略称：ふしチャレ！)は、不思議のダンジョンRTAフェスが主催する「期間内にゲームに挑戦して目標達成を目指す」イベントです。挑戦するゲームは不思議のダンジョン・ローグライクジャンルとされているものであれば何でもOKです。"
@@ -46,6 +45,11 @@ const Submission: NextPage<Props> = (props: Props) => {
             ))}
         </div>
       </div>
+      <TwitterShareArea
+        url={process.env.URL + router.pathname}
+        text={title}
+        hashtags={['ふしチャレ！']}
+      />
       <Footer />
     </>
   )

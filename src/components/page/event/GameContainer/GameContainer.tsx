@@ -7,18 +7,16 @@ interface Props {
 }
 
 const GameContainer = (props: Props) => {
+  const department = props.department.replace('部門', '')
+  const departmentStyle = department == 'もっと不思議' ? 'more' : 'little'
   return (
     <li className={styles.gameContainer}>
       <div className={styles.head}>{props.title}</div>
-      <div className={styles.goal}>
+      <div className={styles.body}>
         <ul>
           <li>
-            <span className={styles.left}>部門</span>
-            <span className={styles.right}>{props.department}</span>
-          </li>
-          <li>
-            <span className={styles.left}>目標</span>
-            <span className={styles.right}>{props.goal}</span>
+            <span className={`${styles.department} ${styles[departmentStyle]}`}>{department}</span>
+            <span className={styles.goal}>{props.goal}</span>
           </li>
         </ul>
       </div>

@@ -6,10 +6,10 @@ interface Props {
   target?: string
 }
 
-const GreenButton = (props: Props) => {
+const GreenButtonLink = (props: Props) => {
   return (
     <ButtonLink color="rgb(92,170,155)" text={props.text} href={props.href} target={props.target} />
   )
 }
 
-export default GreenButton
+export default GreenButtonLink

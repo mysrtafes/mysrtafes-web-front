@@ -12,7 +12,7 @@
     font-size: 16px;
     font-weight: bold;
   }
-  .goal {
+  .body {
     background-color: rgba(112, 182, 169, 0.2);
     padding: 10px 10px;
     font-size: 16px;
@@ -21,11 +21,24 @@
     li {
       display: flex;
     }
-    span.left {
+    span.department {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       white-space: nowrap;
+      padding: 2px 4px;
+      border-radius: 5px;
+      font-size: 10px;
+      color: #fff;
+      &.little {
+        background: rgb(211, 140, 8);
+      }
+      &.more {
+        background: rgb(175, 106, 59);
+      }
     }
-    span.right {
-      margin-left: 20px;
+    span.goal {
+      margin-left: 12px;
     }
   }
 }
