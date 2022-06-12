@@ -3,7 +3,6 @@ import OutLineGreenButtonLink from '@/components/ButtonLink/OutLineGreenButtonLi
 import DiscordLink from '@/components/DiscordLink/DiscordLink'
 import styles from '@/components/page/event/Challenge/Challenge.module.scss'
 import Image from 'next/image'
-import Link from 'next/link'
 
 const Challenge = () => {
   return (
