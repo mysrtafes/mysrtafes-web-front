@@ -16,7 +16,7 @@ const EventArchiveContentExternalLink = (props: Props) => {
     <li className={styles.eventArchiveContent}>
       <div className={styles.eventArchivesLink}>
         <div className={styles.thumbnail}>
-          <Image src={props.imageUrl} alt="イベントサムネ" width={1206} height={680} quality={5} />
+          <Image src={props.imageUrl} alt="イベントサムネ" width={1200} height={670} quality={5} />
         </div>
         <p>{props.period}</p>
         <h3>{props.title}</h3>

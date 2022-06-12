@@ -6,8 +6,8 @@ interface Props {
   target?: string
 }
 
-const GrayButton = (props: Props) => {
+const GrayButtonLink = (props: Props) => {
   return <ButtonLink color="#989898" text={props.text} href={props.href} target={props.target} />
 }
 
-export default GrayButton
+export default GrayButtonLink

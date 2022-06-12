@@ -26,6 +26,7 @@ const HamburgerMenu = ({ isTopPage = false }) => {
               to="first-view"
               href="first-view"
               onClick={toggleMenu}
+              offset={-60}
             >
               最新イベント
             </Scroll>
@@ -37,6 +38,7 @@ const HamburgerMenu = ({ isTopPage = false }) => {
               to="event-archives"
               href="event-archives"
               onClick={toggleMenu}
+              offset={-60}
             >
               過去イベント
             </Scroll>
@@ -48,12 +50,20 @@ const HamburgerMenu = ({ isTopPage = false }) => {
               to="special-thanks"
               href="special-thanks"
               onClick={toggleMenu}
+              offset={-60}
             >
               主催・運営
             </Scroll>
           </li>
           <li>
-            <Scroll smooth={true} duration={600} to="about" href="about" onClick={toggleMenu}>
+            <Scroll
+              smooth={true}
+              duration={600}
+              to="about"
+              href="about"
+              onClick={toggleMenu}
+              offset={-60}
+            >
               不思議RTAフェスとは？
             </Scroll>
           </li>

@@ -1,0 +1,12 @@
+.twitterShareArea {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 60px;
+  span.share {
+    color: #777777;
+    font-weight: 700;
+  }
+}

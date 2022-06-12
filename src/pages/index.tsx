@@ -6,11 +6,14 @@ import FirstView from '@/components/page/index/FirstView/FirstView'
 import OfficialLinks from '@/components/page/index/OfficialLinks/OfficialLinks'
 import SpecialThanks from '@/components/page/index/SpecialThanks/SpecialThanks'
 import TweetListSP from '@/components/TweetList/TweetListSP'
+import TwitterShareArea from '@/components/TwitterShare/TwitterShareArea'
 import useBetterMediaQuery from '@/hooks/useBetterMediaQuery'
 import styles from '@/styles/Home.module.scss'
 import type { NextPage } from 'next'
+import { useRouter } from 'next/router'
 
 const Home: NextPage = () => {
+  const router = useRouter()
   const isPC = useBetterMediaQuery('(min-width: 768px)')
   return (
     <>
@@ -29,6 +32,10 @@ const Home: NextPage = () => {
         <About />
       </div>
       {!isPC && <TweetListSP />}
+      <TwitterShareArea
+        url={process.env.URL + router.pathname}
+        text="不思議のダンジョンRTAフェス"
+      />
       <Footer />
     </>
   )

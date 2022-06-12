@@ -9,7 +9,8 @@
       width: 75%;
       padding: 20px;
       &:first-child {
-        width: 25%;
+        font-family: 'Kosugi Maru';
+        width: 33%;
         font-weight: bold;
       }
       ul {
@@ -31,7 +32,7 @@
 @media (max-width: 768px) {
   .specialThanks {
     padding-top: 50px;
-    padding-bottom: 0;
+    padding-bottom: 10px;
 
     table {
       width: 90%;

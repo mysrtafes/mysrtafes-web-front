@@ -9,22 +9,34 @@ const HeaderMenu = ({ isTopPage = false }) => {
       isTopPage ? (
         <>
           <li>
-            <Scroll smooth={true} duration={600} to="first-view" href="/#first-view">
+            <Scroll smooth={true} duration={600} offset={-64} to="first-view" href="/#first-view">
               最新イベント
             </Scroll>
           </li>
           <li>
-            <Scroll smooth={true} duration={600} to="event-archives" href="/#event-archives">
+            <Scroll
+              smooth={true}
+              duration={600}
+              offset={-64}
+              to="event-archives"
+              href="/#event-archives"
+            >
               過去イベント
             </Scroll>
           </li>
           <li>
-            <Scroll smooth={true} duration={600} to="special-thanks" href="/#special-thanks">
+            <Scroll
+              smooth={true}
+              duration={600}
+              offset={-64}
+              to="special-thanks"
+              href="/#special-thanks"
+            >
               主催・運営
             </Scroll>
           </li>
           <li>
-            <Scroll smooth={true} duration={600} to="about" href="/#about">
+            <Scroll smooth={true} duration={600} offset={-64} to="about" href="/#about">
               不思議RTAフェスとは？
             </Scroll>
           </li>
