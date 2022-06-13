@@ -1,15 +1,17 @@
 import HeaderBanner from '@/components/Header/HeaderBanner'
 import HeaderMenu from '@/components/Header/HeaderMenu'
 import styles from '@/components/Header/HeaderPC.module.scss'
-import useBetterMediaQuery from '@/hooks/useBetterMediaQuery'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const HeaderPC = ({ isTopPage = false }) => {
-  const isPC = useBetterMediaQuery('(min-width: 768px)')
   return (
     <>
-      {isTopPage && isPC && <HeaderBanner />}
+      {isTopPage && (
+        <div className={styles.PC}>
+          <HeaderBanner />
+        </div>
+      )}
       <header className={styles.headerPC}>
         <div className={styles.headerBottom}>
           <div className={styles.headerBottomInner}>
