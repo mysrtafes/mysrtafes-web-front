@@ -19,7 +19,7 @@ const SubmissionContainer = (props: Props) => {
             href={'https://twitter.com/' + twitterId}
             className={styles.twitter}
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
           >
             @{twitterId}
           </a>
@@ -29,7 +29,7 @@ const SubmissionContainer = (props: Props) => {
               href={challenger.StreamUrl}
               className={styles.stream}
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
             >
               配信場所
             </a>

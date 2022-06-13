@@ -24,7 +24,7 @@ const About = () => {
         </div>
         <p className={styles.textAlignRight}>
           「
-          <a href="https://rtain.jp/" target="_blank" rel="noreferrer">
+          <a href="https://rtain.jp/" target="_blank" rel="noreferrer noopener">
             RTA in Japan 公式サイト
           </a>
           から引用」
