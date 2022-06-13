@@ -46,7 +46,7 @@ const Submission: NextPage<Props> = (props: Props) => {
         </div>
       </div>
       <TwitterShareArea
-        url={process.env.URL + router.pathname}
+        url={process.env.NEXT_PUBLIC_URL + router.pathname}
         text={title}
         hashtags={['ふしチャレ！']}
       />

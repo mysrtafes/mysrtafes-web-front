@@ -29,7 +29,7 @@ const ChallengePage: NextPage = () => {
       <Header />
       <Challenge />
       <TwitterShareArea
-        url={process.env.URL + router.pathname}
+        url={process.env.NEXT_PUBLIC_URL + router.pathname}
         text={title}
         hashtags={['ふしチャレ！']}
       />
