@@ -6,6 +6,9 @@
 }
 
 @media (max-width: 768px) {
+  .SPOnly {
+    display: block;
+  }
   .headerSP {
     background: #343438;
     height: 60px;
