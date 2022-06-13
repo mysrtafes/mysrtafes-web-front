@@ -8,7 +8,7 @@ const HeaderPC = ({ isTopPage = false }) => {
   return (
     <>
       {isTopPage && (
-        <div className={styles.PC}>
+        <div className={styles.PCOnly}>
           <HeaderBanner />
         </div>
       )}
