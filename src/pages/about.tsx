@@ -1,9 +1,10 @@
-import type { NextPage } from 'next'
-import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
-import Head from 'next/head'
+import Header from '@/components/Header/Header'
 import About from '@/components/page/about/About/About'
 import TwitterShareArea from '@/components/TwitterShare/TwitterShareArea'
+import links from '@/const/links'
+import type { NextPage } from 'next'
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 const AboutPage: NextPage = () => {
@@ -28,7 +29,7 @@ const AboutPage: NextPage = () => {
 
       <Header />
       <About />
-      <TwitterShareArea url={process.env.NEXT_PUBLIC_URL + router.pathname} text={title} />
+      <TwitterShareArea url={links.webSite + router.pathname} text={title} />
       <Footer />
     </>
   )

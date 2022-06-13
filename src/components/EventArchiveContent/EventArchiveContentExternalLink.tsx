@@ -20,11 +20,21 @@ const EventArchiveContentExternalLink = (props: Props) => {
         </div>
         <p>{props.period}</p>
         <h3>{props.title}</h3>
-        <a href={props.twitchUrl} target="_blank" rel="noreferrer" className={styles.twitchLink}>
+        <a
+          href={props.twitchUrl}
+          target="_blank"
+          rel="noreferrer noopener"
+          className={styles.twitchLink}
+        >
           <FontAwesomeIcon icon={faTwitch} className={styles.twitchIcon} />
           <p>タイムテーブル</p>
         </a>
-        <a href={props.youtubeUrl} target="_blank" rel="noreferrer" className={styles.youtubeLink}>
+        <a
+          href={props.youtubeUrl}
+          target="_blank"
+          rel="noreferrer noopener"
+          className={styles.youtubeLink}
+        >
           <FontAwesomeIcon icon={faYoutube} className={styles.youtubeIcon} />
           <p>Youtubeアーカイブ</p>
         </a>

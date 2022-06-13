@@ -1,7 +1,8 @@
 import BlueButton from '@/components/ButtonLink/BlueButtonLink'
 import OutLineGreenButtonLink from '@/components/ButtonLink/OutLineGreenButtonLink'
-import DiscordLink from '@/components/DiscordLink/DiscordLink'
+import SmallDiscordLink from '@/components/DiscordLink/SmallDiscordLink'
 import styles from '@/components/page/event/Challenge/Challenge.module.scss'
+import links from '@/const/links'
 import Image from 'next/image'
 
 const Challenge = () => {
@@ -31,14 +32,14 @@ const Challenge = () => {
           日本国内では他にも
           <strong>
             『
-            <a href="https://hackfest.rtain.jp/" target="_blank" rel="noreferrer">
+            <a href="https://hackfest.rtain.jp/" target="_blank" rel="noreferrer noopener">
               RTAハッカソン
             </a>
             』『
             <a
               href="https://w.atwiki.jp/roadtotherecord/pages/18.html"
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
             >
               Deep Running
             </a>
@@ -88,13 +89,9 @@ const Challenge = () => {
         <p className={styles.message}>
           <strong>2022年6月24日(金)21:00 ～ 7月18日(月)24:00</strong>
           <br />
+          <br />
           6月24日(金)20:30頃に
-          <a
-            href="https://www.twitch.tv/mysterydungeon_rtafes"
-            className={styles.link}
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href={links.twitch} className={styles.link} target="_blank" rel="noreferrer noopener">
             公式Twitchチャンネル
           </a>
           にて開幕配信を行います！
@@ -132,11 +129,21 @@ const Challenge = () => {
           <li className={styles.listQuestion}>Q: イベントに関する質問はどこから行えますか？</li>
           <li className={styles.listAnswer}>
             A:
-            <a href="https://twitter.com/mysrtafes" target="blank" rel="noreferrer">
+            <a
+              href={links.twitter}
+              target="blank"
+              rel="noreferrer noopener"
+              className={styles.link}
+            >
               公式Twitter
             </a>
             や
-            <a href="https://discord.gg/5z4hG4uzAd" target="blank" rel="noreferrer">
+            <a
+              href={links.discord}
+              target="blank"
+              rel="noreferrer noopener"
+              className={styles.link}
+            >
               公式Discord
             </a>
             内に作成したチャンネルへお気軽にご質問ください。
@@ -162,7 +169,7 @@ const Challenge = () => {
         </ul>
 
         <h2>Discord</h2>
-        <DiscordLink />
+        <SmallDiscordLink />
       </div>
     </div>
   )

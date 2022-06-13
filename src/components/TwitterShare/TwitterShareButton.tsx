@@ -24,7 +24,7 @@ const TwitterShareButton = (props: Props) => {
       href={href.toString()}
       className={styles.twitterShareButton}
       target="_blank"
-      rel="noreferrer"
+      rel="noreferrer noopener"
     >
       <FontAwesomeIcon icon={faTwitter} className={styles.twitterIcon} />
       <span className={styles.tweet}>ツイート</span>

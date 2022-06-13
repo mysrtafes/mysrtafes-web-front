@@ -17,7 +17,7 @@ const StaffNameList = (props: Props) => {
           aria-label="twitterページへ"
           className={styles.twitterIcon}
           target="_blank"
-          rel="noreferrer"
+          rel="noreferrer noopener"
         >
           <FontAwesomeIcon icon={faTwitter} />
         </a>

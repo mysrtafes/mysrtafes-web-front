@@ -1,9 +1,10 @@
-import '../styles/reset.css'
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import { QueryClient, QueryClientProvider } from 'react-query'
-import Head from 'next/head'
+import links from '@/const/links'
 import usePageView from '@/hooks/usePageView'
+import type { AppProps } from 'next/app'
+import Head from 'next/head'
+import { QueryClient, QueryClientProvider } from 'react-query'
+import '../styles/globals.css'
+import '../styles/reset.css'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -26,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="twitter:site" content="@mysrtafes" />
         <meta property="og:locale" content="ja_JP" />
         <meta property="og:site_name" content="不思議のダンジョンRTAフェス" />
-        <meta property="og:url" content="https://mysrtafes.com" />
+        <meta property="og:url" content={links.webSite} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="不思議のダンジョンRTAフェス" key="og:title" />
         <meta
@@ -41,7 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta
           property="og:image"
-          content="https://mysrtafes.com/images/mysrtafes.png"
+          content={`${links.webSite}/images/mysrtafes.png`}
           key="og:image"
         />
       </Head>

@@ -2,12 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
   color: #fff;
   background-color: #1da1f2;
   width: 100px;
   height: 32px;
   border-radius: 4px;
+  margin-left: 10px;
   .twitterIcon {
     width: 22px;
     color: #fff;
@@ -17,5 +17,7 @@
     }
   }
   span.tweet {
+    font-weight: 700;
+    margin-left: 8px;
   }
 }

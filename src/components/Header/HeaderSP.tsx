@@ -1,10 +1,10 @@
+import HamburgerMenu from '@/components/Header/HamburgerMenu'
+import HeaderBanner from '@/components/Header/HeaderBanner'
 import styles from '@/components/Header/HeaderSP.module.scss'
 import useBetterMediaQuery from '@/hooks/useBetterMediaQuery'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import HamburgerMenu from '@/components/Header/HamburgerMenu'
-import HeaderBanner from '@/components/Header/HeaderBanner'
 
 const HeaderSP = ({ isTopPage = false }) => {
   const isPC = useBetterMediaQuery('(min-width: 768px)')
