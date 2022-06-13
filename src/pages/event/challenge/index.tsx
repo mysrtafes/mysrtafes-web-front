@@ -2,6 +2,7 @@ import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
 import Challenge from '@/components/page/event/Challenge/Challenge'
 import TwitterShareArea from '@/components/TwitterShare/TwitterShareArea'
+import links from '@/const/links'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
@@ -29,9 +30,9 @@ const ChallengePage: NextPage = () => {
       <Header />
       <Challenge />
       <TwitterShareArea
-        url={process.env.NEXT_PUBLIC_URL + router.pathname}
+        url={links.webSite + router.pathname}
         text={title}
-        hashtags={['ふしチャレ！']}
+        hashtags={['ふしチャレ']}
       />
       <Footer />
     </>

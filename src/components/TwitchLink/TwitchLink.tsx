@@ -1,14 +1,15 @@
 import styles from '@/components/TwitchLink/TwitchLink.module.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import links from '@/const/links'
 import { faTwitch } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const TwitchLink = () => {
   return (
     <a
-      href="https://www.twitch.tv/mysterydungeon_rtafes"
+      href={links.twitch}
       className={styles.twitchLinkButton}
       target="_blank"
-      rel="noreferrer"
+      rel="noreferrer noopener"
     >
       <FontAwesomeIcon icon={faTwitch} className={styles.twitchIcon} />
       <p>

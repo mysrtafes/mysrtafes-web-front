@@ -1,13 +1,13 @@
-import styles from '@/components/DiscordLink/DiscordLink.module.scss'
+import styles from '@/components/DiscordLink/SmallDiscordLink.module.scss'
 import links from '@/const/links'
 import { faDiscord } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const DiscordLink = () => {
+const SmallDiscordLink = () => {
   return (
     <a
       href={links.discord}
-      className={styles.discordLinkButton}
+      className={styles.smallDiscordLinkButton}
       target="_blank"
       rel="noreferrer noopener"
     >
@@ -22,4 +22,4 @@ const DiscordLink = () => {
   )
 }
 
-export default DiscordLink
+export default SmallDiscordLink

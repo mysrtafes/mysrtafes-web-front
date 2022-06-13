@@ -1,5 +1,5 @@
-import { Head, Html, Main, NextScript } from 'next/document'
 import { existsGaId, GA_ID } from '@/lib/gtag'
+import { Head, Html, Main, NextScript } from 'next/document'
 
 const Document = () => {
   return (

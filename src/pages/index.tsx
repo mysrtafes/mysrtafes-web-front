@@ -7,6 +7,7 @@ import OfficialLinks from '@/components/page/index/OfficialLinks/OfficialLinks'
 import SpecialThanks from '@/components/page/index/SpecialThanks/SpecialThanks'
 import TweetListSP from '@/components/TweetList/TweetListSP'
 import TwitterShareArea from '@/components/TwitterShare/TwitterShareArea'
+import links from '@/const/links'
 import useBetterMediaQuery from '@/hooks/useBetterMediaQuery'
 import styles from '@/styles/Home.module.scss'
 import type { NextPage } from 'next'
@@ -32,10 +33,7 @@ const Home: NextPage = () => {
         <About />
       </div>
       {!isPC && <TweetListSP />}
-      <TwitterShareArea
-        url={process.env.NEXT_PUBLIC_URL + router.pathname}
-        text="不思議のダンジョンRTAフェス"
-      />
+      <TwitterShareArea url={links.webSite + router.pathname} text="不思議のダンジョンRTAフェス" />
       <Footer />
     </>
   )

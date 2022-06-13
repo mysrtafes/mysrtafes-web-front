@@ -1,12 +1,13 @@
-import type { NextPage } from 'next'
-import styles from '@/styles/Submissions.module.scss'
-import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
-import Head from 'next/head'
+import Header from '@/components/Header/Header'
 import SubmissionContainer from '@/components/page/event/SubmissionContainer/SubmissionContainer'
-import useChallengers from '@/hooks/useChallenger'
-import { Challenger, PrismaClient } from '@prisma/client'
 import TwitterShareArea from '@/components/TwitterShare/TwitterShareArea'
+import links from '@/const/links'
+import useChallengers from '@/hooks/useChallenger'
+import styles from '@/styles/Submissions.module.scss'
+import { Challenger, PrismaClient } from '@prisma/client'
+import type { NextPage } from 'next'
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 interface Props {
@@ -37,7 +38,7 @@ const Submission: NextPage<Props> = (props: Props) => {
 
       <Header />
       <div className={styles.main}>
-        <h2 className={styles.title}>ふしチャレ！応募者一覧</h2>
+        <h2 className={styles.title}>ふしチャレ！応募一覧</h2>
         <div className={styles.inner}>
           {!isLoading &&
             challengers?.map(challenger => (
@@ -46,9 +47,9 @@ const Submission: NextPage<Props> = (props: Props) => {
         </div>
       </div>
       <TwitterShareArea
-        url={process.env.NEXT_PUBLIC_URL + router.pathname}
+        url={links.webSite + router.pathname}
         text={title}
-        hashtags={['ふしチャレ！']}
+        hashtags={['ふしチャレ']}
       />
       <Footer />
     </>
