@@ -55,7 +55,7 @@ const PrivacyPolicy: NextPage = () => {
           </div>
         </div>
       </div>
-      <TwitterShareArea url={process.env.URL + router.pathname} text={title} />
+      <TwitterShareArea url={process.env.NEXT_PUBLIC_URL + router.pathname} text={title} />
       <Footer />
     </>
   )

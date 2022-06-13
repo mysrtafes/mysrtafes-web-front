@@ -33,7 +33,7 @@ const Home: NextPage = () => {
       </div>
       {!isPC && <TweetListSP />}
       <TwitterShareArea
-        url={process.env.URL + router.pathname}
+        url={process.env.NEXT_PUBLIC_URL + router.pathname}
         text="不思議のダンジョンRTAフェス"
       />
       <Footer />
