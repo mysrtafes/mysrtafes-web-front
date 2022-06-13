@@ -1,13 +1,11 @@
 import HamburgerMenu from '@/components/Header/HamburgerMenu'
 import HeaderBanner from '@/components/Header/HeaderBanner'
 import styles from '@/components/Header/HeaderSP.module.scss'
-import useBetterMediaQuery from '@/hooks/useBetterMediaQuery'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const HeaderSP = ({ isTopPage = false }) => {
-  const isPC = useBetterMediaQuery('(min-width: 768px)')
   return (
     <>
       <div className={styles.headerSP}>
@@ -27,7 +25,11 @@ const HeaderSP = ({ isTopPage = false }) => {
         </Link>
         <HamburgerMenu isTopPage={isTopPage} />
       </div>
-      {isTopPage && !isPC && <HeaderBanner />}
+      {isTopPage && (
+        <div className={styles.SPOnly}>
+          <HeaderBanner />
+        </div>
+      )}
     </>
   )
 }

@@ -36,6 +36,9 @@
 }
 
 @media (max-width: 768px) {
+  .PCOnly {
+    display: none;
+  }
   .headerPC {
     display: none;
   }
