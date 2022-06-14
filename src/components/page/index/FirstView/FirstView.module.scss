@@ -1,6 +1,6 @@
 .firstView {
   background-size: cover;
-  height: 420px;
+  height: 488px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -19,16 +19,31 @@
     position: relative;
   }
   .innerBox {
-    width: 668px;
+    width: 90%;
+    max-width: 1200px;
     height: 320px;
-    padding: 20px;
+    padding: 40px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background: rgba(255, 255, 255, 0.89);
     position: absolute;
-    right: 60px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .innerBoxLeft {
+      max-width: 405px;
+      width: 100%;
+      margin-right: 50px;
+    }
+    .innerBoxRight {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
     .eventHoldingPeriod {
       font-family: 'Kosugi Maru';
       font-style: normal;
@@ -64,16 +79,20 @@
 
 @media (max-width: 768px) {
   .firstView {
-    height: 480px;
+    height: 580px;
     .innerBox {
-      left: 0;
-      right: 0;
-      width: 90%;
-      margin: 0 auto;
-      height: 380px;
-      align-items: center;
+      flex-direction: column;
+      padding: 15px;
+      height: 500px;
       .eventHoldingPeriod {
         font-size: 18px;
+      }
+      .innerBoxLeft {
+        margin-right: 0;
+      }
+      .innerBoxRight {
+        padding: 20px 0 0 0;
+        align-items: center;
       }
     }
   }

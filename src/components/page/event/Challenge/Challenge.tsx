@@ -1,4 +1,5 @@
-import BlueButton from '@/components/ButtonLink/BlueButtonLink'
+import BlueButtonLink from '@/components/ButtonLink/BlueButtonLink'
+import BrownButtonLink from '@/components/ButtonLink/BrownButtonLink'
 import OutLineGreenButtonLink from '@/components/ButtonLink/OutLineGreenButtonLink'
 import SmallDiscordLink from '@/components/DiscordLink/SmallDiscordLink'
 import styles from '@/components/page/event/Challenge/Challenge.module.scss'
@@ -109,12 +110,12 @@ const Challenge = () => {
           <br />
           どなたでも応募可能です。
           <br />
-          イベント応募と結果報告は以下のGoogleフォームから行ってください。
+          イベント応募は以下のGoogleフォームから行ってください。
           <br />
           期間中の途中参加も大歓迎です！
           <br />
           <br />
-          <BlueButton
+          <BlueButtonLink
             href="https://docs.google.com/forms/d/e/1FAIpQLSd1C2o799W9tmZCbBWRBkvv2fXxNUtOdP0pOfNywUj5z901xw/viewform?usp=sf_link"
             text="イベントに応募する"
             target="_blank"
@@ -124,6 +125,17 @@ const Challenge = () => {
           <OutLineGreenButtonLink href="/event/challenge/submissions" text="応募一覧" />
         </p>
 
+        <h2>結果報告</h2>
+        <p className={styles.message}>
+          結果報告は以下のGoogleフォームから行ってください。
+          <br />
+          <br />
+          <BrownButtonLink
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdpkSiXNHFRKFQDJNjmzQ4uhuGsU7lJEUo9dCi3HmaIMbfoKQ/viewform?usp=sf_link"
+            text="結果を報告する"
+            target="_blank"
+          />
+        </p>
         <h2>Q＆A</h2>
         <ul className={styles.list}>
           <li className={styles.listQuestion}>Q: イベントに関する質問はどこから行えますか？</li>
@@ -168,6 +180,29 @@ const Challenge = () => {
           </li>
         </ul>
 
+        <h2>ロゴ</h2>
+        <p className={styles.message}>
+          <Image
+            className={styles.image}
+            src="/images/challengerLogo.png"
+            alt="ふしチャレロゴ"
+            width={405}
+            height={217}
+          />
+          <br />
+          配信を行う際にご活用ください。
+          <br />
+          素材の改変や公序良俗に反する目的での利用は避けるようにお願いします。
+          <br />
+          <a
+            href="/images/challengerLogo.png"
+            className={styles.link}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            元画像(高画質版)はこちら
+          </a>
+        </p>
         <h2>Discord</h2>
         <SmallDiscordLink />
       </div>

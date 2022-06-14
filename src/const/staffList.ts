@@ -12,7 +12,7 @@ const staffList = {
     { name: 'ping値', twitterId: 'pingval' },
     { name: 'sisuka', twitterId: 'sisuka2580' },
     { name: 'あーる', twitterId: 'r_sprl' },
-    { name: 'アジーン', twitterId: '' },
+    { name: 'アジーン', twitterId: 'discordjinro' },
     { name: 'イカロす', twitterId: 'UranosTubasaPMD' },
     { name: 'イリィ→', twitterId: 'irie1013' },
     { name: 'うたたね', twitterId: 'utatane97181115' },
