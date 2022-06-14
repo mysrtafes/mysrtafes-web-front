@@ -82,15 +82,9 @@
   .firstView {
     height: 580px;
     .innerBox {
-      left: 0;
-      right: 0;
-      width: 90%;
-      margin: 0 auto;
-      align-items: center;
       flex-direction: column;
       padding: 15px;
       height: 500px;
-      margin-top: 40px;
       .eventHoldingPeriod {
         font-size: 18px;
       }
@@ -98,7 +92,8 @@
         margin-right: 0;
       }
       .innerBoxRight {
-        padding: 20px;
+        padding: 20px 0 0 0;
+        align-items: center;
       }
     }
   }

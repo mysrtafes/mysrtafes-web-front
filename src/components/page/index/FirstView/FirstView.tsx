@@ -27,7 +27,7 @@ const FirstView = (props: Props) => {
             <Image
               className={styles.image}
               src="/images/challengerLogo.png"
-              alt="ふしチャレンロゴ"
+              alt="ふしチャレロゴ"
               priority={true}
               width={405}
               height={217}
@@ -36,7 +36,7 @@ const FirstView = (props: Props) => {
           <div className={styles.innerBoxRight}>
             <p className={styles.eventHoldingPeriod}>{props.holdingPeriod}</p>
             <p className={styles.eventTitle}>{props.title}</p>
-            <p className={styles.eventApplicationPeriod}>応募受付中!</p>
+            <p className={styles.eventApplicationPeriod}>応募受付中！</p>
             <GreenButtonLink text="応募はこちら" href={props.url} />
           </div>
         </div>
