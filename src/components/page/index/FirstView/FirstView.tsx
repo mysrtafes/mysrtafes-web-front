@@ -23,10 +23,22 @@ const FirstView = (props: Props) => {
       />
       <div className={styles.imageFilter}>
         <div className={styles.innerBox}>
-          <p className={styles.eventHoldingPeriod}>{props.holdingPeriod}</p>
-          <p className={styles.eventTitle}>{props.title}</p>
-          <p className={styles.eventApplicationPeriod}>応募受付中!</p>
-          <GreenButtonLink text="応募はこちら" href={props.url} />
+          <div className={styles.innerBoxLeft}>
+            <Image
+              className={styles.image}
+              src="/images/challengerLogo.png"
+              alt="ふしチャレンロゴ"
+              priority={true}
+              width={405}
+              height={217}
+            />
+          </div>
+          <div className={styles.innerBoxRight}>
+            <p className={styles.eventHoldingPeriod}>{props.holdingPeriod}</p>
+            <p className={styles.eventTitle}>{props.title}</p>
+            <p className={styles.eventApplicationPeriod}>応募受付中!</p>
+            <GreenButtonLink text="応募はこちら" href={props.url} />
+          </div>
         </div>
       </div>
     </div>
