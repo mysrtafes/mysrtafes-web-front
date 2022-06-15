@@ -17,12 +17,14 @@ interface Props {
 const Submission: NextPage<Props> = (props: Props) => {
   const { challengers, isLoading } = useChallengers(props.challengers)
   const router = useRouter()
+  const currentUrl = links.webSite + router.pathname
   const title =
     '『ふしチャレ！～不思議のダンジョンRTAフェス外伝～』応募一覧 | 不思議のダンジョンRTAフェス'
   return (
     <>
       <Head>
         <title>{title}</title>
+        <meta property="og:url" content={currentUrl} key="og:url" />
         <meta property="og:title" content={title} key="og:title" />
         <meta
           name="description"
@@ -51,11 +53,7 @@ const Submission: NextPage<Props> = (props: Props) => {
             ))}
         </div>
       </div>
-      <TwitterShareArea
-        url={links.webSite + router.pathname}
-        text={title}
-        hashtags={['ふしチャレ']}
-      />
+      <TwitterShareArea url={currentUrl} text={title} hashtags={['ふしチャレ']} />
       <Footer />
     </>
   )
