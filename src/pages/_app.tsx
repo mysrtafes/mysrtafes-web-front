@@ -27,8 +27,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="twitter:site" content="@mysrtafes" />
         <meta property="og:locale" content="ja_JP" />
         <meta property="og:site_name" content="不思議のダンジョンRTAフェス" />
-        <meta property="og:url" content={links.webSite} />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content={links.webSite} key="og:url" />
         <meta property="og:title" content="不思議のダンジョンRTAフェス" key="og:title" />
         <meta
           name="description"

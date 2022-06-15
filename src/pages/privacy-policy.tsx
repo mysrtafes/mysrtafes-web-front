@@ -3,17 +3,20 @@ import Header from '@/components/Header/Header'
 import TwitterShareArea from '@/components/TwitterShare/TwitterShareArea'
 import links from '@/const/links'
 import styles from '@/styles/PrivacyPolicy.module.scss'
+import { link } from 'fs'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 const PrivacyPolicy: NextPage = () => {
   const router = useRouter()
+  const currentUrl = links.webSite + router.pathname
   const title = 'プライバシーポリシー | 不思議のダンジョンRTAフェス'
   return (
     <>
       <Head>
         <title>{title}</title>
+        <meta property="og:url" content={currentUrl} key="og:url" />
         <meta property="og:title" content={title} key="og:title" />
       </Head>
 
@@ -46,7 +49,7 @@ const PrivacyPolicy: NextPage = () => {
           </div>
         </div>
       </div>
-      <TwitterShareArea url={links.webSite + router.pathname} text={title} />
+      <TwitterShareArea url={currentUrl} text={title} />
       <Footer />
     </>
   )
