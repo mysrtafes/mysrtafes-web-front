@@ -26,7 +26,7 @@ const FirstView = (props: Props) => {
           <div className={styles.innerBoxLeft}>
             <Image
               className={styles.image}
-              src="/images/challengerLogo.png"
+              src="/images/challenger-logo.png"
               alt="ふしチャレロゴ"
               priority={true}
               width={405}
