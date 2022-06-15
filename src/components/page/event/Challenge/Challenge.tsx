@@ -184,7 +184,7 @@ const Challenge = () => {
         <p className={styles.message}>
           <Image
             className={styles.image}
-            src="/images/challengerLogo.png"
+            src="/images/challenger-logo.png"
             alt="ふしチャレロゴ"
             width={405}
             height={217}
@@ -195,7 +195,7 @@ const Challenge = () => {
           素材の改変や公序良俗に反する目的での利用は避けるようにお願いします。
           <br />
           <a
-            href="/images/challengerLogo.png"
+            href="/images/challenger-logo.png"
             className={styles.link}
             target="_blank"
             rel="noreferrer noopener"
