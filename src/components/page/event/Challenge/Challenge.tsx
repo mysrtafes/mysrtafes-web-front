@@ -89,13 +89,6 @@ const Challenge = () => {
         <h2>イベントスケジュール</h2>
         <p className={styles.message}>
           <strong>2022年6月24日(金)21:00 ～ 7月18日(月)24:00</strong>
-          <br />
-          <br />
-          6月24日(金)20:30頃に
-          <a href={links.twitch} className={styles.link} target="_blank" rel="noreferrer noopener">
-            公式Twitchチャンネル
-          </a>
-          にて開幕配信を行います！
         </p>
 
         <h2>参加方法</h2>
@@ -135,6 +128,52 @@ const Challenge = () => {
             text="結果を報告する"
             target="_blank"
           />
+        </p>
+        <h2>公式配信</h2>
+        <p className={styles.message}>
+          イベント期間中、運営側で配信企画を行います。
+          <br />
+          配信場所：
+          <a href={links.twitch} className={styles.link} target="_blank" rel="noreferrer noopener">
+            不思議RTAフェスTwitchチャンネル
+          </a>
+          <ul className={styles.schedule}>
+            <li className={styles.major}>
+              <h3>開会式</h3>
+              <ul>
+                <li className={styles.datetime}>6/24(金)20:45</li>
+                <li>
+                  21時のイベント開始と同時に主催のポンズさんが挑戦を開始します。
+                  みんなで一緒にプレーを開始しましょう。
+                </li>
+              </ul>
+            </li>
+            <li className={styles.major}>
+              <h3>ふしチャレスタッフの挑戦</h3>
+              <ul>
+                <li className={styles.datetime}>
+                  6/25(土)21:00、7/2(土)21:00、7/9(土)21:00、7/16(土)21:00
+                </li>
+                <li>
+                  イベント期間中の毎週土曜に、ふしチャレ運営スタッフがふしチャレに挑戦する様子を配信します。
+                </li>
+              </ul>
+            </li>
+            <li className={styles.major}>
+              <h3>ふしチャレ中間報告会</h3>
+              <ul>
+                <li className={styles.datetime}>7/3(日)21:00、7/17(日)21:00</li>
+                <li>参加者からの挑戦結果報告を流させて頂きます。</li>
+              </ul>
+            </li>
+            <li className={styles.major}>
+              <h3>閉会式</h3>
+              <ul>
+                <li className={styles.datetime}> 7/23(土)21:00</li>
+                <li>最終的な挑戦結果報告を流し、イベントの総括をします</li>
+              </ul>
+            </li>
+          </ul>
         </p>
         <h2>Q＆A</h2>
         <ul className={styles.list}>
@@ -176,6 +215,8 @@ const Challenge = () => {
           <li className={styles.listAnswer}>
             A: 3つまでの申請と同様に、新たに応募フォームから申請してください。
             <br />
+            一応最低限のルールとして、先に申請した全ての挑戦に目処がついたら(目標達成、あるいは断念)次の申請を行うようお願いします。
+            <br />
             挑戦する目標の上限はありませんので、思う存分挑戦してください。
           </li>
         </ul>
@@ -200,7 +241,16 @@ const Challenge = () => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            元画像(高画質版)はこちら
+            元画像はこちら
+          </a>
+          <br />
+          <a
+            href="/images/challenger-logo-white.png"
+            className={styles.link}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            白抜き版はこちら
           </a>
         </p>
         <h2>Discord</h2>
