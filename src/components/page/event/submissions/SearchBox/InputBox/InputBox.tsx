@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 
 interface Props {
   challengers: Challenger[]
-  setChallengers: (challengers: Challenger[]) => void
+  setChallengers: (challengers: Challenger[] | null) => void
 }
 
 const InputBox = (props: Props) => {
@@ -12,6 +12,10 @@ const InputBox = (props: Props) => {
   const [search, setSearch] = useState('')
 
   useEffect(() => {
+    if (search == '') {
+      setChallengers(null)
+      return
+    }
     const searchChallengers = challengers.filter(challenger => {
       if (
         challenger.Name.includes(search) ||
