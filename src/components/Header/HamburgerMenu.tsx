@@ -1,13 +1,13 @@
 import styles from '@/components/Header/HamburgerMenu.module.scss'
 import Link from 'next/link'
-import React, { useCallback, useMemo, useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import { Link as Scroll } from 'react-scroll'
 
 const HamburgerMenu = ({ isTopPage = false }) => {
   const [isOpenMenu, setIsOpenMenu] = useState(false)
-  const toggleMenu = useCallback(() => {
+  const toggleMenu = () => {
     setIsOpenMenu(!isOpenMenu)
-  }, [isOpenMenu])
+  }
 
   const closeWithClick = (e: any) => {
     if (e.target === e.currentTarget) {
@@ -97,7 +97,7 @@ const HamburgerMenu = ({ isTopPage = false }) => {
           </li>
         </>
       ),
-    [isTopPage, toggleMenu],
+    [isTopPage],
   )
 
   return (

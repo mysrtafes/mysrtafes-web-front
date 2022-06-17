@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
-import Challenge from '@/components/page/event/Challenge/Challenge'
+import Challenge from '@/components/page/event/challenge/Challenge'
 import TwitterShareArea from '@/components/TwitterShare/TwitterShareArea'
 import links from '@/const/links'
 import type { NextPage } from 'next'
