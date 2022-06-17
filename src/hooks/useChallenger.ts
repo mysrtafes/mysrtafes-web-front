@@ -12,6 +12,8 @@ const useChallengers = (initialData: Challenger[] = []) => {
     isError,
   } = useQuery('challenger', getChallengers, {
     initialData: initialData,
+    staleTime: 0,
+    cacheTime: 0,
   })
   return { challengers, isLoading, isError }
 }
