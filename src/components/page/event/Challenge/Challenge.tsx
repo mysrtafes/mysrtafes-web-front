@@ -1,5 +1,4 @@
 import BlueButtonLink from '@/components/ButtonLink/BlueButtonLink'
-import BrownButtonLink from '@/components/ButtonLink/BrownButtonLink'
 import OutLineGreenButtonLink from '@/components/ButtonLink/OutLineGreenButtonLink'
 import SmallDiscordLink from '@/components/DiscordLink/SmallDiscordLink'
 import styles from '@/components/page/event/Challenge/Challenge.module.scss'
@@ -123,7 +122,7 @@ const Challenge = () => {
           結果報告は以下のGoogleフォームから行ってください。
           <br />
           <br />
-          <BrownButtonLink
+          <BlueButtonLink
             href="https://docs.google.com/forms/d/e/1FAIpQLSdpkSiXNHFRKFQDJNjmzQ4uhuGsU7lJEUo9dCi3HmaIMbfoKQ/viewform?usp=sf_link"
             text="結果を報告する"
             target="_blank"
