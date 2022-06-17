@@ -1,7 +1,7 @@
 import BlueButtonLink from '@/components/ButtonLink/BlueButtonLink'
 import OutLineGreenButtonLink from '@/components/ButtonLink/OutLineGreenButtonLink'
 import SmallDiscordLink from '@/components/DiscordLink/SmallDiscordLink'
-import styles from '@/components/page/event/Challenge/Challenge.module.scss'
+import styles from '@/components/page/event/challenge/Challenge.module.scss'
 import links from '@/const/links'
 import Image from 'next/image'
 

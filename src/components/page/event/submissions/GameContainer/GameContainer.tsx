@@ -1,4 +1,4 @@
-import styles from '@/components/page/event/GameContainer/GameContainer.module.scss'
+import styles from '@/components/page/event/submissions/GameContainer/GameContainer.module.scss'
 
 interface Props {
   title: string
