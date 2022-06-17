@@ -1,16 +1,20 @@
 import InputBox from '@/components/page/event/submissions/SearchBox/InputBox/InputBox'
 import SubmissionContainer from '@/components/page/event/submissions/SubmissionContainer/SubmissionContainer'
-import useChallengers from '@/hooks/useChallenger'
+import useChallengers, { getChallengers } from '@/hooks/useChallenger'
 import styles from '@/components/page/event/submissions/Submissions.module.scss'
 import { Challenger } from '@prisma/client'
 import { useState } from 'react'
+import { useQuery } from 'react-query'
 
 interface Props {
   challengers: Challenger[]
 }
 
 const Submissions = (props: Props) => {
-  const { challengers, isLoading } = useChallengers(props.challengers)
+  const { data: challengers, isLoading } = useQuery('challenger', getChallengers, {
+    initialData: props.challengers,
+    refetchOnMount: 'always',
+  })
   const [searchChallengers, setSearchChallengers] = useState<Challenger[]>([])
   const search = (challengers: Challenger[]) => {
     setSearchChallengers(challengers)
