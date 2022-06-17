@@ -15,9 +15,11 @@ const Submissions = (props: Props) => {
   const search = (challengers: Challenger[]) => {
     setSearchChallengers(challengers)
   }
-  console.log(challengers)
+
   const result = searchChallengers ?? challengers
-  console.log(result)
+  console.log(challengers)
+  console.error(searchChallengers)
+  console.warn(result)
 
   return (
     <div className={styles.main}>
