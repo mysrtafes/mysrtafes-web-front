@@ -10,13 +10,14 @@ interface Props {
 }
 
 const Submissions = (props: Props) => {
-  const { challengers } = useChallengers(props.challengers)
+  const { challengers, isLoading } = useChallengers(props.challengers)
   const [searchChallengers, setSearchChallengers] = useState<Challenger[]>([])
   const search = (challengers: Challenger[]) => {
     setSearchChallengers(challengers)
   }
   console.log(challengers)
   const result = searchChallengers ?? challengers
+  console.log(result)
 
   return (
     <div className={styles.main}>
@@ -26,9 +27,10 @@ const Submissions = (props: Props) => {
       </div>
 
       <div className={styles.inner}>
-        {result.map(challenger => (
-          <SubmissionContainer challenger={challenger} key={challenger.id} />
-        ))}
+        {!isLoading &&
+          result.map(challenger => (
+            <SubmissionContainer challenger={challenger} key={challenger.id} />
+          ))}
       </div>
     </div>
   )
