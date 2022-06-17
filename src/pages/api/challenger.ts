@@ -8,6 +8,7 @@ const handleCreate = async (req: NextApiRequest, res: NextApiResponse) => {
       status: 'error',
       message: 'no EditUrl',
     })
+    return
   }
   const prisma = new PrismaClient()
   const data = await prisma.challenger.upsert({
