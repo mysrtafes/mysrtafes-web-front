@@ -1,4 +1,4 @@
-import styles from '@/components/page/event/SearchBox/InputBox/InputBox.module.scss'
+import styles from '@/components/page/event/submissions/SearchBox/InputBox/InputBox.module.scss'
 import { Challenger } from '@prisma/client'
 import { useEffect, useState } from 'react'
 
