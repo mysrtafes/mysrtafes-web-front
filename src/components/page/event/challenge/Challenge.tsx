@@ -249,7 +249,7 @@ const Challenge = () => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            白抜き版はこちら
+            白抜き画像はこちら
           </a>
         </p>
         <h2>Discord</h2>
