@@ -1,7 +1,7 @@
-import InputBox from '@/components/page/event/SearchBox/InputBox/InputBox'
-import SubmissionContainer from '@/components/page/event/Submissions/SubmissionContainer/SubmissionContainer'
+import InputBox from '@/components/page/event/submissions/SearchBox/InputBox/InputBox'
+import SubmissionContainer from '@/components/page/event/submissions/SubmissionContainer/SubmissionContainer'
 import useChallengers from '@/hooks/useChallenger'
-import styles from '@/components/page/event/Submissions/Submissions.module.scss'
+import styles from '@/components/page/event/submissions/Submissions.module.scss'
 import { Challenger } from '@prisma/client'
 import { useState } from 'react'
 

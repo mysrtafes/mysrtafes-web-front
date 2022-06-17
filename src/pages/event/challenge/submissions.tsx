@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
-import Submissions from '@/components/page/event/Submissions/Submissions'
+import Submissions from '@/components/page/event/submissions/Submissions'
 import TwitterShareArea from '@/components/TwitterShare/TwitterShareArea'
 import links from '@/const/links'
 import { Challenger, PrismaClient } from '@prisma/client'
