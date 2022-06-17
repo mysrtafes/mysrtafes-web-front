@@ -11,11 +11,9 @@ Next.js 12
 docker-compose build
 docker-compose up -d
 docker-compose exec app npm install
+docker-compose exec npx prisma generate
+docker-compose exec npx prisma migrate dev
 ```
-
-### Docker ない人(仮)
-
-Node.js の 16 を環境にインストールし、`npm install`
 
 ### 共通
 
@@ -29,12 +27,6 @@ cp .env .env.example
 
 ```
 docker-compose exec app npm run dev
-```
-
-### Docker ない人
-
-```
-npm run dev
 ```
 
 ## アクセス
