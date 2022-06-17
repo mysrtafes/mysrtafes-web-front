@@ -17,9 +17,6 @@ const Submissions = (props: Props) => {
   }
 
   const result = searchChallengers ?? challengers
-  console.log(challengers)
-  console.warn(result)
-  console.error(searchChallengers)
 
   return (
     <div className={styles.main}>
