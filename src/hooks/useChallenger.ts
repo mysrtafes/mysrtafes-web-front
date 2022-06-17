@@ -14,6 +14,7 @@ const useChallengers = (initialData: Challenger[] = []) => {
     initialData: initialData,
     staleTime: 0,
     cacheTime: 0,
+    refetchOnMount: true,
   })
   return { challengers, isLoading, isError }
 }
