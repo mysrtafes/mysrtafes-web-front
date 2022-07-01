@@ -3,7 +3,9 @@ import SubmissionContainer from '@/components/page/event/submissions/SubmissionC
 import useChallengers from '@/hooks/useChallenger'
 import styles from '@/components/page/event/submissions/Submissions.module.scss'
 import { Challenger } from '@prisma/client'
-import { useState } from 'react'
+import useOrder from '@/hooks/useOrder'
+import OrderInput from './OrderInput/OrderInput'
+import useChallengerResult from '@/hooks/useChallengerResult'
 
 interface Props {
   challengers: Challenger[]
@@ -11,18 +13,15 @@ interface Props {
 
 const Submissions = (props: Props) => {
   const { challengers, isLoading } = useChallengers(props.challengers)
-  const [searchChallengers, setSearchChallengers] = useState<Challenger[] | null>([])
-  const search = (challengers: Challenger[] | null) => {
-    setSearchChallengers(challengers)
-  }
-
-  const result = searchChallengers ?? challengers
+  const [order, Asc, Desc] = useOrder()
+  const [search, result] = useChallengerResult({ challengers, order })
 
   return (
     <div className={styles.main}>
       <div className={styles.search}>
         <h2 className={styles.title}>ふしチャレ！応募一覧</h2>
         <InputBox setChallengers={search} challengers={challengers ?? []} />
+        <OrderInput order={order} Desc={Desc} Asc={Asc} />
       </div>
 
       <div className={styles.inner}>

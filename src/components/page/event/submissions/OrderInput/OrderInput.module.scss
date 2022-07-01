@@ -1,0 +1,22 @@
+.order {
+  padding: 8px 0px;
+  button {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 6px 12px;
+    margin-right: 8px;
+    color: #888;
+    &.selected {
+      background-color: #111;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
