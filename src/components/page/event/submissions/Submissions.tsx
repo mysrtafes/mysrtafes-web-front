@@ -19,7 +19,12 @@ const Submissions = (props: Props) => {
   return (
     <div className={styles.main}>
       <div className={styles.search}>
-        <h2 className={styles.title}>ふしチャレ！応募一覧</h2>
+        <h2 className={styles.title}>
+          {
+            // eslint-disable-next-line @next/next/no-html-link-for-pages
+            <a href="/event/challenge/submissions">ふしチャレ！応募一覧</a>
+          }
+        </h2>
         <InputBox setChallengers={search} challengers={challengers ?? []} />
         <OrderInput order={order} Desc={Desc} Asc={Asc} />
       </div>

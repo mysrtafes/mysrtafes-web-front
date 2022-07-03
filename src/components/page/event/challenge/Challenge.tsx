@@ -219,6 +219,16 @@ const Challenge = () => {
             挑戦する目標の上限はありませんので、思う存分挑戦してください。
           </li>
         </ul>
+        <p className={styles.message}>
+          <a
+            href="https://docs.google.com/spreadsheets/d/1NYcEgQBZacYUk0y54N-OAz3eNZd7s-9nNAXyulwiPsA/edit#gid=0"
+            target="_blank"
+            rel="noreferrer noopener"
+            className={styles.link}
+          >
+            その他のQ&Aはこちら
+          </a>
+        </p>
 
         <h2>ロゴ</h2>
         <p className={styles.message}>
