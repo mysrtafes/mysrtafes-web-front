@@ -36,7 +36,7 @@ const FirstView = (props: Props) => {
           <div className={styles.innerBoxRight}>
             <p className={styles.eventHoldingPeriod}>{props.holdingPeriod}</p>
             <p className={styles.eventTitle}>{props.title}</p>
-            <p className={styles.eventApplicationPeriod}>応募受付中！</p>
+            <p className={styles.eventApplicationPeriod}>本イベントは終了いたしました。</p>
             <GreenButtonLink text="詳細はこちら" href={props.url} />
           </div>
         </div>

@@ -102,16 +102,7 @@ const Challenge = () => {
           <br />
           どなたでも応募可能です。
           <br />
-          イベント応募は以下のGoogleフォームから行ってください。
-          <br />
           期間中の途中参加も大歓迎です！
-          <br />
-          <br />
-          <BlueButtonLink
-            href="https://docs.google.com/forms/d/e/1FAIpQLSd1C2o799W9tmZCbBWRBkvv2fXxNUtOdP0pOfNywUj5z901xw/viewform?usp=sf_link"
-            text="イベントに応募する"
-            target="_blank"
-          />
           <br />
           <br />
           <OutLineGreenButtonLink href="/event/challenge/submissions" text="応募一覧" />

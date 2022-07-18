@@ -7,11 +7,11 @@ import Link from 'next/link'
 const HeaderPC = ({ isTopPage = false }) => {
   return (
     <>
-      {isTopPage && (
+      {/* {isTopPage && (
         <div className={styles.PCOnly}>
           <HeaderBanner />
         </div>
-      )}
+      )} */}
       <header className={styles.headerPC}>
         <div className={styles.headerBottom}>
           <div className={styles.headerBottomInner}>
