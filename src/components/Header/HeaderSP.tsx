@@ -25,11 +25,11 @@ const HeaderSP = ({ isTopPage = false }) => {
         </Link>
         <HamburgerMenu isTopPage={isTopPage} />
       </div>
-      {isTopPage && (
+      {/* {isTopPage && (
         <div className={styles.SPOnly}>
           <HeaderBanner />
         </div>
-      )}
+      )} */}
     </>
   )
 }
